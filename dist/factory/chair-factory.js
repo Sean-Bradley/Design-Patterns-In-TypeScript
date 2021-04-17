@@ -1,5 +1,4 @@
 "use strict";
-// The Factory Class
 Object.defineProperty(exports, "__esModule", { value: true });
 const medium_chair_1 = require("./medium-chair");
 const small_chair_1 = require("./small-chair");

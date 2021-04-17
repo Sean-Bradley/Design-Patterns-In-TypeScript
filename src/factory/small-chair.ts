@@ -1,7 +1,6 @@
 import Chair from "./chair"
 
 export default class SmallChair implements Chair {
-    //The Small Chair Concrete Class implements the Chair interface"
 
     height: number
     width: number

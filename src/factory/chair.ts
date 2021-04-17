@@ -1,9 +1,8 @@
 export default interface Chair {
-
-    // height: number
-    // width: number
-    // depth: number
-
-    //An abstract interface method
+    
+    height: number;
+    width: number,
+    depth: number
     getDimensions(): dimension;
+
 }

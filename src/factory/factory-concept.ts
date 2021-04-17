@@ -1,55 +1,51 @@
 //The Factory Concept
 
-interface IProduct {
-    //A Hypothetical Class Interface (Product)"
-
+interface Product {
     name: String;
-
-    //An abstract interface method
-    create_object(): IProduct;
+    createObject(): Product;
 }
 
-class ConcreteProductA implements IProduct {
-    //A Concrete Class that implements the IProduct interface
+class ConcreteProductA implements Product {
+
     name: String;
+
     constructor() {
         this.name = "ConcreteProductA"
     }
 
-    create_object() {
+    createObject() {
         return this
     }
 }
 
-class ConcreteProductB implements IProduct {
-    //A Concrete Class that implements the IProduct interface
+class ConcreteProductB implements Product {
 
     name: String;
+
     constructor() {
         this.name = "ConcreteProductB"
     }
 
-    create_object() {
+    createObject() {
         return this
     }
 }
 
-class ConcreteProductC implements IProduct {
-    //A Concrete Class that implements the IProduct interface
+class ConcreteProductC implements Product {
 
     name: String;
+
     constructor() {
         this.name = "ConcreteProductC"
     }
 
-    create_object() {
+    createObject() {
         return this
     }
 }
 
 class Creator {
-    // A static method to get a concrete product
-    static create_object(some_property: string): IProduct {
+    static createObject(some_property: string): Product {
         if (some_property === 'a') {
             return new ConcreteProductA()
         } else if (some_property === 'b') {
@@ -61,5 +57,5 @@ class Creator {
 }
 
 // # The Client
-const PRODUCT = Creator.create_object('b')
+const PRODUCT = Creator.createObject('b')
 console.log(PRODUCT.name)

@@ -1,5 +1,3 @@
-// The Factory Class
-
 import SmallChair from "./medium-chair"
 import MediumChair from "./small-chair"
 import BigChair from "./big-chair"
