@@ -1,0 +1,24 @@
+{
+  "name": "design-patterns-in-typescript",
+  "version": "1.0.0",
+  "description": "Design Patterns In TypeScript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript.git"
+  },
+  "keywords": [
+    "DesignPatterns",
+    "TypeScript"
+  ],
+  "author": "Sean Bradley",
+  "license": "Copyright 2021 Sean Bradley All Rights Reserved",
+  "bugs": {
+    "url": "https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript/issues"
+  },
+  "homepage": "https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
