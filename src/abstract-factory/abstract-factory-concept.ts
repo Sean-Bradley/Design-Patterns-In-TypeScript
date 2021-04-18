@@ -1,13 +1,10 @@
 // Abstract Factory Concept Sample Code
+import { FactoryA } from './factory-a'
+import { FactoryB } from './factory-b'
 
-import FactoryA from './factory-a'
-import FactoryB from './factory-b'
+//module AbstractFactoryConcept {
 
-interface AbstractFactory {
-    createObject(factory: string): any;
-}
-
-class AbstractFactory implements AbstractFactory {
+class AbstractFactory {
     // The Abstract Factory Concrete Class
     static createObject(factory: string): any {
         try {
@@ -25,10 +22,10 @@ class AbstractFactory implements AbstractFactory {
     }
 }
 
-
 // The Client
 let PRODUCT = AbstractFactory.createObject('ab')
 console.log(PRODUCT)
 
 PRODUCT = AbstractFactory.createObject('bc')
 console.log(PRODUCT)
+//}

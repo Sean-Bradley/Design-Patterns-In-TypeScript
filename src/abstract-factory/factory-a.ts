@@ -1,52 +1,48 @@
 // FactoryA Sample Code
+export module FactoryA {
 
-interface Product {
-    name: String;
-    createObject(): Product;
-}
-
-
-class ConcreteProductA implements Product {
-    name: String;
-
-    constructor() {
-        this.name = "FactoryA:ConcreteProductA"
+    interface Product {
+        name: String;
+        createObject(): Product;
     }
 
-    createObject() {
-        return this
-    }
-}
+    class ConcreteProductA implements Product {
+        name: String;
 
-class ConcreteProductB implements Product {
-    name: String;
+        constructor() {
+            this.name = "FactoryA:ConcreteProductA"
+        }
 
-    constructor() {
-        this.name = "FactoryA:ConcreteProductB"
-    }
-
-    createObject() {
-        return this
-    }
-}
-
-
-class ConcreteProductC implements Product {
-    name: String;
-
-    constructor() {
-        this.name = "FactoryA:ConcreteProductC"
+        createObject() {
+            return this
+        }
     }
 
-    createObject() {
-        return this
+    class ConcreteProductB implements Product {
+        name: String;
+
+        constructor() {
+            this.name = "FactoryA:ConcreteProductB"
+        }
+
+        createObject() {
+            return this
+        }
     }
-}
 
+    class ConcreteProductC implements Product {
+        name: String;
 
-export default class FactoryA {
+        constructor() {
+            this.name = "FactoryA:ConcreteProductC"
+        }
 
-    static getObject(some_property: string) {
+        createObject() {
+            return this
+        }
+    }
+
+    export function getObject(some_property: string) {
         try {
             if (some_property === 'a') {
                 return new ConcreteProductA()

@@ -1,4 +1,4 @@
-export default interface Chair {
+export interface Chair {
 
     name: string
     height: number

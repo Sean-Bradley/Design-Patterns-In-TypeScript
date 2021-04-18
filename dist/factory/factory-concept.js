@@ -1,42 +1,45 @@
 "use strict";
 //The Factory Concept
-class ConcreteProductA {
-    constructor() {
-        this.name = "ConcreteProductA";
-    }
-    createObject() {
-        return this;
-    }
-}
-class ConcreteProductB {
-    constructor() {
-        this.name = "ConcreteProductB";
-    }
-    createObject() {
-        return this;
-    }
-}
-class ConcreteProductC {
-    constructor() {
-        this.name = "ConcreteProductC";
-    }
-    createObject() {
-        return this;
-    }
-}
-class Creator {
-    static createObject(some_property) {
-        if (some_property === 'a') {
-            return new ConcreteProductA();
+var FactoryConcept;
+(function (FactoryConcept) {
+    class ConcreteProductA {
+        constructor() {
+            this.name = "ConcreteProductA";
         }
-        else if (some_property === 'b') {
-            return new ConcreteProductB();
-        }
-        else {
-            return new ConcreteProductC();
+        createObject() {
+            return this;
         }
     }
-}
-// # The Client
-const PRODUCT = Creator.createObject('b');
-console.log(PRODUCT.name);
+    class ConcreteProductB {
+        constructor() {
+            this.name = "ConcreteProductB";
+        }
+        createObject() {
+            return this;
+        }
+    }
+    class ConcreteProductC {
+        constructor() {
+            this.name = "ConcreteProductC";
+        }
+        createObject() {
+            return this;
+        }
+    }
+    class Creator {
+        static createObject(some_property) {
+            if (some_property === 'a') {
+                return new ConcreteProductA();
+            }
+            else if (some_property === 'b') {
+                return new ConcreteProductB();
+            }
+            else {
+                return new ConcreteProductC();
+            }
+        }
+    }
+    // # The Client
+    const PRODUCT = Creator.createObject('b');
+    console.log(PRODUCT.name);
+})(FactoryConcept || (FactoryConcept = {}));

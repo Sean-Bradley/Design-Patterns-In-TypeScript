@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BigChair = void 0;
 class BigChair {
     constructor() {
         this.name = "BigChair";
@@ -15,4 +16,4 @@ class BigChair {
         };
     }
 }
-exports.default = BigChair;
+exports.BigChair = BigChair;

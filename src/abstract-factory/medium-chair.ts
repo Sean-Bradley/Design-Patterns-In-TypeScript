@@ -1,6 +1,6 @@
-import Chair from "./chair"
+import {Chair} from "./chair"
 
-export default class MediumChair implements Chair {
+export class MediumChair implements Chair {
 
     name: string
     height: number

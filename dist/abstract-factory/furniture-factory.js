@@ -1,16 +1,18 @@
 "use strict";
 "Abstract Furniture Factory";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FurnitureFactory = void 0;
 const chair_factory_1 = require("./chair-factory");
 const table_factory_1 = require("./table-factory");
-class FurnitureFactory {
-    static getFurniture(furniture) {
+var FurnitureFactory;
+(function (FurnitureFactory) {
+    function getFurniture(furniture) {
         try {
             if (['SmallChair', 'MediumChair', 'BigChair'].indexOf(furniture) > -1) {
-                return chair_factory_1.default.getChair(furniture);
+                return chair_factory_1.ChairFactory.getChair(furniture);
             }
             if (['SmallTable', 'MediumTable', 'BigTable'].indexOf(furniture) > -1) {
-                return table_factory_1.default.getTable(furniture);
+                return table_factory_1.TableFactory.getTable(furniture);
             }
             throw new Error('No Factory Found');
         }
@@ -18,5 +20,5 @@ class FurnitureFactory {
             console.log(e);
         }
     }
-}
-exports.default = FurnitureFactory;
+    FurnitureFactory.getFurniture = getFurniture;
+})(FurnitureFactory = exports.FurnitureFactory || (exports.FurnitureFactory = {}));

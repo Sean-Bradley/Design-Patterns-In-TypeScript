@@ -1,4 +1,4 @@
-export default interface Table {
+export interface Table {
 
     name: string
     height: number

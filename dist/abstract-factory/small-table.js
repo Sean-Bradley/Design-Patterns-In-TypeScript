@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SmallTable = void 0;
 class SmallTable {
     constructor() {
         this.name = "SmallTable";
@@ -15,4 +16,4 @@ class SmallTable {
         };
     }
 }
-exports.default = SmallTable;
+exports.SmallTable = SmallTable;

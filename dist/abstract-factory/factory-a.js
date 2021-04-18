@@ -1,32 +1,34 @@
 "use strict";
-// FactoryA Sample Code
 Object.defineProperty(exports, "__esModule", { value: true });
-class ConcreteProductA {
-    constructor() {
-        this.name = "FactoryA:ConcreteProductA";
+exports.FactoryA = void 0;
+// FactoryA Sample Code
+var FactoryA;
+(function (FactoryA) {
+    class ConcreteProductA {
+        constructor() {
+            this.name = "FactoryA:ConcreteProductA";
+        }
+        createObject() {
+            return this;
+        }
     }
-    createObject() {
-        return this;
+    class ConcreteProductB {
+        constructor() {
+            this.name = "FactoryA:ConcreteProductB";
+        }
+        createObject() {
+            return this;
+        }
     }
-}
-class ConcreteProductB {
-    constructor() {
-        this.name = "FactoryA:ConcreteProductB";
+    class ConcreteProductC {
+        constructor() {
+            this.name = "FactoryA:ConcreteProductC";
+        }
+        createObject() {
+            return this;
+        }
     }
-    createObject() {
-        return this;
-    }
-}
-class ConcreteProductC {
-    constructor() {
-        this.name = "FactoryA:ConcreteProductC";
-    }
-    createObject() {
-        return this;
-    }
-}
-class FactoryA {
-    static getObject(some_property) {
+    function getObject(some_property) {
         try {
             if (some_property === 'a') {
                 return new ConcreteProductA();
@@ -46,5 +48,5 @@ class FactoryA {
         }
         return null;
     }
-}
-exports.default = FactoryA;
+    FactoryA.getObject = getObject;
+})(FactoryA = exports.FactoryA || (exports.FactoryA = {}));

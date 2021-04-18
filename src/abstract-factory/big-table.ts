@@ -1,6 +1,6 @@
-import Table from "./table"
+import { Table } from "./table"
 
-export default class BigTable implements Table {
+export class BigTable implements Table {
 
     name: string
     height: number

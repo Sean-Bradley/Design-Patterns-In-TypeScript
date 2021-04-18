@@ -1,22 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const medium_chair_1 = require("./medium-chair");
+exports.ChairFactory = void 0;
 const small_chair_1 = require("./small-chair");
+const medium_chair_1 = require("./medium-chair");
 const big_chair_1 = require("./big-chair");
-class ChairFactory {
-    static getChair(chair) {
+var ChairFactory;
+(function (ChairFactory) {
+    function getChair(chair) {
         if (chair == 'BigChair') {
-            return new big_chair_1.default();
+            return new big_chair_1.BigChair();
         }
         else if (chair == 'MediumChair') {
-            return new small_chair_1.default();
+            return new medium_chair_1.MediumChair();
         }
         else if (chair == 'SmallChair') {
-            return new medium_chair_1.default();
+            return new small_chair_1.SmallChair();
         }
         else {
             throw new Error('No Chair Found');
         }
     }
-}
-exports.default = ChairFactory;
+    ChairFactory.getChair = getChair;
+})(ChairFactory = exports.ChairFactory || (exports.ChairFactory = {}));

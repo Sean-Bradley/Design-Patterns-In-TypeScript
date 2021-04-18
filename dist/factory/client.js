@@ -1,6 +1,8 @@
 "use strict";
-// Factory Use Case Example Code
 Object.defineProperty(exports, "__esModule", { value: true });
+// Factory Use Case Example Code
 const chair_factory_1 = require("./chair-factory");
-const CHAIR = chair_factory_1.default.getChair("SmallChair");
+//module FactoryUseCase {
+const CHAIR = chair_factory_1.ChairFactory.getChair("SmallChair");
 console.log(CHAIR.getDimensions());
+//}
