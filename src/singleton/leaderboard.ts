@@ -2,8 +2,8 @@
 
 export default class Leaderboard {
 
-    static instance: Leaderboard
-    table: { [id: number]: string } = {}
+    private static instance: Leaderboard
+    private table: { [id: number]: string } = {}
 
     constructor() {
         if (Leaderboard.instance) {

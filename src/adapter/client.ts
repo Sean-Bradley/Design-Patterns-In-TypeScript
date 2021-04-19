@@ -5,12 +5,11 @@ import CubeBAdapter from './cube-b-adapter'
 const totalCubes = 5
 let counter = 0
 
-//while (counter < totalCubes) {
 const manufactureCube = () => {
     // produce 5 cubes from which ever supplier can manufacture it first
-    const width = Math.floor(Math.random() * 11)
-    const height = Math.floor(Math.random() * 11)
-    const depth = Math.floor(Math.random() * 11)
+    const width = Math.floor(Math.random() * 10) + 1
+    const height = Math.floor(Math.random() * 10) + 1
+    const depth = Math.floor(Math.random() * 10) + 1
     let cube = new CubeA()
     let success = cube.manufacture(width, height, depth)
     if (success) {

@@ -2,12 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class CubeA {
     manufacture(width, height, depth) {
-        // this.width = width
-        // this.height = height
-        // this.depth = depth
         // if not busy, then manufacture a cube with dimensions
         const now = Date.now();
-        //console.log(now + " " + CubeA.last_time)
         if (now > CubeA.last_time + 1500) {
             console.log(`Company A built Cube with dimensions ${width}x${height}x${depth}`);
             CubeA.last_time = now;
