@@ -16,15 +16,16 @@ export default class GameEngine {
         if (GameEngine.instance) {
             return GameEngine.instance
         }
-        this.startTime = Date.now()
+        this.startTime = Math.floor(Date.now() / 1000)
         this.clock = 60
         GameEngine.instance = this
     }
 
     getGameState(): {} {
         //Get a snapshot of the current game state"
-        const now = Date.now()
+        const now = Math.floor(Date.now() / 1000)
         let time_remaining = this.startTime - now + this.clock
+        console.log("getGameState " + time_remaining)
         if (time_remaining < 0) {
             time_remaining = 0
         }
@@ -38,7 +39,7 @@ export default class GameEngine {
 
     submitEntry(user_id: string, entry: number): boolean {
         // Submit a new entry for the user in this game
-        const now = Date.now()
+        const now = Math.floor(Date.now() / 1000)
         let time_remaining = this.startTime - now + this.clock
         if (time_remaining > 0) {
             if (this.wallets.getBalance(user_id) > 1) {

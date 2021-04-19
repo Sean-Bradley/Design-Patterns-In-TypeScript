@@ -1,31 +1,46 @@
 // The Facade Example Use Case
 import GameAPI from './game-api'
 
-const GAME_API = new GameAPI()
+function sleep(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-const USER = { "user_name": "sean" }
-const USER_ID = GAME_API.registerUser(USER)
+async function facadeExample() {
+    const gameAPI = new GameAPI()
 
-//time.sleep(1)
+    const user = { "user_name": "sean" }
+    const userId = gameAPI.registerUser(user)
 
-GAME_API.submitEntry(USER_ID, 5)
+    await sleep(500)
 
-//time.sleep(1)
+    gameAPI.submitEntry(userId, 5)
 
-console.log()
-console.log("---- Gamestate Snapshot ----")
-console.log(GAME_API.gameState())
+    await sleep(500)
 
-//time.sleep(1)
+    console.log()
+    console.log("---- Gamestate Snapshot ----")
+    console.log(gameAPI.gameState())
 
-const HISTORY = GAME_API.getHistory()
+    await sleep(1000)
 
-console.log()
-console.log("---- Reports History ----")
-Object.keys(HISTORY).forEach(([key]) => {
-    console.log(`${key} : ${HISTORY[key][0]} : ${HISTORY[key][1]}`)
-});
+    const HISTORY = gameAPI.getHistory()
 
-console.log()
-console.log("---- Gamestate Snapshot ----")
-console.log(GAME_API.gameState())
+    console.log()
+    console.log("---- Reports History ----")
+    Object.keys(HISTORY).forEach(([key]) => {
+        console.log(`${key} : ${HISTORY[key][0]} : ${HISTORY[key][1]}`)
+    });
+
+    await sleep(1000)
+
+    console.log()
+    console.log("---- User Balance ----")
+    console.log(user.user_name + " : " + gameAPI.getBalance(userId))
+
+    await sleep(1000)
+
+    console.log()
+    console.log("---- Gamestate Snapshot ----")
+    console.log(gameAPI.gameState())
+}
+facadeExample()
