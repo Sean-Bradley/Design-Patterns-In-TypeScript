@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// Decorator Use Case Example Code
+const value_1 = require("./value");
+const add_1 = require("./add");
+const sub_1 = require("./sub");
+const A = new value_1.default(1);
+const B = new value_1.default(2);
+const C = new value_1.default(5);
+console.log(new add_1.default(A, B).value);
+console.log(new add_1.default(A, 100).value);
+console.log(new sub_1.default(C, A).value);
+console.log(new sub_1.default(new add_1.default(C, B), A).value);
+console.log(new sub_1.default(100, 101).value);
+console.log(new add_1.default(new sub_1.default(new add_1.default(C, B), A), 100).value);
+console.log(new sub_1.default(123, new add_1.default(C, C)).value);
+console.log(new add_1.default(new sub_1.default(new add_1.default(C, 10), A), 100).value);
+console.log(A.value);
+console.log(B.value);
+console.log(C.value);
