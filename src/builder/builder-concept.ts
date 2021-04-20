@@ -1,5 +1,5 @@
 // Builder Concept Sample Code
-namespace BuilderConcept {
+module BuilderConcept {
 
     class Product {
         // The Product
