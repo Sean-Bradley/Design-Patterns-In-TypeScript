@@ -27,7 +27,7 @@ async function facadeExample() {
 
     console.log()
     console.log("---- Reports History ----")
-    Object.keys(HISTORY).forEach(([key]) => {
+    Object.keys(HISTORY).forEach(key => {
         console.log(`${key} : ${HISTORY[key][0]} : ${HISTORY[key][1]}`)
     });
 

@@ -27,7 +27,7 @@ var ObserverConcept;
             observable.subscribe(this);
         }
         notify(...args) {
-            console.log(`Observer id:${this.id} received ${JSON.stringify(args)}`);
+            console.log(`OBSERVER_${this.id} received ${JSON.stringify(args)}`);
         }
     }
     // The Client
@@ -36,7 +36,7 @@ var ObserverConcept;
     const OBSERVER_1 = new Observer(SUBJECT);
     const OBSERVER_2 = new Observer(SUBJECT);
     SUBJECT.notify("First Notification", [1, 2, 3]);
-    //Unsubscribe OBSERVER_1
-    SUBJECT.unsubscribe(OBSERVER_1);
+    //Unsubscribe OBSERVER_2
+    SUBJECT.unsubscribe(OBSERVER_2);
     SUBJECT.notify("Second Notification", { "A": 1, "B": 2, "C": 3 });
 })(ObserverConcept || (ObserverConcept = {}));
