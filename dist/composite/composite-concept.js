@@ -56,7 +56,6 @@ var CompositeConcept;
         }
     }
     // The Client
-    let COUNTER = 1; //An ID to help distinguish between objects
     const LEAF_A = new Leaf('leaf-a');
     const LEAF_B = new Leaf('leaf-b');
     const COMPOSITE_1 = new Composite('comp-1');

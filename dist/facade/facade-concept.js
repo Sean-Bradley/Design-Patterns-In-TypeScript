@@ -20,15 +20,15 @@ class SubSystemClassC {
 }
 class Facade {
     // A simplified facade offering the services of subsystems
-    sub_system_class_a() {
+    subSystemClassA() {
         // Uses the subsystems method"
         return new SubSystemClassA().method();
     }
-    sub_system_class_b(value) {
+    subSystemClassB(value) {
         // Uses the subsystems method"
         return new SubSystemClassB().method(value);
     }
-    sub_system_class_c(value) {
+    subSystemClassC(value) {
         // Uses the subsystems method"
         return new SubSystemClassC().method(value);
     }
@@ -40,6 +40,6 @@ console.log(new SubSystemClassB().method("B"));
 console.log(new SubSystemClassC().method({ "C": [1, 2, 3] }));
 // or using the simplified facade instead
 const FACADE = new Facade();
-console.log(FACADE.sub_system_class_a());
-console.log(FACADE.sub_system_class_b("B"));
-console.log(FACADE.sub_system_class_c({ "C": [1, 2, 3] }));
+console.log(FACADE.subSystemClassA());
+console.log(FACADE.subSystemClassB("B"));
+console.log(FACADE.subSystemClassC({ "C": [1, 2, 3] }));
