@@ -19,6 +19,8 @@
     "url": "https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript/issues"
   },
   "homepage": "https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.41"
+  },
   "dependencies": {}
 }

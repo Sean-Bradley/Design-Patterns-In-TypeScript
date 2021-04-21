@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // The Command Pattern Use Case Example. A smart light Switch
 const light_1 = require("./light");
 const switch_1 = require("./switch");
-const switch_on_command_1 = require("./switch_on_command");
-const switch_off_command_1 = require("./switch_off_command");
+const switch_on_command_1 = require("./switch-on-command");
+const switch_off_command_1 = require("./switch-off-command");
 // Create a receiver
 const LIGHT = new light_1.default();
 // Create Commands

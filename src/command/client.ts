@@ -1,8 +1,8 @@
 // The Command Pattern Use Case Example. A smart light Switch
 import Light from './light'
 import Switch from './switch'
-import SwitchOnCommand from './switch_on_command'
-import SwitchOffCommand from './switch_off_command'
+import SwitchOnCommand from './switch-on-command'
+import SwitchOffCommand from './switch-off-command'
 
 // Create a receiver
 const LIGHT = new Light()
