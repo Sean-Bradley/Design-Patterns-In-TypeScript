@@ -3,11 +3,11 @@ module StrategyUseCase {
     class GameCharacter {
         // This is the context whose strategy will change
 
-        position: [number, number] = [0, 0]
+        #position: [number, number] = [0, 0]
 
         move(movementStyle: IMoveConstructor) {
             // The movement algorithm has been decided by the client
-            new movementStyle().move(this.position)
+            new movementStyle().move(this.#position)
         }
     }
 

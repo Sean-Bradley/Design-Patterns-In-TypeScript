@@ -1,17 +1,25 @@
 "use strict";
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
 // The Strategy Pattern Example Use Case
 var StrategyUseCase;
 (function (StrategyUseCase) {
+    var _position;
     class GameCharacter {
         constructor() {
             // This is the context whose strategy will change
-            this.position = [0, 0];
+            _position.set(this, [0, 0]);
         }
         move(movementStyle) {
             // The movement algorithm has been decided by the client
-            new movementStyle().move(this.position);
+            new movementStyle().move(__classPrivateFieldGet(this, _position));
         }
     }
+    _position = new WeakMap();
     class Walking {
         // A concrete movement strategy for walking
         move(position) {
