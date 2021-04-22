@@ -17,20 +17,17 @@ module ObserverConcept {
 
     class Subject implements IObservable {
         // The Subject (a.k.a Observable)
-        observers: IObserver[]
+        observers: Set<IObserver>
         constructor() {
-            this.observers = []
+            this.observers = new Set()
         }
 
         subscribe(observer: IObserver) {
-            this.observers.push(observer)
+            this.observers.add(observer)
         }
 
         unsubscribe(observer: IObserver) {
-            const index = this.observers.indexOf(observer);
-            if (index > -1) {
-                this.observers.splice(index, 1);
-            }
+            this.observers.delete(observer)
         }
 
         notify(...args: any) {
@@ -72,6 +69,6 @@ module ObserverConcept {
 
     //Unsubscribe OBSERVER_2
     SUBJECT.unsubscribe(OBSERVER_2)
-    
+
     SUBJECT.notify("Second Notification", { "A": 1, "B": 2, "C": 3 })
 }

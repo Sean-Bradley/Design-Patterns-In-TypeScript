@@ -12,7 +12,7 @@ export class DataController implements IDataController {
     // A Subject (a.k.a Observable)
 
     static instance: DataController
-    observers: IDataModel[] = []
+    observers: Set<IDataModel> = new Set()
 
     constructor() {
         if (DataController.instance) {
@@ -22,14 +22,11 @@ export class DataController implements IDataController {
     }
 
     subscribe(observer: IDataModel) {
-        this.observers.push(observer)
+        this.observers.add(observer)
     }
 
     unsubscribe(observer: IDataModel) {
-        const index = this.observers.indexOf(observer);
-        if (index > -1) {
-            this.observers.splice(index, 1);
-        }
+        this.observers.delete(observer);
     }
 
     notify(data: number[]) {

@@ -4,16 +4,13 @@ var ObserverConcept;
 (function (ObserverConcept) {
     class Subject {
         constructor() {
-            this.observers = [];
+            this.observers = new Set();
         }
         subscribe(observer) {
-            this.observers.push(observer);
+            this.observers.add(observer);
         }
         unsubscribe(observer) {
-            const index = this.observers.indexOf(observer);
-            if (index > -1) {
-                this.observers.splice(index, 1);
-            }
+            this.observers.delete(observer);
         }
         notify(...args) {
             this.observers.forEach(observer => {
