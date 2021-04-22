@@ -27,11 +27,11 @@ var FactoryConcept;
         }
     }
     class Creator {
-        static createObject(some_property) {
-            if (some_property === 'a') {
+        static createObject(someProperty) {
+            if (someProperty === 'a') {
                 return new ConcreteProductA();
             }
-            else if (some_property === 'b') {
+            else if (someProperty === 'b') {
                 return new ConcreteProductB();
             }
             else {

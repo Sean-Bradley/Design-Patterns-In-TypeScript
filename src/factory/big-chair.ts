@@ -1,6 +1,6 @@
-import { Chair } from "./chair"
+import Chair from "./chair"
 
-export class BigChair implements Chair {
+export default class BigChair implements Chair {
 
     height: number
     width: number

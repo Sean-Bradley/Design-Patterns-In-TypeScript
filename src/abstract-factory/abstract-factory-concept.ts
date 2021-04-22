@@ -2,10 +2,9 @@
 import { FactoryA } from './factory-a'
 import { FactoryB } from './factory-b'
 
-//module AbstractFactoryConcept {
-
 class AbstractFactory {
     // The Abstract Factory Concrete Class
+    
     static createObject(factory: string): any {
         try {
             if (['aa', 'ab', 'ac'].indexOf(factory) > -1) {
@@ -14,7 +13,7 @@ class AbstractFactory {
             if (['ba', 'bb', 'bc'].indexOf(factory) > -1) {
                 return FactoryB.getObject(factory[1])
             }
-            throw new Error('No Factory Found');
+            throw new Error('No Factory Found')
         } catch (e) {
             console.log(e)
         }
@@ -28,4 +27,3 @@ console.log(PRODUCT)
 
 PRODUCT = AbstractFactory.createObject('bc')
 console.log(PRODUCT)
-//}

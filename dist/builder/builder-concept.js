@@ -4,7 +4,6 @@ var BuilderConcept;
 (function (BuilderConcept) {
     class Product {
         constructor() {
-            // The Product
             this.parts = [];
         }
     }

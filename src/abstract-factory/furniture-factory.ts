@@ -1,10 +1,10 @@
 "Abstract Furniture Factory"
 
-import { ChairFactory } from './chair-factory'
-import { TableFactory } from './table-factory'
+import ChairFactory from './chair-factory'
+import TableFactory from './table-factory'
 
-export module FurnitureFactory {
-    export function getFurniture(furniture: string) {
+export default class FurnitureFactory {
+    static getFurniture(furniture: string) {
         try {
             if (['SmallChair', 'MediumChair', 'BigChair'].indexOf(furniture) > -1) {
                 return ChairFactory.getChair(furniture)

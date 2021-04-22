@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MediumTable = void 0;
 class MediumTable {
     constructor() {
         this.name = "MediumTable";
@@ -16,4 +15,4 @@ class MediumTable {
         };
     }
 }
-exports.MediumTable = MediumTable;
+exports.default = MediumTable;

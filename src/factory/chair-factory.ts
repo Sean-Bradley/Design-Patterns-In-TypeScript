@@ -1,10 +1,10 @@
-import { SmallChair } from "./small-chair"
-import { MediumChair } from "./medium-chair"
-import { BigChair } from "./big-chair"
+import SmallChair from "./small-chair"
+import MediumChair from "./medium-chair"
+import BigChair from "./big-chair"
 
-export module ChairFactory {
+export default class ChairFactory {
 
-    export function getChair(chair: string) {
+    static getChair(chair: string) {
         if (chair == 'BigChair') {
             return new BigChair()
         } else if (chair == 'MediumChair') {
@@ -12,6 +12,5 @@ export module ChairFactory {
         } else {
             return new SmallChair()
         }
-    }
-    
+    }    
 }

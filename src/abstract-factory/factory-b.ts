@@ -2,12 +2,12 @@
 export module FactoryB {
 
     interface Product {
-        name: String;
-        createObject(): Product;
+        name: String
+        createObject(): Product
     }
 
     class ConcreteProductA implements Product {
-        name: String;
+        name: String
 
         constructor() {
             this.name = "FactoryB:ConcreteProductA"
@@ -19,7 +19,7 @@ export module FactoryB {
     }
 
     class ConcreteProductB implements Product {
-        name: String;
+        name: String
 
         constructor() {
             this.name = "FactoryB:ConcreteProductB"
@@ -31,7 +31,7 @@ export module FactoryB {
     }
 
     class ConcreteProductC implements Product {
-        name: String;
+        name: String
 
         constructor() {
             this.name = "FactoryB:ConcreteProductC"

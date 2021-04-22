@@ -1,14 +1,15 @@
 //The Factory Concept
+
 module FactoryConcept {
 
-    interface Product {
-        name: String;
-        createObject(): this;
+    interface IProduct {
+        name: String
+        createObject(): this
     }
 
-    class ConcreteProductA implements Product {
+    class ConcreteProductA implements IProduct {
 
-        name: String;
+        name: String
 
         constructor() {
             this.name = "ConcreteProductA"
@@ -19,9 +20,9 @@ module FactoryConcept {
         }
     }
 
-    class ConcreteProductB implements Product {
+    class ConcreteProductB implements IProduct {
 
-        name: String;
+        name: String
 
         constructor() {
             this.name = "ConcreteProductB"
@@ -32,9 +33,9 @@ module FactoryConcept {
         }
     }
 
-    class ConcreteProductC implements Product {
+    class ConcreteProductC implements IProduct {
 
-        name: String;
+        name: String
 
         constructor() {
             this.name = "ConcreteProductC"
@@ -46,10 +47,10 @@ module FactoryConcept {
     }
 
     class Creator {
-        static createObject(some_property: string): Product {
-            if (some_property === 'a') {
+        static createObject(someProperty: string): IProduct {
+            if (someProperty === 'a') {
                 return new ConcreteProductA()
-            } else if (some_property === 'b') {
+            } else if (someProperty === 'b') {
                 return new ConcreteProductB()
             } else {
                 return new ConcreteProductC()

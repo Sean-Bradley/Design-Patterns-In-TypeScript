@@ -16,11 +16,11 @@ export default class Document implements ProtoType {
         let array
         if (mode === 2) {
             // results in a deep copy of the Document
-            array = JSON.parse(JSON.stringify(this.array));
+            array = JSON.parse(JSON.stringify(this.array))
         } else {
             // default, results in a shallow copy of the Document
-            array = Object.assign([], this.array);
+            array = Object.assign([], this.array)
         }
-        return new Document(this.name, array);
+        return new Document(this.name, array)
     }
 }

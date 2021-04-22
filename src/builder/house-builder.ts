@@ -1,8 +1,8 @@
 // The Builder Class
 
-import { House } from './house'
+import House from './house'
 
-export class HouseBuilder {
+export default class HouseBuilder {
 
     house: House
 
@@ -10,27 +10,27 @@ export class HouseBuilder {
         this.house = new House()
     }
 
-    set_building_type(building_type: string) {
-        this.house.building_type = building_type
+    setBuildingType(buildingType: string) {
+        this.house.buildingType = buildingType
         return this
     }
 
-    set_wall_material(wall_material: string) {
-        this.house.wall_material = wall_material
+    setWallMaterial(wallMaterial: string) {
+        this.house.wallMaterial = wallMaterial
         return this
     }
 
-    set_number_doors(number: number) {
+    setNumberDoors(number: number) {
         this.house.doors = number
         return this
     }
 
-    set_number_windows(number: number) {
+    setNumberWindows(number: number) {
         this.house.windows = number
         return this
     }
 
-    get_result() {
+    getResult() {
         return this.house
     }
 }

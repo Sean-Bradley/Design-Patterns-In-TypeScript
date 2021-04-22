@@ -1,10 +1,10 @@
-export interface Table {
+export default interface Table {
 
     name: string
     height: number
     width: number
     depth: number
     
-    getDimensions(): dimension;
+    getDimensions(): dimension
 
 }

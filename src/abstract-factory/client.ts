@@ -1,5 +1,5 @@
 // Abstract Factory Use Case Example Code
-import { FurnitureFactory } from './furniture-factory'
+import FurnitureFactory from './furniture-factory'
 
 let FURNITURE = FurnitureFactory.getFurniture("SmallChair")
 console.log(FURNITURE?.name)

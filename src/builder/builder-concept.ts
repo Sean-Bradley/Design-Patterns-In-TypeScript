@@ -2,11 +2,10 @@
 module BuilderConcept {
 
     class Product {
-        // The Product
         parts: string[] = []
     }
 
-    interface IBuilder {        
+    interface IBuilder {
         buildPartA(): this
         buildPartB(): this
         buildPartC(): this

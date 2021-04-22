@@ -1,14 +1,14 @@
 // A Director Class
-import { HouseBuilder } from './house-builder'
+import HouseBuilder from './house-builder'
 
-export module CastleDirector {
+export default class CastleDirector {
 
-    export function construct() {        
+    static construct() {
         return new HouseBuilder()
-            .set_building_type("Castle")
-            .set_wall_material("Sandstone")
-            .set_number_doors(100)
-            .set_number_windows(200)
-            .get_result()
+            .setBuildingType("Castle")
+            .setWallMaterial("Sandstone")
+            .setNumberDoors(100)
+            .setNumberWindows(200)
+            .getResult()
     }
 }

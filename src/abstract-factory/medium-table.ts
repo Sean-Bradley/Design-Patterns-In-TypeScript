@@ -1,6 +1,6 @@
-import {Table} from "./table"
+import Table from "./table"
 
-export class MediumTable implements Table {
+export default class MediumTable implements Table {
 
     name: string
     height: number

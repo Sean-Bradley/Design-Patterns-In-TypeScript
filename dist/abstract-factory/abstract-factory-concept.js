@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Abstract Factory Concept Sample Code
 const factory_a_1 = require("./factory-a");
 const factory_b_1 = require("./factory-b");
-//module AbstractFactoryConcept {
 class AbstractFactory {
     // The Abstract Factory Concrete Class
     static createObject(factory) {
@@ -27,4 +26,3 @@ let PRODUCT = AbstractFactory.createObject('ab');
 console.log(PRODUCT);
 PRODUCT = AbstractFactory.createObject('bc');
 console.log(PRODUCT);
-//}

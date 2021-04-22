@@ -1,6 +1,6 @@
-import { Chair } from "./chair"
+import Chair from "./chair"
 
-export class MediumChair implements Chair {
+export default class MediumChair implements Chair {
 
     height: number
     width: number
@@ -12,7 +12,7 @@ export class MediumChair implements Chair {
         this.depth = 60
     }
 
-    public getDimensions(): dimension {
+    getDimensions(): dimension {
         return {
             "width": this.width,
             "depth": this.depth,
