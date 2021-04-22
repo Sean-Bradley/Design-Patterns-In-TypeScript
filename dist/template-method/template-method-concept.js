@@ -1,7 +1,7 @@
 "use strict";
 // The Template Method Pattern Concept"
-var TemplateMethod;
-(function (TemplateMethod) {
+var TemplateMethodConcept;
+(function (TemplateMethodConcept) {
     class AbstractClass {
         // A template class containing a template method and primitive methods
         step_one() {
@@ -50,4 +50,4 @@ var TemplateMethod;
     CLASS_A.template_method();
     const CLASS_B = new ConcreteClassB();
     CLASS_B.template_method();
-})(TemplateMethod || (TemplateMethod = {}));
+})(TemplateMethodConcept || (TemplateMethodConcept = {}));

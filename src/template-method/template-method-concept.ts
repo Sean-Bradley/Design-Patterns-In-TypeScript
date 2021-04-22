@@ -1,5 +1,5 @@
 // The Template Method Pattern Concept"
-module TemplateMethod {
+module TemplateMethodConcept {
 
     abstract class AbstractClass {
         // A template class containing a template method and primitive methods
