@@ -15,7 +15,7 @@ export default class Table {
         // Draws the table formatted in the console
         let maxRowLength = 0
         const rows: string[] = []
-        this.rows.forEach(row => {
+        this.rows.forEach((row) => {
             let rowData = row.getData()
             rows.push(`|${rowData}`)
             let rowLength = rowData.length + 1
@@ -24,7 +24,7 @@ export default class Table {
             }
         })
         console.log('-'.repeat(maxRowLength))
-        rows.forEach(row => {
+        rows.forEach((row) => {
             console.log(row)
         })
         console.log('-'.repeat(maxRowLength))

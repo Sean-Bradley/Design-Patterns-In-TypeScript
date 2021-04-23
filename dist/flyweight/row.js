@@ -1,5 +1,5 @@
 "use strict";
-"A Row in the Table";
+'A Row in the Table';
 Object.defineProperty(exports, "__esModule", { value: true });
 const column_1 = require("./column");
 class Row {
@@ -11,8 +11,8 @@ class Row {
     }
     getData() {
         // Format the row before returning it to the table
-        let ret = "";
-        this.columns.forEach(column => {
+        let ret = '';
+        this.columns.forEach((column) => {
             ret = `${ret}${column.getData()}|`;
         });
         return ret;

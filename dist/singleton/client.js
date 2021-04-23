@@ -8,11 +8,11 @@ const game3_1 = require("./game3");
 // Despite all games instantiating a leaderboard, they all point
 // to the same memory object since the leaderboard it is a singleton.
 const GAME1 = new game1_1.Game1();
-GAME1.addWinner(2, "Cosmo");
+GAME1.addWinner(2, 'Cosmo');
 const GAME2 = new game2_1.Game2();
-GAME2.addWinner(3, "Sean");
+GAME2.addWinner(3, 'Sean');
 const GAME3 = new game3_1.Game3();
-GAME3.addWinner(1, "Emmy");
+GAME3.addWinner(1, 'Emmy');
 GAME1.leaderboard.print();
 GAME2.leaderboard.print();
 GAME3.leaderboard.print();

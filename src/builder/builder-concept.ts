@@ -1,6 +1,5 @@
 // Builder Concept Sample Code
 module BuilderConcept {
-
     class Product {
         parts: string[] = []
     }
@@ -44,12 +43,8 @@ module BuilderConcept {
         // The Director, building a complex representation
 
         static construct() {
-            "Constructs and returns the final product"
-            return new Builder()
-                .buildPartA()
-                .buildPartB()
-                .buildPartC()
-                .getResult()
+            'Constructs and returns the final product'
+            return new Builder().buildPartA().buildPartB().buildPartC().getResult()
         }
     }
 

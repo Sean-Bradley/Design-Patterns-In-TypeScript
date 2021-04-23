@@ -3,7 +3,7 @@
 class SubSystemClassA {
     // A hypothetically complicated class
     method(): string {
-        return "A"
+        return 'A'
     }
 }
 
@@ -42,11 +42,11 @@ class Facade {
 // The Client
 // Calling potentially complicated subsystems directly
 console.log(new SubSystemClassA().method())
-console.log(new SubSystemClassB().method("B"))
-console.log(new SubSystemClassC().method({ "C": [1, 2, 3] }))
+console.log(new SubSystemClassB().method('B'))
+console.log(new SubSystemClassC().method({C: [1, 2, 3]}))
 
 // or using the simplified facade instead
 const FACADE = new Facade()
 console.log(FACADE.subSystemClassA())
-console.log(FACADE.subSystemClassB("B"))
-console.log(FACADE.subSystemClassC({ "C": [1, 2, 3] }))
+console.log(FACADE.subSystemClassB('B'))
+console.log(FACADE.subSystemClassC({C: [1, 2, 3]}))

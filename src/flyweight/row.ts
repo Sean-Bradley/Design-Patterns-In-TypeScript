@@ -1,4 +1,4 @@
-"A Row in the Table"
+'A Row in the Table'
 import Column from './column'
 
 export default class Row {
@@ -13,8 +13,8 @@ export default class Row {
     }
     getData() {
         // Format the row before returning it to the table
-        let ret = ""
-        this.columns.forEach(column => {
+        let ret = ''
+        this.columns.forEach((column) => {
             ret = `${ret}${column.getData()}|`
         })
         return ret

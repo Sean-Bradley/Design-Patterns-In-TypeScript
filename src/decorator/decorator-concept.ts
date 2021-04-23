@@ -1,19 +1,16 @@
 // Decorator Concept Sample Code
 module DecoratorConcept {
-    
     interface IComponent {
         method(): string
     }
 
     class Component implements IComponent {
-
         method() {
-            return "Component Method"
+            return 'Component Method'
         }
     }
 
     class Decorator implements IComponent {
-
         private object: IComponent
 
         constructor(object: IComponent) {

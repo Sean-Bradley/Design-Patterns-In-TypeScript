@@ -52,15 +52,16 @@ class Parser {
     }
     static decideLeftExpression(tree, tokens) {
         /*
-        * On the First iteration, the left expression can be either a
-        * number or roman numeral.Every consecutive expression is
-        * reference to an existing AST row
-        */
+         * On the First iteration, the left expression can be either a
+         * number or roman numeral.Every consecutive expression is
+         * reference to an existing AST row
+         */
         const left = tokens.shift();
         let leftExpression;
         if (!tree.length) {
             // only applicable if first round
-            if (!Number(left)) { // if 1st token a roman numeral
+            if (!Number(left)) {
+                // if 1st token a roman numeral
                 tree = [];
                 tree.push(new roman_numeral_1.default(left));
                 let leftExpression;

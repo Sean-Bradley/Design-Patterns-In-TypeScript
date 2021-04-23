@@ -1,13 +1,12 @@
 // The Composite pattern concept
 
 module CompositeConcept {
-
     interface IComponent {
         /*
-        * A component interface describing the common
-        * fields and methods of leaves and composites
-        */
-        name: string // A name for this component 
+         * A component interface describing the common
+         * fields and methods of leaves and composites
+         */
+        name: string // A name for this component
         referenceToParent?: IComponent
         method(): void // A method each Leaf and composite container should implement
         detach(): void // Called before a leaf is attached to a composite
@@ -22,14 +21,16 @@ module CompositeConcept {
         }
 
         method() {
-            const parent = this.referenceToParent ? (this.referenceToParent as Composite).name : "none"
+            const parent = this.referenceToParent
+                ? (this.referenceToParent as Composite).name
+                : 'none'
             console.log(`<Leaf>\t\tname:${this.name}\tParent:\t${parent}`)
         }
 
         detach() {
-            "Detaching this leaf from its parent composite"
+            'Detaching this leaf from its parent composite'
             if (this.referenceToParent) {
-                (this.referenceToParent as Composite).delete(this)
+                ;(this.referenceToParent as Composite).delete(this)
             }
         }
     }
@@ -40,26 +41,29 @@ module CompositeConcept {
         referenceToParent?: IComponent
         components: IComponent[]
         name: string
-        
-        constructor(name:string) {
+
+        constructor(name: string) {
             this.name = name
             this.components = []
         }
 
         method() {
-            const parent = this.referenceToParent ? (this.referenceToParent as Composite).name : "none"
-            console.log(`<Composite>\tname:${this.name}\tParent:\t${parent}\tComponents:${this.components.length}`)
-            this.components.forEach(component => {
+            const parent = this.referenceToParent
+                ? (this.referenceToParent as Composite).name
+                : 'none'
+            console.log(
+                `<Composite>\tname:${this.name}\tParent:\t${parent}\tComponents:${this.components.length}`
+            )
+            this.components.forEach((component) => {
                 component.method()
             })
         }
 
-
         attach(component: IComponent) {
             /*
-            * Detach leaf / composite from any current parent reference and
-            * then set the parent reference to this composite(self)
-            */
+             * Detach leaf / composite from any current parent reference and
+             * then set the parent reference to this composite(self)
+             */
             component.detach()
             component.referenceToParent = this
             this.components.push(component)
@@ -67,7 +71,7 @@ module CompositeConcept {
 
         delete(component: IComponent) {
             // Removes leaf/composite from this composite self.components
-            const index = this.components.indexOf(component);
+            const index = this.components.indexOf(component)
             if (index > -1) {
                 this.components.splice(index, 1)
             }
@@ -76,7 +80,7 @@ module CompositeConcept {
         detach() {
             // Detaching this composite from its parent composite
             if (this.referenceToParent) {
-                (this.referenceToParent as Composite).delete(this)
+                ;(this.referenceToParent as Composite).delete(this)
                 this.referenceToParent = undefined
             }
         }
@@ -98,6 +102,6 @@ module CompositeConcept {
     COMPOSITE_2.attach(COMPOSITE_1)
 
     //     print()
-    LEAF_B.method()  // not in any composites
-    COMPOSITE_2.method()  // COMPOSITE_2 contains both COMPOSITE_1 and LEAF_A
+    LEAF_B.method() // not in any composites
+    COMPOSITE_2.method() // COMPOSITE_2 contains both COMPOSITE_1 and LEAF_A
 }

@@ -1,9 +1,8 @@
 // A Leaderboard Singleton Class
 
 export default class Leaderboard {
-
     private static instance: Leaderboard
-    private table: { [id: number]: string } = {}
+    private table: {[id: number]: string} = {}
 
     constructor() {
         if (Leaderboard.instance) {
@@ -17,7 +16,7 @@ export default class Leaderboard {
     }
 
     public print() {
-        console.log("-----------Leaderboard-----------")
+        console.log('-----------Leaderboard-----------')
         for (let key in this.table) {
             console.log(`|\t${key}\t|\t${this.table[key]}\t|`)
         }

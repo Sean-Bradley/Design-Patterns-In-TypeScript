@@ -1,5 +1,5 @@
-import { IComponent } from './interface-component'
-import { Folder } from './folder'
+import {IComponent} from './interface-component'
+import {Folder} from './folder'
 
 export class File implements IComponent {
     // The File Class. The files are the leaves
@@ -16,9 +16,9 @@ export class File implements IComponent {
     }
 
     detach() {
-        "Detaching this leaf from its parent composite"
+        'Detaching this leaf from its parent composite'
         if (this.referenceToParent) {
-            (this.referenceToParent as Folder).delete(this)
+            ;(this.referenceToParent as Folder).delete(this)
         }
     }
 }

@@ -6,7 +6,7 @@ var FactoryA;
 (function (FactoryA) {
     class ConcreteProductA {
         constructor() {
-            this.name = "FactoryA:ConcreteProductA";
+            this.name = 'FactoryA:ConcreteProductA';
         }
         createObject() {
             return this;
@@ -14,7 +14,7 @@ var FactoryA;
     }
     class ConcreteProductB {
         constructor() {
-            this.name = "FactoryA:ConcreteProductB";
+            this.name = 'FactoryA:ConcreteProductB';
         }
         createObject() {
             return this;
@@ -22,7 +22,7 @@ var FactoryA;
     }
     class ConcreteProductC {
         constructor() {
-            this.name = "FactoryA:ConcreteProductC";
+            this.name = 'FactoryA:ConcreteProductC';
         }
         createObject() {
             return this;

@@ -25,9 +25,9 @@ var FlyweightConcept;
     class Context {
         constructor(codes) {
             /*
-            * An example context that holds references to the flyweights in a
-            * particular order and converts the code to an ascii letter
-            */
+             * An example context that holds references to the flyweights in a
+             * particular order and converts the code to an ascii letter
+             */
             this.codes = [];
             for (let i = 0; i < codes.length; i++) {
                 this.codes.push(codes.charCodeAt(i));
@@ -35,15 +35,15 @@ var FlyweightConcept;
         }
         output() {
             // The context specific output that uses flyweights
-            let ret = "";
-            this.codes.forEach(c => {
+            let ret = '';
+            this.codes.forEach((c) => {
                 ret = ret + String.fromCharCode(FlyweightFactory.getFlyweight(c).code);
             });
             return ret;
         }
     }
     // The Client
-    const CONTEXT = new Context("abracadabra");
+    const CONTEXT = new Context('abracadabra');
     // use flyweights in a context
     console.log(CONTEXT.output());
     console.log(`abracadabra has ${'abracadabra'.length} letters`);

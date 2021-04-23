@@ -4,7 +4,7 @@ var DecoratorConcept;
 (function (DecoratorConcept) {
     class Component {
         method() {
-            return "Component Method";
+            return 'Component Method';
         }
     }
     class Decorator {

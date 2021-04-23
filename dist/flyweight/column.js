@@ -5,12 +5,12 @@ const flyweight_factory_1 = require("./flyweight-factory");
 class Column {
     constructor() {
         /*
-        * The columns are the contexts.
-        * They will share the Flyweights via the FlyweightsFactory.
-        * `data`, `width` and `justify` are extrinsic values. They are outside
-        * of the flyweights.
-        */
-        this.data = "";
+         * The columns are the contexts.
+         * They will share the Flyweights via the FlyweightsFactory.
+         * `data`, `width` and `justify` are extrinsic values. They are outside
+         * of the flyweights.
+         */
+        this.data = '';
         this.width = 10;
         this.justify = 0;
     }
@@ -20,39 +20,39 @@ class Column {
         for (let i = 0; i < this.data.length; i++) {
             codes.push(this.data.charCodeAt(i));
         }
-        let ret = "";
-        Array.from(codes).forEach(c => {
+        let ret = '';
+        Array.from(codes).forEach((c) => {
             ret = ret + String.fromCharCode(flyweight_factory_1.default.getFlyweight(c).code);
         });
         switch (this.justify) {
             case 1:
-                ret = this.leftAlign(this.width, ret, " ");
+                ret = this.leftAlign(this.width, ret, ' ');
                 break;
             case 2:
-                ret = this.rightAlign(this.width, ret, " ");
+                ret = this.rightAlign(this.width, ret, ' ');
                 break;
             default:
-                ret = this.center(this.width, ret, " ");
+                ret = this.center(this.width, ret, ' ');
         }
         return ret;
     }
     center(width, string, padding) {
-        return (width <= string.length)
+        return width <= string.length
             ? string
             : this.centerAlternate(width, padding + string, padding);
     }
     centerAlternate(width, string, padding) {
-        return (width <= string.length)
+        return width <= string.length
             ? string
             : this.center(width, string + padding, padding);
     }
     leftAlign(width, string, padding) {
-        return (width <= string.length)
+        return width <= string.length
             ? string
             : this.leftAlign(width, string + padding, padding);
     }
     rightAlign(width, string, padding) {
-        return (width <= string.length)
+        return width <= string.length
             ? string
             : this.rightAlign(width, padding + string, padding);
     }

@@ -1,10 +1,10 @@
 // Abstract Factory Concept Sample Code
-import { FactoryA } from './factory-a'
-import { FactoryB } from './factory-b'
+import {FactoryA} from './factory-a'
+import {FactoryB} from './factory-b'
 
 class AbstractFactory {
     // The Abstract Factory Concrete Class
-    
+
     static createObject(factory: string): any {
         try {
             if (['aa', 'ab', 'ac'].indexOf(factory) > -1) {

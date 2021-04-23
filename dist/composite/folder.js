@@ -9,15 +9,15 @@ class Folder {
     dir(indent) {
         const parent_id = this.referenceToParent;
         console.log(`${indent}<DIR>  ${this.name}`);
-        this.components.forEach(component => {
-            component.dir(indent + "..");
+        this.components.forEach((component) => {
+            component.dir(indent + '..');
         });
     }
     attach(component) {
         /*
-        * Detach leaf / composite from any current parent reference and
-        * then set the parent reference to this composite(self)
-        */
+         * Detach leaf / composite from any current parent reference and
+         * then set the parent reference to this composite(self)
+         */
         component.detach();
         component.referenceToParent = this;
         this.components.push(component);
@@ -32,6 +32,7 @@ class Folder {
     detach() {
         // Detaching this composite from its parent composite
         if (this.referenceToParent) {
+            ;
             this.referenceToParent.delete(this);
             this.referenceToParent = undefined;
         }

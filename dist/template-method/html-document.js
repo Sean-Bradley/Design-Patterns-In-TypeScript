@@ -10,10 +10,10 @@ class HTMLDocument extends abstract_document_1.AbstractDocument {
     text(document, text) {
         // Putting multiple lines into there own p tags
         const lines = text.split('\n');
-        let markup = "";
-        lines.forEach(line => {
+        let markup = '';
+        lines.forEach((line) => {
             markup = markup + '    <p>' + line + '</p>\n';
-            document["text"] = markup.substring(0, markup.length - 1);
+            document['text'] = markup.substring(0, markup.length - 1);
         });
     }
     print(document) {
@@ -22,22 +22,22 @@ class HTMLDocument extends abstract_document_1.AbstractDocument {
         console.log('  <head>');
         //for attribute in document:
         Object.keys(document).forEach((attribute) => {
-            if (["title", "description", "author"].indexOf(attribute) > -1) {
+            if (['title', 'description', 'author'].indexOf(attribute) > -1) {
                 console.log(`    <${attribute}>${document[attribute]}</${attribute}>`);
             }
-            if (attribute === "bg-col") {
-                console.log("    <style>");
-                console.log("      body {");
+            if (attribute === 'bg-col') {
+                console.log('    <style>');
+                console.log('      body {');
                 console.log(`        background-color: ${document[attribute]};`);
-                console.log("      }");
-                console.log("    </style>");
+                console.log('      }');
+                console.log('    </style>');
             }
         });
-        console.log("  </head>");
-        console.log("  <body>");
+        console.log('  </head>');
+        console.log('  <body>');
         console.log(`${document['text']}`);
-        console.log("  </body>");
-        console.log("</html>");
+        console.log('  </body>');
+        console.log('</html>');
     }
 }
 exports.default = HTMLDocument;

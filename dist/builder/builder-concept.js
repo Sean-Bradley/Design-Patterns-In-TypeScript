@@ -30,12 +30,8 @@ var BuilderConcept;
     class Director {
         // The Director, building a complex representation
         static construct() {
-            "Constructs and returns the final product";
-            return new Builder()
-                .buildPartA()
-                .buildPartB()
-                .buildPartC()
-                .getResult();
+            'Constructs and returns the final product';
+            return new Builder().buildPartA().buildPartB().buildPartC().getResult();
         }
     }
     // The Client

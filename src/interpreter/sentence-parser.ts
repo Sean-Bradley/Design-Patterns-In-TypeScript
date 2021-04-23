@@ -1,8 +1,8 @@
 // A Custom Parser for creating an Abstract Syntax Tree
-import Add from "./add"
-import Numeral from "./numeral"
-import RomanNumeral from "./roman-numeral"
-import Subtract from "./subtract"
+import Add from './add'
+import Numeral from './numeral'
+import RomanNumeral from './roman-numeral'
+import Subtract from './subtract'
 
 export default class Parser {
     // Dynamically create the Abstract Syntax Tree
@@ -13,7 +13,7 @@ export default class Parser {
         const tokens = sentence.split(' ')
         //console.log(JSON.stringify(tokens))
 
-        const tree: IAbstractExpression[] = []  // Abstract Syntax Tree
+        const tree: IAbstractExpression[] = [] // Abstract Syntax Tree
         while (tokens.length > 1) {
             //console.log(JSON.stringify(tokens))
             const leftExpression = Parser.decideLeftExpression(tree, tokens)
@@ -54,17 +54,21 @@ export default class Parser {
         return tree.pop()
     }
 
-    static decideLeftExpression(tree: IAbstractExpression[], tokens: string[]): IAbstractExpression {
+    static decideLeftExpression(
+        tree: IAbstractExpression[],
+        tokens: string[]
+    ): IAbstractExpression {
         /*
-        * On the First iteration, the left expression can be either a
-        * number or roman numeral.Every consecutive expression is
-        * reference to an existing AST row
-        */
+         * On the First iteration, the left expression can be either a
+         * number or roman numeral.Every consecutive expression is
+         * reference to an existing AST row
+         */
         const left = tokens.shift()
         let leftExpression: IAbstractExpression
         if (!tree.length) {
             // only applicable if first round
-            if (!Number(left)) { // if 1st token a roman numeral
+            if (!Number(left)) {
+                // if 1st token a roman numeral
                 tree = []
                 tree.push(new RomanNumeral(left as string))
                 let leftExpression: IAbstractExpression

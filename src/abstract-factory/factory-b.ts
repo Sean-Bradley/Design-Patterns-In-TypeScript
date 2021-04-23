@@ -1,6 +1,5 @@
 // FactoryB Sample Code
 export module FactoryB {
-
     interface Product {
         name: String
         createObject(): Product
@@ -10,7 +9,7 @@ export module FactoryB {
         name: String
 
         constructor() {
-            this.name = "FactoryB:ConcreteProductA"
+            this.name = 'FactoryB:ConcreteProductA'
         }
 
         createObject() {
@@ -22,7 +21,7 @@ export module FactoryB {
         name: String
 
         constructor() {
-            this.name = "FactoryB:ConcreteProductB"
+            this.name = 'FactoryB:ConcreteProductB'
         }
 
         createObject() {
@@ -34,7 +33,7 @@ export module FactoryB {
         name: String
 
         constructor() {
-            this.name = "FactoryB:ConcreteProductC"
+            this.name = 'FactoryB:ConcreteProductC'
         }
 
         createObject() {
@@ -51,7 +50,7 @@ export module FactoryB {
             } else if (some_property === 'c') {
                 return new ConcreteProductC()
             } else {
-                throw new Error('Class Not Found');
+                throw new Error('Class Not Found')
             }
         } catch (e) {
             console.log(e)

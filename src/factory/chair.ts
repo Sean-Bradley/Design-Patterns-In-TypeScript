@@ -1,8 +1,28 @@
+import {dimension} from './dimension'
+
 // A Chair Interface
-export default interface Chair {
+interface IChair {
     height: number
     width: number
     depth: number
-    getDimensions(): dimension;
+    getDimensions(): dimension
 }
 
+// The Chair Base Class
+export default class Chair implements IChair {
+    height = 0
+    width = 0
+    depth = 0
+
+    createObject(): IChair {
+        return this
+    }
+
+    getDimensions(): dimension {
+        return {
+            width: this.width,
+            depth: this.depth,
+            height: this.height,
+        }
+    }
+}

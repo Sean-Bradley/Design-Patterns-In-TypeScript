@@ -9,12 +9,15 @@ var CompositeConcept;
             this.name = name;
         }
         method() {
-            const parent = this.referenceToParent ? this.referenceToParent.name : "none";
+            const parent = this.referenceToParent
+                ? this.referenceToParent.name
+                : 'none';
             console.log(`<Leaf>\t\tname:${this.name}\tParent:\t${parent}`);
         }
         detach() {
-            "Detaching this leaf from its parent composite";
+            'Detaching this leaf from its parent composite';
             if (this.referenceToParent) {
+                ;
                 this.referenceToParent.delete(this);
             }
         }
@@ -25,17 +28,19 @@ var CompositeConcept;
             this.components = [];
         }
         method() {
-            const parent = this.referenceToParent ? this.referenceToParent.name : "none";
+            const parent = this.referenceToParent
+                ? this.referenceToParent.name
+                : 'none';
             console.log(`<Composite>\tname:${this.name}\tParent:\t${parent}\tComponents:${this.components.length}`);
-            this.components.forEach(component => {
+            this.components.forEach((component) => {
                 component.method();
             });
         }
         attach(component) {
             /*
-            * Detach leaf / composite from any current parent reference and
-            * then set the parent reference to this composite(self)
-            */
+             * Detach leaf / composite from any current parent reference and
+             * then set the parent reference to this composite(self)
+             */
             component.detach();
             component.referenceToParent = this;
             this.components.push(component);
@@ -50,6 +55,7 @@ var CompositeConcept;
         detach() {
             // Detaching this composite from its parent composite
             if (this.referenceToParent) {
+                ;
                 this.referenceToParent.delete(this);
                 this.referenceToParent = undefined;
             }

@@ -4,7 +4,6 @@ import Leaderboard from './leaderboard'
 import Game from './game'
 
 export class Game1 implements Game {
-
     leaderboard: Leaderboard
 
     constructor() {

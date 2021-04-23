@@ -10,8 +10,9 @@ class File {
         console.log(`${indent}<FILE> ${this.name}`);
     }
     detach() {
-        "Detaching this leaf from its parent composite";
+        'Detaching this leaf from its parent composite';
         if (this.referenceToParent) {
+            ;
             this.referenceToParent.delete(this);
         }
     }

@@ -13,7 +13,7 @@ class Leaderboard {
         this.table[position] = name;
     }
     print() {
-        console.log("-----------Leaderboard-----------");
+        console.log('-----------Leaderboard-----------');
         for (let key in this.table) {
             console.log(`|\t${key}\t|\t${this.table[key]}\t|`);
         }

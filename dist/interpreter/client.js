@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const sentence_parser_1 = require("./sentence-parser");
 // The sentence complies with a simple grammar of
 // Number -> Operator -> Number -> etc,
-const SENTENCE = "5 + IV - 3 + VII - 2";
+const SENTENCE = '5 + IV - 3 + VII - 2';
 // const SENTENCE = "4 + II + XII + 1 + 2"
 // const SENTENCE = "5 + 4 - 3 + 7 - 2"
 // const SENTENCE = "V + IV - III + 7 - II"
