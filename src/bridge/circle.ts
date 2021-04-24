@@ -1,15 +1,16 @@
 // A Circle Abstraction
-import Shape from './shape'
-import ShapeImplementor from './shape-implementer'
 
-export default class Circle implements Shape {
-    implementer: ShapeImplementor
+import IShape from './ishape'
+import IShapeImplementor from './ishape-implementer'
 
-    constructor(implementer: ShapeImplementor) {
+export default class Circle implements IShape {
+    implementer: IShapeImplementor
+
+    constructor(implementer: IShapeImplementor) {
         this.implementer = implementer
     }
 
-    draw() {
+    draw(): void {
         this.implementer.drawImplementation()
     }
 }

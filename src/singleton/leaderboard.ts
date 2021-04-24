@@ -11,13 +11,13 @@ export default class Leaderboard {
         Leaderboard.instance = this
     }
 
-    public addWinner(position: number, name: string) {
+    public addWinner(position: number, name: string): void {
         this.table[position] = name
     }
 
-    public print() {
+    public print(): void {
         console.log('-----------Leaderboard-----------')
-        for (let key in this.table) {
+        for (const key in this.table) {
             console.log(`|\t${key}\t|\t${this.table[key]}\t|`)
         }
         console.log()

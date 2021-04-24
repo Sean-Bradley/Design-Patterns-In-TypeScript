@@ -6,7 +6,7 @@ import {Game3} from './game3'
 
 // The Client
 // Despite all games instantiating a leaderboard, they all point
-// to the same memory object since the leaderboard it is a singleton.
+// to the same memory object since the leaderboard is a singleton.
 const GAME1 = new Game1()
 GAME1.addWinner(2, 'Cosmo')
 

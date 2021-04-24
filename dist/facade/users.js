@@ -1,6 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // A Singleton Dictionary of Users
+Object.defineProperty(exports, "__esModule", { value: true });
 const reports_1 = require("./reports");
 const wallets_1 = require("./wallets");
 class Users {
@@ -15,10 +15,10 @@ class Users {
     }
     registerUser(new_user) {
         // register a user
-        if (!(new_user["user_name"] in this.users)) {
+        if (!(new_user['user_name'] in this.users)) {
             // generate really complicated unique user_id.
             // Using the existing user_name as the id for simplicity
-            const user_id = new_user["user_name"];
+            const user_id = new_user['user_name'];
             this.users[user_id] = new_user;
             this.reports.logEvent(`new user '${user_id}' created`);
             // create a wallet for the new user
@@ -28,16 +28,16 @@ class Users {
             this.wallets.adjustBalance(user_id, 10);
             return user_id;
         }
-        return "";
+        return '';
     }
     editUser(user_id, user) {
-        "do nothing. Not implemented yet";
+        'do nothing. Not implemented yet';
         console.log(user_id);
         console.log(user);
         return false;
     }
     changePwd(user_id, password) {
-        "do nothing. Not implemented yet";
+        'do nothing. Not implemented yet';
         console.log(user_id);
         console.log(password);
         return false;

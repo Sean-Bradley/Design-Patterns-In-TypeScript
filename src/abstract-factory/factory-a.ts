@@ -1,47 +1,41 @@
 // FactoryA Sample Code
-export module FactoryA {
-    interface Product {
-        name: String
-        createObject(): Product
+
+export interface IProduct {
+    name: string
+    createObject(): IProduct
+}
+
+class ConcreteProduct implements IProduct {
+    name = ''
+
+    createObject() {
+        return this
     }
+}
 
-    class ConcreteProductA implements Product {
-        name: String
-
-        constructor() {
-            this.name = 'FactoryA:ConcreteProductA'
-        }
-
-        createObject() {
-            return this
-        }
+class ConcreteProductA extends ConcreteProduct {
+    constructor() {
+        super()
+        this.name = 'FactoryA:ConcreteProductA'
     }
+}
 
-    class ConcreteProductB implements Product {
-        name: String
-
-        constructor() {
-            this.name = 'FactoryA:ConcreteProductB'
-        }
-
-        createObject() {
-            return this
-        }
+class ConcreteProductB extends ConcreteProduct {
+    constructor() {
+        super()
+        this.name = 'FactoryA:ConcreteProductB'
     }
+}
 
-    class ConcreteProductC implements Product {
-        name: String
-
-        constructor() {
-            this.name = 'FactoryA:ConcreteProductC'
-        }
-
-        createObject() {
-            return this
-        }
+class ConcreteProductC extends ConcreteProduct {
+    constructor() {
+        super()
+        this.name = 'FactoryA:ConcreteProductC'
     }
+}
 
-    export function getObject(some_property: string) {
+export class FactoryA {
+    static getObject(some_property: string): IProduct {
         try {
             if (some_property === 'a') {
                 return new ConcreteProductA()
@@ -55,6 +49,6 @@ export module FactoryA {
         } catch (e) {
             console.log(e)
         }
-        return null
+        return new ConcreteProduct()
     }
 }

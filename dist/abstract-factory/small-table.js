@@ -1,18 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class SmallTable {
+const table_1 = require("./table");
+class SmallTable extends table_1.Table {
     constructor() {
-        this.name = "SmallTable";
+        super();
+        this.name = 'SmallTable';
         this.height = 40;
         this.width = 40;
         this.depth = 40;
-    }
-    getDimensions() {
-        return {
-            "width": this.width,
-            "depth": this.depth,
-            "height": this.height
-        };
     }
 }
 exports.default = SmallTable;

@@ -1,4 +1,4 @@
-'The Flyweight Use Case Example'
+// The Flyweight Use Case Example
 
 import Table from './table'
 import FlyweightFactory from './flyweight-factory'

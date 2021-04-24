@@ -1,4 +1,5 @@
 // Singleton Concept Sample Code
+
 export class Singleton {
     // The Singleton Class
     static instance: Singleton

@@ -6,7 +6,7 @@ class Document {
         this.array = array;
     }
     clone(mode) {
-        " This clone method uses different copy techniques ";
+        ' This clone method uses different copy techniques ';
         let array;
         if (mode === 2) {
             // results in a deep copy of the Document

@@ -1,5 +1,5 @@
 // The Proteus Interface
-export default interface Proteus {
+export default interface IProteus {
     // A Greek mythological character that can change to many forms
 
     tell_me_the_future(): void

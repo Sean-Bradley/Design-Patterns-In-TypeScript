@@ -1,7 +1,8 @@
+// A Formatted Table
+
 import Row from './row'
 
 export default class Table {
-    // A Formatted Table
     rows: Row[]
 
     constructor(row_count: number, column_count: number) {
@@ -11,14 +12,14 @@ export default class Table {
         }
     }
 
-    draw() {
+    draw(): void {
         // Draws the table formatted in the console
         let maxRowLength = 0
         const rows: string[] = []
         this.rows.forEach((row) => {
-            let rowData = row.getData()
+            const rowData = row.getData()
             rows.push(`|${rowData}`)
-            let rowLength = rowData.length + 1
+            const rowLength = rowData.length + 1
             if (maxRowLength < rowLength) {
                 maxRowLength = rowLength
             }

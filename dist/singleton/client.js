@@ -6,7 +6,7 @@ const game2_1 = require("./game2");
 const game3_1 = require("./game3");
 // The Client
 // Despite all games instantiating a leaderboard, they all point
-// to the same memory object since the leaderboard it is a singleton.
+// to the same memory object since the leaderboard is a singleton.
 const GAME1 = new game1_1.Game1();
 GAME1.addWinner(2, 'Cosmo');
 const GAME2 = new game2_1.Game2();

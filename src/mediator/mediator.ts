@@ -1,6 +1,6 @@
 // The Subject that all components will stay synchronized with
 
-import { IComponent } from "./interface-component"
+import IComponent from './icomponent'
 
 export default class Mediator {
     // A Subject whose notify method is mediated
@@ -17,7 +17,7 @@ export default class Mediator {
 
     notify(message: string, originator: IComponent) {
         // Add components except for the originator component
-        this.components.forEach(component => {
+        this.components.forEach((component) => {
             if (component !== originator) {
                 component.receive(message)
             }

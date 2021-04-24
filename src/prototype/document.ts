@@ -1,8 +1,7 @@
 // A sample document to be used in the Prototype example
-import ProtoType from './prototype'
+import ProtoType from './iprototype'
 
 export default class Document implements ProtoType {
-
     name: string
     array: [number[], number[]]
 
@@ -11,8 +10,8 @@ export default class Document implements ProtoType {
         this.array = array
     }
 
-    clone(mode: number) {
-        " This clone method uses different copy techniques "
+    clone(mode: number): Document {
+        ' This clone method uses different copy techniques '
         let array
         if (mode === 2) {
             // results in a deep copy of the Document

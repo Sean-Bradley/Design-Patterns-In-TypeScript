@@ -1,5 +1,5 @@
 // The Shape Abstraction Interface
 
-export default interface Shape {
+export default interface IShape {
     draw(): void
 }

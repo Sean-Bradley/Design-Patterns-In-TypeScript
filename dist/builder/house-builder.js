@@ -1,5 +1,4 @@
 "use strict";
-// The Builder Class
 Object.defineProperty(exports, "__esModule", { value: true });
 const house_1 = require("./house");
 class HouseBuilder {

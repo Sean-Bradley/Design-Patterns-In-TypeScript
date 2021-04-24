@@ -1,9 +1,9 @@
-import {IComponent} from './interface-component'
+import IComponent from './icomponent'
 
-export class Folder implements IComponent {
+export default class Folder implements IComponent {
     // A composite can contain leaves and composites
 
-    referenceToParent?: IComponent
+    referenceToParent?: Folder
     name: string
     components: IComponent[]
 
@@ -12,8 +12,7 @@ export class Folder implements IComponent {
         this.components = []
     }
 
-    dir(indent: string) {
-        const parent_id = this.referenceToParent
+    dir(indent: string): void {
         console.log(`${indent}<DIR>  ${this.name}`)
 
         this.components.forEach((component) => {
@@ -21,7 +20,7 @@ export class Folder implements IComponent {
         })
     }
 
-    attach(component: IComponent) {
+    attach(component: IComponent): void {
         /*
          * Detach leaf / composite from any current parent reference and
          * then set the parent reference to this composite(self)
@@ -31,7 +30,7 @@ export class Folder implements IComponent {
         this.components.push(component)
     }
 
-    delete(component: IComponent) {
+    delete(component: IComponent): void {
         // Removes leaf/composite from this composite self.components
         const index = this.components.indexOf(component)
         if (index > -1) {
@@ -39,10 +38,10 @@ export class Folder implements IComponent {
         }
     }
 
-    detach() {
+    detach(): void {
         // Detaching this composite from its parent composite
         if (this.referenceToParent) {
-            ;(this.referenceToParent as Folder).delete(this)
+            this.referenceToParent.delete(this)
             this.referenceToParent = undefined
         }
     }

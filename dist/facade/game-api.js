@@ -1,6 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // The Game API facade
+Object.defineProperty(exports, "__esModule", { value: true });
 const reports_1 = require("./reports");
 const wallets_1 = require("./wallets");
 const users_1 = require("./users");

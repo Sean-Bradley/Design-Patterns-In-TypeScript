@@ -2,10 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class _Add {
     constructor(val1, val2) {
-        const left = val1.hasOwnProperty('value')
+        const left = Object.prototype.hasOwnProperty.call(val1, 'value')
             ? val1.value
             : val1;
-        const right = val2.hasOwnProperty('value')
+        const right = Object.prototype.hasOwnProperty.call(val2, 'value')
             ? val2.value
             : val2;
         this.value = left + right;

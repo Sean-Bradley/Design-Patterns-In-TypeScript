@@ -1,7 +1,6 @@
 // A Singleton Dictionary of Reported Events
 
 export default class Reports {
-
     private static instance: Reports
     private reports: { [id: string]: [number, string] } = {}
     private row_id = 0

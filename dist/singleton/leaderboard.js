@@ -14,7 +14,7 @@ class Leaderboard {
     }
     print() {
         console.log('-----------Leaderboard-----------');
-        for (let key in this.table) {
+        for (const key in this.table) {
             console.log(`|\t${key}\t|\t${this.table[key]}\t|`);
         }
         console.log();

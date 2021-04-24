@@ -3,7 +3,7 @@ import Flyweight from './flyweight'
 export default class FlyweightFactory {
     // Creating the FlyweightFactory as a static class
 
-    private static flyweights: {[id: number]: Flyweight} = {}
+    private static flyweights: { [id: number]: Flyweight } = {}
 
     static getFlyweight(code: number): Flyweight {
         // A static method to get a flyweight based on a code

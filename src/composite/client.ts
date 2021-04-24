@@ -1,6 +1,7 @@
-'A use case of the composite pattern.'
-import {File} from './file'
-import {Folder} from './folder'
+// A use case of the composite pattern.
+
+import File from './file'
+import Folder from './folder'
 
 const FILESYSTEM = new Folder('root')
 const FILE_1 = new File('abc.txt')

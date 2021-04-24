@@ -1,5 +1,5 @@
 "use strict";
-'The Flyweight Use Case Example';
+// The Flyweight Use Case Example
 Object.defineProperty(exports, "__esModule", { value: true });
 const table_1 = require("./table");
 const flyweight_factory_1 = require("./flyweight-factory");

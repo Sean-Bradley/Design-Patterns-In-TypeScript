@@ -1,15 +1,13 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // A Column that is used in a Row
+Object.defineProperty(exports, "__esModule", { value: true });
 const flyweight_factory_1 = require("./flyweight-factory");
 class Column {
     constructor() {
-        /*
-         * The columns are the contexts.
-         * They will share the Flyweights via the FlyweightsFactory.
-         * `data`, `width` and `justify` are extrinsic values. They are outside
-         * of the flyweights.
-         */
+        // The columns are the contexts.
+        // They will share the Flyweights via the FlyweightsFactory.
+        // `data`, `width` and `justify` are extrinsic values. They are outside
+        // of the flyweights.
         this.data = '';
         this.width = 10;
         this.justify = 0;

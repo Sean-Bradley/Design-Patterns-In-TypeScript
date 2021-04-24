@@ -1,4 +1,5 @@
 // A Singleton Dictionary of Users
+
 import Reports from './reports'
 import Wallets from './wallets'
 
@@ -17,10 +18,10 @@ export default class Users {
 
     registerUser(new_user: { [id: string]: string }): string {
         // register a user
-        if (!(new_user["user_name"] in this.users)) {
+        if (!(new_user['user_name'] in this.users)) {
             // generate really complicated unique user_id.
             // Using the existing user_name as the id for simplicity
-            const user_id = new_user["user_name"]
+            const user_id = new_user['user_name']
             this.users[user_id] = new_user
             this.reports.logEvent(`new user '${user_id}' created`)
             // create a wallet for the new user
@@ -30,19 +31,18 @@ export default class Users {
             this.wallets.adjustBalance(user_id, 10)
             return user_id
         }
-        return ""
-
+        return ''
     }
 
     editUser(user_id: string, user: { [id: string]: string }): boolean {
-        "do nothing. Not implemented yet"
+        'do nothing. Not implemented yet'
         console.log(user_id)
         console.log(user)
         return false
     }
 
     changePwd(user_id: string, password: string): boolean {
-        "do nothing. Not implemented yet"
+        'do nothing. Not implemented yet'
         console.log(user_id)
         console.log(password)
         return false

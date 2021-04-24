@@ -1,5 +1,5 @@
 // The Shape Implementor Interface
 
-export default interface ShapeImplementor {
+export default interface IShapeImplementor {
     drawImplementation(): void
 }

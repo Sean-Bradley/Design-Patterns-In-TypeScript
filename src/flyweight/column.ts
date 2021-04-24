@@ -1,13 +1,12 @@
 // A Column that is used in a Row
+
 import FlyweightFactory from './flyweight-factory'
 
 export default class Column {
-    /*
-     * The columns are the contexts.
-     * They will share the Flyweights via the FlyweightsFactory.
-     * `data`, `width` and `justify` are extrinsic values. They are outside
-     * of the flyweights.
-     */
+    // The columns are the contexts.
+    // They will share the Flyweights via the FlyweightsFactory.
+    // `data`, `width` and `justify` are extrinsic values. They are outside
+    // of the flyweights.
     data = ''
     width = 10
     justify = 0

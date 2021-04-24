@@ -1,11 +1,13 @@
 // Abstract Factory Concept Sample Code
-import {FactoryA} from './factory-a'
-import {FactoryB} from './factory-b'
+import {FactoryA, IProduct as IProductA} from './factory-a'
+import {FactoryB, IProduct as IProductB} from './factory-b'
+
+interface IProduct extends IProductA, IProductB {}
 
 class AbstractFactory {
     // The Abstract Factory Concrete Class
 
-    static createObject(factory: string): any {
+    static createObject(factory: string): IProduct | undefined {
         try {
             if (['aa', 'ab', 'ac'].indexOf(factory) > -1) {
                 return FactoryA.getObject(factory[1])
@@ -17,7 +19,6 @@ class AbstractFactory {
         } catch (e) {
             console.log(e)
         }
-        return null
     }
 }
 

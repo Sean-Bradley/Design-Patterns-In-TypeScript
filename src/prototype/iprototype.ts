@@ -2,7 +2,7 @@
 
 import Document from "./document";
 
-export default interface ProtoType {
+export default interface IProtoType {
     // interface with clone method
     clone(mode: number): Document
     // The clone, deep or shallow.

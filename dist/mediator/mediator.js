@@ -11,7 +11,7 @@ class Mediator {
     }
     notify(message, originator) {
         // Add components except for the originator component
-        this.components.forEach(component => {
+        this.components.forEach((component) => {
             if (component !== originator) {
                 component.receive(message);
             }

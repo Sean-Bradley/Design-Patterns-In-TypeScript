@@ -1,24 +1,24 @@
-import {IComponent} from './interface-component'
-import {Folder} from './folder'
+import IComponent from './icomponent'
+import Folder from './folder'
 
-export class File implements IComponent {
+export default class File implements IComponent {
     // The File Class. The files are the leaves
 
     name: string
-    referenceToParent?: IComponent = undefined
+    referenceToParent?: Folder = undefined
 
     constructor(name: string) {
         this.name = name
     }
 
-    dir(indent: string) {
+    dir(indent: string): void {
         console.log(`${indent}<FILE> ${this.name}`)
     }
 
-    detach() {
+    detach(): void {
         'Detaching this leaf from its parent composite'
         if (this.referenceToParent) {
-            ;(this.referenceToParent as Folder).delete(this)
+            this.referenceToParent.delete(this)
         }
     }
 }

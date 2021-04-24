@@ -1,7 +1,7 @@
 // A Game Class that uses the Leaderboard Singleton
 
 import Leaderboard from './leaderboard'
-import Game from './game'
+import Game from './igame'
 
 export class Game1 implements Game {
     leaderboard: Leaderboard
@@ -10,7 +10,7 @@ export class Game1 implements Game {
         this.leaderboard = new Leaderboard()
     }
 
-    addWinner(position: number, name: string) {
+    addWinner(position: number, name: string): void {
         this.leaderboard.addWinner(position, name)
     }
 }

@@ -16,7 +16,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "multiline-comment-style": 2,
+        "multiline-comment-style": 0,
         "spaced-comment": 2
     }
 }

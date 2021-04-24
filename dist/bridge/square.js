@@ -1,4 +1,5 @@
 "use strict";
+// A Square Abstraction
 Object.defineProperty(exports, "__esModule", { value: true });
 class Square {
     constructor(implementer) {

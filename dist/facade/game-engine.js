@@ -1,6 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // The Game Engine
+Object.defineProperty(exports, "__esModule", { value: true });
 const reports_1 = require("./reports");
 const wallets_1 = require("./wallets");
 class GameEngine {
@@ -19,24 +19,24 @@ class GameEngine {
         GameEngine.instance = this;
     }
     getGameState() {
-        //Get a snapshot of the current game state"
+        // Get a snapshot of the current game state
         const now = Math.floor(Date.now() / 1000);
-        let time_remaining = this.startTime - now + this.clock;
-        console.log("getGameState " + time_remaining);
-        if (time_remaining < 0) {
-            time_remaining = 0;
+        let timeRemaining = this.startTime - now + this.clock;
+        console.log('getGameState ' + timeRemaining);
+        if (timeRemaining < 0) {
+            timeRemaining = 0;
         }
         this.gameOpen = false;
         return {
-            "clock": time_remaining,
-            "game_open": this.gameOpen,
-            "entries": this.entries
+            clock: timeRemaining,
+            gameOpen: this.gameOpen,
+            entries: this.entries,
         };
     }
     submitEntry(user_id, entry) {
         // Submit a new entry for the user in this game
         const now = Math.floor(Date.now() / 1000);
-        let time_remaining = this.startTime - now + this.clock;
+        const time_remaining = this.startTime - now + this.clock;
         if (time_remaining > 0) {
             if (this.wallets.getBalance(user_id) > 1) {
                 if (this.wallets.adjustBalance(user_id, -1)) {
@@ -50,7 +50,7 @@ class GameEngine {
             this.reports.logEvent(`User Balance for '${user_id}' to low`);
             return false;
         }
-        this.reports.logEvent("Game Closed");
+        this.reports.logEvent('Game Closed');
         return false;
     }
 }

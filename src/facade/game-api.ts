@@ -1,11 +1,11 @@
 // The Game API facade
+
 import Reports from './reports'
 import Wallets from './wallets'
 import Users from './users'
-import GameEngine from './game-engine'
+import GameEngine, { GameState } from './game-engine'
 
 export default class GameAPI {
-
     private wallets: Wallets
     private reports: Reports
     private users: Users
@@ -23,12 +23,12 @@ export default class GameAPI {
         return this.wallets.getBalance(user_id)
     }
 
-    gameState(): {} {
+    gameState(): GameState {
         // Get the current game state
         return this.gameEngine.getGameState()
     }
 
-    getHistory(): { [id: string]: [number, string] }  {
+    getHistory(): { [id: string]: [number, string] } {
         // get the game history
         return this.reports.getHistory()
     }

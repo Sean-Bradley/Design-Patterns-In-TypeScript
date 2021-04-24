@@ -1,15 +1,14 @@
-import ShapeImplementer from './shape-implementer'
+import IShapeImplementor from './ishape-implementer'
 
-export default class CircleImplementer implements ShapeImplementer {
-
-    drawImplementation() {
-        console.log("    ******")
-        console.log("  **      **")
-        console.log(" *          *")
-        console.log("*            *")
-        console.log("*            *")
-        console.log(" *          *")
-        console.log("  **      **")
-        console.log("    ******")
+export default class CircleImplementer implements IShapeImplementor {
+    drawImplementation(): void {
+        console.log('    ******')
+        console.log('  **      **')
+        console.log(' *          *')
+        console.log('*            *')
+        console.log('*            *')
+        console.log(' *          *')
+        console.log('  **      **')
+        console.log('    ******')
     }
 }

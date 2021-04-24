@@ -1,4 +1,5 @@
 "use strict";
+// A Formatted Table
 Object.defineProperty(exports, "__esModule", { value: true });
 const row_1 = require("./row");
 class Table {
@@ -13,9 +14,9 @@ class Table {
         let maxRowLength = 0;
         const rows = [];
         this.rows.forEach((row) => {
-            let rowData = row.getData();
+            const rowData = row.getData();
             rows.push(`|${rowData}`);
-            let rowLength = rowData.length + 1;
+            const rowLength = rowData.length + 1;
             if (maxRowLength < rowLength) {
                 maxRowLength = rowLength;
             }

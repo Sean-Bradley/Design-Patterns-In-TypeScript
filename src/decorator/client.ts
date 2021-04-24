@@ -1,4 +1,5 @@
 // Decorator Use Case Example Code
+
 import Value from './value'
 import Add from './add'
 import Sub from './sub'
@@ -17,4 +18,4 @@ console.log(Sub(123, Add(C, C)).value)
 console.log(Add(Sub(Add(C, 10), A), 100).value)
 console.log(A.value)
 console.log(B.value)
-console.log(C)
+console.log(C.value)

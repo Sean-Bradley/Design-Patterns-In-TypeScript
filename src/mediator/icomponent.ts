@@ -1,6 +1,6 @@
 // An interface that each component should implement
 
-export interface IComponent {
+export default interface IComponent {
 
     notify(message: string): void
 

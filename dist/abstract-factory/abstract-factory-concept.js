@@ -18,7 +18,6 @@ class AbstractFactory {
         catch (e) {
             console.log(e);
         }
-        return null;
     }
 }
 // The Client

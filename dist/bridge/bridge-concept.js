@@ -1,37 +1,34 @@
 "use strict";
 // Bridge Pattern Concept Sample Code
-var BridgeConcept;
-(function (BridgeConcept) {
-    class RefinedAbstractionA {
-        constructor(implementer) {
-            this.implementer = implementer;
-        }
-        method(...args) {
-            this.implementer.method(...args);
-        }
+class RefinedAbstractionA {
+    constructor(implementer) {
+        this.implementer = implementer;
     }
-    class RefinedAbstractionB {
-        constructor(implementer) {
-            this.implementer = implementer;
-        }
-        method(...args) {
-            this.implementer.method(...args);
-        }
+    method(value) {
+        this.implementer.method(value);
     }
-    class ConcreteImplementerA {
-        method(...args) {
-            console.log(args);
-        }
+}
+class RefinedAbstractionB {
+    constructor(implementer) {
+        this.implementer = implementer;
     }
-    class ConcreteImplementerB {
-        method(...args) {
-            args.forEach(arg => console.log(arg));
-        }
+    method(value) {
+        this.implementer.method(value);
     }
-    // The Client
-    const VALUES = ['a', 'b', 'c'];
-    const REFINED_ABSTRACTION_A = new RefinedAbstractionA(new ConcreteImplementerA);
-    REFINED_ABSTRACTION_A.method(...VALUES);
-    const REFINED_ABSTRACTION_B = new RefinedAbstractionB(new ConcreteImplementerB);
-    REFINED_ABSTRACTION_B.method(...VALUES);
-})(BridgeConcept || (BridgeConcept = {}));
+}
+class ConcreteImplementerA {
+    method(value) {
+        console.log(value);
+    }
+}
+class ConcreteImplementerB {
+    method(value) {
+        value.forEach((v) => console.log(v));
+    }
+}
+// The Client
+const VALUES = ['a', 'b', 'c'];
+const REFINED_ABSTRACTION_A = new RefinedAbstractionA(new ConcreteImplementerA());
+REFINED_ABSTRACTION_A.method(VALUES);
+const REFINED_ABSTRACTION_B = new RefinedAbstractionB(new ConcreteImplementerB());
+REFINED_ABSTRACTION_B.method(VALUES);

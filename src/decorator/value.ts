@@ -1,3 +1,7 @@
+export interface IValue {
+    value: number
+}
+
 class _Value implements IValue {
     value: number
     constructor(value: number) {

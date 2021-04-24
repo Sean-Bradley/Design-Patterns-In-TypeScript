@@ -1,7 +1,7 @@
 "use strict";
+// Singleton Concept Sample Code
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Singleton = void 0;
-// Singleton Concept Sample Code
 class Singleton {
     constructor() {
         if (Singleton.instance) {

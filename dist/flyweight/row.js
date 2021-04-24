@@ -1,5 +1,5 @@
 "use strict";
-'A Row in the Table';
+// A Row in the Table
 Object.defineProperty(exports, "__esModule", { value: true });
 const column_1 = require("./column");
 class Row {

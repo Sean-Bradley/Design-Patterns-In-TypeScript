@@ -1,19 +1,19 @@
 "use strict";
-'A use case of the composite pattern.';
+// A use case of the composite pattern.
 Object.defineProperty(exports, "__esModule", { value: true });
 const file_1 = require("./file");
 const folder_1 = require("./folder");
-const FILESYSTEM = new folder_1.Folder('root');
-const FILE_1 = new file_1.File('abc.txt');
-const FILE_2 = new file_1.File('123.txt');
+const FILESYSTEM = new folder_1.default('root');
+const FILE_1 = new file_1.default('abc.txt');
+const FILE_2 = new file_1.default('123.txt');
 FILESYSTEM.attach(FILE_1);
 FILESYSTEM.attach(FILE_2);
-const FOLDER_A = new folder_1.Folder('folder_a');
+const FOLDER_A = new folder_1.default('folder_a');
 FILESYSTEM.attach(FOLDER_A);
-const FILE_3 = new file_1.File('xyz.txt');
+const FILE_3 = new file_1.default('xyz.txt');
 FOLDER_A.attach(FILE_3);
-const FOLDER_B = new folder_1.Folder('folder_b');
-const FILE_4 = new file_1.File('456.txt');
+const FOLDER_B = new folder_1.default('folder_b');
+const FILE_4 = new file_1.default('456.txt');
 FOLDER_B.attach(FILE_4);
 FILESYSTEM.attach(FOLDER_B);
 FILESYSTEM.dir('');
