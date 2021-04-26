@@ -1,7 +1,7 @@
 // The Save/Restore Game functionality
 
-import GameCharacter from "./game-character"
-import Memento from "./memento"
+import GameCharacter from './game-character'
+import Memento from './memento'
 
 export default class CareTaker {
     // Guardian. Provides a narrow interface to the mementos
@@ -14,20 +14,18 @@ export default class CareTaker {
         this.#mementos = []
     }
 
-    save() {
+    save(): void {
         // Store a new Memento of the Characters current state
         console.log('CareTaker: Game Save')
         const memento = this.#originator.memento
         this.#mementos.push(memento)
     }
 
-    restore(index: number) {
-        /*
-        * Replace the Characters current attributes with the state
-        * stored in the saved Memento
-        */
+    restore(index: number): void {
+        // Replace the Characters current attributes with the state
+        // stored in the saved Memento
         console.log('CareTaker: Restoring Characters attributes from Memento')
-        const memento = this.#mementos[index]        
+        const memento = this.#mementos[index]
         this.#originator.memento = memento
     }
 }

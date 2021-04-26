@@ -1,4 +1,4 @@
-import { IDataModel } from "./data-model"
+import { IDataModel } from './data-model'
 
 export interface IDataView {
     // A Subject Interface
@@ -17,14 +17,14 @@ export class BarGraphView implements IDataView {
         this.id = this.observable.subscribe(this)
     }
 
-    notify(data: number[]) {
+    notify(data: number[]): void {
         console.log(`BarGraph, id:${this.id}`)
         this.draw(data)
     }
-    draw(data: number[]) {
+    draw(data: number[]): void {
         console.log(`Drawing a Bar graph using data:${JSON.stringify(data)}`)
     }
-    delete() {
+    delete(): void {
         this.observable.unsubscribe(this.id)
     }
 }
@@ -39,14 +39,14 @@ export class PieGraphView implements IDataView {
         this.id = this.observable.subscribe(this)
     }
 
-    notify(data: number[]) {
+    notify(data: number[]): void {
         console.log(`PieGraph, id:${this.id}`)
         this.draw(data)
     }
-    draw(data: number[]) {
+    draw(data: number[]): void {
         console.log(`Drawing a Pie graph using data:${data}`)
     }
-    delete() {
+    delete(): void {
         this.observable.unsubscribe(this.id)
     }
 }
@@ -61,14 +61,14 @@ export class TableView implements IDataView {
         this.id = this.observable.subscribe(this)
     }
 
-    notify(data: number[]) {
+    notify(data: number[]): void {
         console.log(`TableView, id:${this.id}`)
         this.draw(data)
     }
-    draw(data: number[]) {
+    draw(data: number[]): void {
         console.log(`Drawing a Table using data:${JSON.stringify(data)}`)
     }
-    delete() {
+    delete(): void {
         this.observable.unsubscribe(this.id)
     }
 }

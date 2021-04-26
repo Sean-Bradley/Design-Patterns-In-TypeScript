@@ -21,10 +21,8 @@ export default class Folder implements IComponent {
     }
 
     attach(component: IComponent): void {
-        /*
-         * Detach leaf / composite from any current parent reference and
-         * then set the parent reference to this composite(self)
-         */
+        // Detach leaf / composite from any current parent reference and
+        // then set the parent reference to this composite(self)
         component.detach()
         component.referenceToParent = this
         this.components.push(component)

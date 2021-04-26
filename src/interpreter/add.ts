@@ -9,7 +9,7 @@ export default class Add implements IAbstractExpression {
         this.right = right
     }
 
-    interpret() {
+    interpret(): number {
         return this.left.interpret() + this.right.interpret()
     }
 }

@@ -36,15 +36,15 @@ class Receiver {
     }
 
     runCommand2() {
-        // A set of instructions to run"
+        // A set of instructions to run
         console.log('Executing Command 2')
     }
 }
 
 class Command1 implements ICommand {
-    /* A Command object, that implements the ICommand interface and
-     * runs the command on the designated receiver
-     */
+    // A Command object, that implements the ICommand interface and
+    // runs the command on the designated receiver
+
     receiver: Receiver
 
     constructor(receiver: Receiver) {
@@ -57,9 +57,9 @@ class Command1 implements ICommand {
 }
 
 class Command2 implements ICommand {
-    /* A Command object, that implements the ICommand interface and
-     * runs the command on the designated receiver
-     */
+    // A Command object, that implements the ICommand interface and
+    // runs the command on the designated receiver
+
     receiver: Receiver
 
     constructor(receiver: Receiver) {

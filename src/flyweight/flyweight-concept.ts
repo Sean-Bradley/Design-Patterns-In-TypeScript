@@ -31,7 +31,7 @@ class FlyweightFactory {
     }
 }
 
-class Context {
+class AppContext {
     // An example context that holds references to the flyweights in a
     // particular order and converts the code to an ascii letter
     private codes: number[] = []
@@ -54,10 +54,10 @@ class Context {
 }
 
 // The Client
-const CONTEXT = new Context('abracadabra')
+const APP_CONTEXT = new AppContext('abracadabra')
 
 // use flyweights in a context
-console.log(CONTEXT.output())
+console.log(APP_CONTEXT.output())
 
 console.log(`abracadabra has ${'abracadabra'.length} letters`)
 console.log(`FlyweightFactory has ${FlyweightFactory.getCount()} flyweights`)

@@ -1,9 +1,8 @@
 // A HTML document concrete class of AbstractDocument
 
-import {Document, AbstractDocument} from './abstract-document'
+import { Document, AbstractDocument } from './abstract-document'
 
 export default class HTMLDocument extends AbstractDocument {
-    // Prints out a HTML formatted document
     title(document: Document): void {
         document['title'] = 'New HTML Document'
     }
@@ -18,14 +17,15 @@ export default class HTMLDocument extends AbstractDocument {
         })
     }
 
-    print(document: Document) {
+    print(document: Document): void {
         // overriding print to output with html tags
         console.log('<html>')
         console.log('  <head>')
-        //for attribute in document:
         Object.keys(document).forEach((attribute: string) => {
             if (['title', 'description', 'author'].indexOf(attribute) > -1) {
-                console.log(`    <${attribute}>${document[attribute]}</${attribute}>`)
+                console.log(
+                    `    <${attribute}>${document[attribute]}</${attribute}>`
+                )
             }
             if (attribute === 'bg-col') {
                 console.log('    <style>')

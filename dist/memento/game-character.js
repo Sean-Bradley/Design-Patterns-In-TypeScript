@@ -25,7 +25,7 @@ class GameCharacter {
         __classPrivateFieldSet(this, _score, 0);
         __classPrivateFieldSet(this, _inventory, new Set());
         __classPrivateFieldSet(this, _level, 0);
-        __classPrivateFieldSet(this, _location, { "x": 0, "y": 0, "z": 0 });
+        __classPrivateFieldSet(this, _location, { x: 0, y: 0, z: 0 });
     }
     get score() {
         // A getter for the score"
@@ -45,16 +45,16 @@ class GameCharacter {
     }
     moveForward(amount) {
         // The character moves around the environment
-        __classPrivateFieldGet(this, _location)["z"] += amount;
+        __classPrivateFieldGet(this, _location)['z'] += amount;
     }
     status() {
         return (`Score: ${__classPrivateFieldGet(this, _score)}, ` +
             `Level: ${__classPrivateFieldGet(this, _level)}, ` +
             `Location: ${JSON.stringify(__classPrivateFieldGet(this, _location))}\n` +
-            `Inventory: ${JSON.stringify(Array.from(__classPrivateFieldGet(this, _inventory)))}\n`);
+            `Inventory: ${JSON.stringify(Array.from(__classPrivateFieldGet(this, _inventory)))}`);
     }
     get memento() {
-        "A `getter` for the characters attributes as a Memento";
+        'A `getter` for the characters attributes as a Memento';
         return new memento_1.default(__classPrivateFieldGet(this, _score), new Set(__classPrivateFieldGet(this, _inventory)), __classPrivateFieldGet(this, _level), Object.assign({}, __classPrivateFieldGet(this, _location)));
     }
     set memento(value) {

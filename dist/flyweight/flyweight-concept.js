@@ -20,7 +20,7 @@ class FlyweightFactory {
 }
 // Creating the FlyweightFactory as a static class
 FlyweightFactory.flyweights = {};
-class Context {
+class AppContext {
     constructor(codes) {
         // An example context that holds references to the flyweights in a
         // particular order and converts the code to an ascii letter
@@ -39,8 +39,8 @@ class Context {
     }
 }
 // The Client
-const CONTEXT = new Context('abracadabra');
+const APP_CONTEXT = new AppContext('abracadabra');
 // use flyweights in a context
-console.log(CONTEXT.output());
+console.log(APP_CONTEXT.output());
 console.log(`abracadabra has ${'abracadabra'.length} letters`);
 console.log(`FlyweightFactory has ${FlyweightFactory.getCount()} flyweights`);

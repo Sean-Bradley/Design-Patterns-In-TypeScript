@@ -1,4 +1,4 @@
-import { IDataModel } from "./data-model";
+import { IDataModel } from './data-model'
 
 // A Data Controller Interface
 export interface IDataController {
@@ -21,17 +21,17 @@ export class DataController implements IDataController {
         DataController.instance = this
     }
 
-    subscribe(observer: IDataModel) {
+    subscribe(observer: IDataModel): void {
         this.observers.add(observer)
     }
 
-    unsubscribe(observer: IDataModel) {
-        this.observers.delete(observer);
+    unsubscribe(observer: IDataModel): void {
+        this.observers.delete(observer)
     }
 
-    notify(data: number[]) {
-        this.observers.forEach(observer => {
+    notify(data: number[]): void {
+        this.observers.forEach((observer) => {
             observer.notify(data)
-        });
+        })
     }
 }

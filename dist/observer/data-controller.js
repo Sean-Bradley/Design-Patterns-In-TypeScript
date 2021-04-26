@@ -16,7 +16,7 @@ class DataController {
         this.observers.delete(observer);
     }
     notify(data) {
-        this.observers.forEach(observer => {
+        this.observers.forEach((observer) => {
             observer.notify(data);
         });
     }

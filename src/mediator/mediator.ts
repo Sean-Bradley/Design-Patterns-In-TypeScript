@@ -10,12 +10,12 @@ export default class Mediator {
         this.components = new Set()
     }
 
-    add(component: IComponent) {
+    add(component: IComponent): void {
         // Add components
         this.components.add(component)
     }
 
-    notify(message: string, originator: IComponent) {
+    notify(message: string, originator: IComponent): void {
         // Add components except for the originator component
         this.components.forEach((component) => {
             if (component !== originator) {

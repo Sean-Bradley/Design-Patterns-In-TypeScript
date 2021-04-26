@@ -1,5 +1,5 @@
-import { IDataController, DataController } from "./data-controller";
-import { IDataView } from "./data-view";
+import { IDataController, DataController } from './data-controller'
+import { IDataView } from './data-view'
 
 export interface IDataModel {
     // A Subject Interface
@@ -12,7 +12,7 @@ export class DataModel implements IDataModel {
     // A Subject (a.k.a Observable)
 
     observers: { [id: number]: IDataView } = {}
-    dataController: IDataController;
+    dataController: IDataController
     counter: number
 
     constructor() {
@@ -21,19 +21,19 @@ export class DataModel implements IDataModel {
         this.dataController.subscribe(this)
     }
 
-    subscribe(observer: IDataView) {
+    subscribe(observer: IDataView): number {
         this.counter++
         this.observers[this.counter] = observer
         return this.counter
     }
 
-    unsubscribe(observerId: number) {
+    unsubscribe(observerId: number): void {
         delete this.observers[observerId]
     }
 
-    notify(data: number[]) {
-        Object.keys(this.observers).forEach(observer => {
+    notify(data: number[]): void {
+        Object.keys(this.observers).forEach((observer) => {
             this.observers[parseInt(observer)].notify(data)
-        });
+        })
     }
 }

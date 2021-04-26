@@ -1,4 +1,5 @@
 // A Custom Parser for creating an Abstract Syntax Tree
+
 import Add from './add'
 import Numeral from './numeral'
 import RomanNumeral from './roman-numeral'
@@ -7,15 +8,13 @@ import Subtract from './subtract'
 export default class Parser {
     // Dynamically create the Abstract Syntax Tree
 
-    static parse(sentence: string) {
+    static parse(sentence: string): IAbstractExpression | undefined {
         // Create the AST from the sentence
 
         const tokens = sentence.split(' ')
-        //console.log(JSON.stringify(tokens))
 
         const tree: IAbstractExpression[] = [] // Abstract Syntax Tree
         while (tokens.length > 1) {
-            //console.log(JSON.stringify(tokens))
             const leftExpression = Parser.decideLeftExpression(tree, tokens)
 
             // get the operator, make the token list shorter
@@ -43,7 +42,9 @@ export default class Parser {
                     }
                 } else {
                     if (operator === '-') {
-                        tree.push(new Subtract(tree[tree.length - 1], rightExpression))
+                        tree.push(
+                            new Subtract(tree[tree.length - 1], rightExpression)
+                        )
                     }
                     if (operator === '+') {
                         tree.push(new Add(tree[tree.length - 1], rightExpression))
@@ -58,11 +59,9 @@ export default class Parser {
         tree: IAbstractExpression[],
         tokens: string[]
     ): IAbstractExpression {
-        /*
-         * On the First iteration, the left expression can be either a
-         * number or roman numeral.Every consecutive expression is
-         * reference to an existing AST row
-         */
+        // On the First iteration, the left expression can be either a
+        // number or roman numeral.Every consecutive expression is
+        // reference to an existing AST row
         const left = tokens.shift()
         let leftExpression: IAbstractExpression
         if (!tree.length) {
@@ -71,13 +70,11 @@ export default class Parser {
                 // if 1st token a roman numeral
                 tree = []
                 tree.push(new RomanNumeral(left as string))
-                let leftExpression: IAbstractExpression
                 leftExpression = tree[tree.length - 1] as IAbstractExpression
-                return leftExpression
             } else {
                 leftExpression = new Numeral(left as string)
-                return leftExpression
             }
+            return leftExpression
         } else {
             leftExpression = tree[tree.length - 1] as IAbstractExpression
             return leftExpression

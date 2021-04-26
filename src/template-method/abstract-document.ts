@@ -1,4 +1,5 @@
 // An abstract document containing a combination of hooks and abstract methods
+
 export interface Document {
     [id: string]: string
 }
@@ -9,44 +10,42 @@ export abstract class AbstractDocument {
     document: Document = {}
 
     abstract title(document: Document): void
-    //must implement"
+    // Must implement
 
-    description(document: Document): void { }
-    //optional"
+    description?(document: Document): void
+    // Optional
 
-    author(document: Document): void { }
-    // optional
+    author?(document: Document): void
+    // Optional
 
     backgroundColour(document: Document): void {
-        // optional with a default behavior
-        document["bg-col"] = "white"
+        // Optional with a default behavior
+        document['bg-col'] = 'white'
     }
 
     abstract text(document: Document, text: string): void
-    // must implement
+    // Must implement
 
-    footer(document: Document): void { }
-    //"optional"
-
+    footer?(document: Document): void
+    // Optional
 
     print(document: Document): void {
-        //optional with a default behavior"
-        console.log("----------------------")
+        // Optional with a default behavior"
+        console.log('----------------------')
         Object.keys(document).forEach((attribute: string) => {
             console.log(`${attribute}\t: ${document[attribute]}`)
         })
         console.log()
     }
 
-    createDocument(text: string) {
+    createDocument(text: string): void {
         // The template method
-        //const document: AbstractDocument = {} //new AbstractDocument()
         this.title(this.document)
-        this.description(this.document)
-        this.author(this.document)
+        if (this.description) this.description(this.document)
+        if (this.author) this.author(this.document)
         this.backgroundColour(this.document)
         this.text(this.document, text)
-        this.footer(this.document)
+        if (this.footer) this.footer(this.document)
         this.print(this.document)
     }
 }

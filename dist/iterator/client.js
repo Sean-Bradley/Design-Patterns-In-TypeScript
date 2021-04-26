@@ -7,11 +7,11 @@ class NumberWheel {
     next() {
         // Return a new number next in the wheel
         this.index = this.index + 1;
-        return this.index * 2 % 11;
+        return (this.index * 2) % 11;
     }
 }
 // The Client
 const NUMBERWHEEL = new NumberWheel();
 for (let i = 0; i < 22; i++) {
-    process.stdout.write(NUMBERWHEEL.next() + " ");
+    process.stdout.write(NUMBERWHEEL.next() + ' ');
 }

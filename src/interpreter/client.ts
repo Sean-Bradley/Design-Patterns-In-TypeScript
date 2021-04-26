@@ -19,4 +19,4 @@ const AST_ROOT = Parser.parse(SENTENCE)
 console.log((AST_ROOT as IAbstractExpression).interpret())
 
 // Print out a representation of the AST_ROOT
-console.dir(AST_ROOT, {depth: null})
+console.dir(AST_ROOT, { depth: null })

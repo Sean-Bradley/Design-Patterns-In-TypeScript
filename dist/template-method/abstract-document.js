@@ -1,4 +1,5 @@
 "use strict";
+// An abstract document containing a combination of hooks and abstract methods
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AbstractDocument = void 0;
 class AbstractDocument {
@@ -6,21 +7,15 @@ class AbstractDocument {
         // A template class containing a template method and primitive methods
         this.document = {};
     }
-    //must implement"
-    description(document) { }
-    //optional"
-    author(document) { }
-    // optional
+    // Optional
     backgroundColour(document) {
-        // optional with a default behavior
-        document["bg-col"] = "white";
+        // Optional with a default behavior
+        document['bg-col'] = 'white';
     }
-    // must implement
-    footer(document) { }
-    //"optional"
+    // Optional
     print(document) {
-        //optional with a default behavior"
-        console.log("----------------------");
+        // Optional with a default behavior"
+        console.log('----------------------');
         Object.keys(document).forEach((attribute) => {
             console.log(`${attribute}\t: ${document[attribute]}`);
         });
@@ -28,13 +23,15 @@ class AbstractDocument {
     }
     createDocument(text) {
         // The template method
-        //const document: AbstractDocument = {} //new AbstractDocument()
         this.title(this.document);
-        this.description(this.document);
-        this.author(this.document);
+        if (this.description)
+            this.description(this.document);
+        if (this.author)
+            this.author(this.document);
         this.backgroundColour(this.document);
         this.text(this.document, text);
-        this.footer(this.document);
+        if (this.footer)
+            this.footer(this.document);
         this.print(this.document);
     }
 }

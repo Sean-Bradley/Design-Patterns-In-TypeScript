@@ -1,6 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // A Custom Parser for creating an Abstract Syntax Tree
+Object.defineProperty(exports, "__esModule", { value: true });
 const add_1 = require("./add");
 const numeral_1 = require("./numeral");
 const roman_numeral_1 = require("./roman-numeral");
@@ -10,10 +10,8 @@ class Parser {
     static parse(sentence) {
         // Create the AST from the sentence
         const tokens = sentence.split(' ');
-        //console.log(JSON.stringify(tokens))
         const tree = []; // Abstract Syntax Tree
         while (tokens.length > 1) {
-            //console.log(JSON.stringify(tokens))
             const leftExpression = Parser.decideLeftExpression(tree, tokens);
             // get the operator, make the token list shorter
             const operator = tokens.shift();
@@ -51,11 +49,9 @@ class Parser {
         return tree.pop();
     }
     static decideLeftExpression(tree, tokens) {
-        /*
-         * On the First iteration, the left expression can be either a
-         * number or roman numeral.Every consecutive expression is
-         * reference to an existing AST row
-         */
+        // On the First iteration, the left expression can be either a
+        // number or roman numeral.Every consecutive expression is
+        // reference to an existing AST row
         const left = tokens.shift();
         let leftExpression;
         if (!tree.length) {
@@ -64,14 +60,12 @@ class Parser {
                 // if 1st token a roman numeral
                 tree = [];
                 tree.push(new roman_numeral_1.default(left));
-                let leftExpression;
                 leftExpression = tree[tree.length - 1];
-                return leftExpression;
             }
             else {
                 leftExpression = new numeral_1.default(left);
-                return leftExpression;
             }
+            return leftExpression;
         }
         else {
             leftExpression = tree[tree.length - 1];

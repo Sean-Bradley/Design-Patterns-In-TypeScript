@@ -1,16 +1,15 @@
-import { Document, AbstractDocument } from "./abstract-document"
+import { Document, AbstractDocument } from './abstract-document'
 
 export default class TextDocument extends AbstractDocument {
-    // Prints out a text document
-    title(document: Document) {
+    title(document: Document): void {
         document['title'] = 'New Text Document'
     }
 
-    text(document: Document, text: string) {
+    text(document: Document, text: string): void {
         document['text'] = text
     }
 
-    footer(document: Document) {
+    footer(document: Document): void {
         document['footer'] = '-- Page 1 --'
     }
 }

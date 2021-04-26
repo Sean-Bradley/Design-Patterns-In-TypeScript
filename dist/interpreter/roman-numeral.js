@@ -12,17 +12,13 @@ class RomanNumeral {
         RomanNumeral100.interpret(this.context);
         RomanNumeral10.interpret(this.context);
         RomanNumeral1.interpret(this.context);
-        //console.log("***" + this.context[1])
         return new numeral_1.default(this.context[1]).interpret();
     }
 }
 exports.default = RomanNumeral;
 class RomanNumeral1 extends RomanNumeral {
     static interpret(context) {
-        //const context: string = args[0]
-        //console.log(context)
         if (context[0].length === 0) {
-            //console.log("***" + context[1])
             return new numeral_1.default(context[1]).interpret();
         }
         if (context[0].substring(0, 2) === this.nine) {
@@ -41,7 +37,6 @@ class RomanNumeral1 extends RomanNumeral {
             context[1] += 1 * this.multiplier;
             context[0] = context[0].substring(1);
         }
-        //console.log("***" + context[1])
         return new numeral_1.default(context[1]).interpret();
     }
 }

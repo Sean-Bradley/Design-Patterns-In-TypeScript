@@ -1,8 +1,8 @@
 // Observer Design Pattern Concept
 
-import { DataController } from "./data-controller"
-import { DataModel } from "./data-model"
-import { BarGraphView, PieGraphView, TableView } from "./data-view"
+import { DataController } from './data-controller'
+import { DataModel } from './data-model'
+import { BarGraphView, PieGraphView, TableView } from './data-view'
 
 // A local data view that the hypothetical external controller updates
 const DATA_MODEL = new DataModel()
@@ -13,7 +13,7 @@ const BAR_GRAPH_VIEW = new BarGraphView(DATA_MODEL)
 const TABLE_VIEW = new TableView(DATA_MODEL)
 
 // A hypothetical data controller running in a different process
-const DATA_CONTROLLER = new DataController() //(Singleton)
+const DATA_CONTROLLER = new DataController() // (Singleton)
 
 // The hypothetical external data controller updates some data
 DATA_CONTROLLER.notify([1, 2, 3])

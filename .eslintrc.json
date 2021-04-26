@@ -16,6 +16,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "no-unused-vars": "off",
         "multiline-comment-style": 0,
         "spaced-comment": 2
     }

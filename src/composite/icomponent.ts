@@ -1,9 +1,7 @@
 export default interface IComponent {
-    /*
-     * A component interface describing the common
-     * fields and methods of leaves and composites
-     */
-
+    // A component interface describing the common
+    // fields and methods of leaves and composites
+    
     referenceToParent?: IComponent
 
     dir(indent: string): void

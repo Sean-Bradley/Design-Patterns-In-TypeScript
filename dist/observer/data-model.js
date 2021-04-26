@@ -19,7 +19,7 @@ class DataModel {
         delete this.observers[observerId];
     }
     notify(data) {
-        Object.keys(this.observers).forEach(observer => {
+        Object.keys(this.observers).forEach((observer) => {
             this.observers[parseInt(observer)].notify(data);
         });
     }

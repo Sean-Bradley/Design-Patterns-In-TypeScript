@@ -30,10 +30,8 @@ class CareTaker {
         __classPrivateFieldGet(this, _mementos).push(memento);
     }
     restore(index) {
-        /*
-        * Replace the Characters current attributes with the state
-        * stored in the saved Memento
-        */
+        // Replace the Characters current attributes with the state
+        // stored in the saved Memento
         console.log('CareTaker: Restoring Characters attributes from Memento');
         const memento = __classPrivateFieldGet(this, _mementos)[index];
         __classPrivateFieldGet(this, _originator).memento = memento;

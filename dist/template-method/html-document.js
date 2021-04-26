@@ -3,7 +3,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const abstract_document_1 = require("./abstract-document");
 class HTMLDocument extends abstract_document_1.AbstractDocument {
-    // Prints out a HTML formatted document
     title(document) {
         document['title'] = 'New HTML Document';
     }
@@ -20,7 +19,6 @@ class HTMLDocument extends abstract_document_1.AbstractDocument {
         // overriding print to output with html tags
         console.log('<html>');
         console.log('  <head>');
-        //for attribute in document:
         Object.keys(document).forEach((attribute) => {
             if (['title', 'description', 'author'].indexOf(attribute) > -1) {
                 console.log(`    <${attribute}>${document[attribute]}</${attribute}>`);

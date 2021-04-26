@@ -13,12 +13,11 @@ export default class RomanNumeral implements IAbstractExpression {
         this.context = [romanNumeral, 0]
     }
 
-    interpret() {
+    interpret(): number {
         RomanNumeral1000.interpret(this.context)
         RomanNumeral100.interpret(this.context)
         RomanNumeral10.interpret(this.context)
         RomanNumeral1.interpret(this.context)
-        //console.log("***" + this.context[1])
         return new Numeral(this.context[1]).interpret()
     }
 }
@@ -32,10 +31,7 @@ class RomanNumeral1 extends RomanNumeral {
     static multiplier = 1
 
     static interpret(context: [string, number]) {
-        //const context: string = args[0]
-        //console.log(context)
         if (context[0].length === 0) {
-            //console.log("***" + context[1])
             return new Numeral(context[1]).interpret()
         }
 
@@ -53,7 +49,6 @@ class RomanNumeral1 extends RomanNumeral {
             context[1] += 1 * this.multiplier
             context[0] = context[0].substring(1)
         }
-        //console.log("***" + context[1])
         return new Numeral(context[1]).interpret()
     }
 }
