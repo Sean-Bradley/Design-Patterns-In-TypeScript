@@ -1,16 +1,13 @@
 "use strict";
-// A dispenser of £20 notes
+// A dispenser of £50 notes
 Object.defineProperty(exports, "__esModule", { value: true });
 class Dispenser50 {
-    // constructor() {
-    //     this.successor = undefined
-    // }
     nextSuccessor(successor) {
         // Set the next successor
         this.successor = successor;
     }
     handle(amount) {
-        //Handle the dispensing of notes"
+        // Handle the dispensing of notes"
         if (amount >= 50) {
             const num = Math.floor(amount / 50);
             const remainder = amount % 50;

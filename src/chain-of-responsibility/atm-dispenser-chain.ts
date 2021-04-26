@@ -1,4 +1,5 @@
 // The ATM Dispenser Chain
+
 import Dispenser10 from './dispenser10'
 import Dispenser20 from './dispenser20'
 import Dispenser50 from './dispenser50'
@@ -7,6 +8,7 @@ export default class ATMDispenserChain {
     chain1: Dispenser50
     chain2: Dispenser20
     chain3: Dispenser10
+
     constructor() {
         // initializing the successors chain
         this.chain1 = new Dispenser50()

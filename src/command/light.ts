@@ -1,13 +1,12 @@
 // The Light. The Receiver
 
 export default class Light {
-
-    turnOn() {
+    turnOn(): void {
         // A set of instructions to run
         console.log('Light turned ON')
     }
 
-    turnOff() {
+    turnOff(): void {
         // A set of instructions to run
         console.log('Light turned OFF')
     }

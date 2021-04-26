@@ -1,4 +1,5 @@
 // The Command Pattern Use Case Example. A smart light Switch
+
 import Light from './light'
 import Switch from './switch'
 import SwitchOnCommand from './switch-on-command'
@@ -13,14 +14,14 @@ const SWITCH_OFF = new SwitchOffCommand(LIGHT)
 
 // Register the commands with the invoker
 const SWITCH = new Switch()
-SWITCH.register("ON", SWITCH_ON)
-SWITCH.register("OFF", SWITCH_OFF)
+SWITCH.register('ON', SWITCH_ON)
+SWITCH.register('OFF', SWITCH_OFF)
 
 // Execute the commands that are registered on the Invoker
-SWITCH.execute("ON")
-SWITCH.execute("OFF")
-SWITCH.execute("ON")
-SWITCH.execute("OFF")
+SWITCH.execute('ON')
+SWITCH.execute('OFF')
+SWITCH.execute('ON')
+SWITCH.execute('OFF')
 
 // show history
 SWITCH.showHistory()

@@ -1,10 +1,10 @@
 // An ATM Dispenser that dispenses denominations of notes
-import { Console } from 'node:console';
+
 import ATMDispenserChain from './atm-dispenser-chain'
 
 const ATM = new ATMDispenserChain()
-console.log('Enter amount to withdrawal : ');
-process.stdin.on("data", (data: string) => {
+console.log('Enter amount to withdrawal : ')
+process.stdin.on('data', (data: string) => {
     if (parseInt(data)) {
         const amount = parseInt(data)
         if (amount < 10 || amount % 10 != 0) {
@@ -19,5 +19,3 @@ process.stdin.on("data", (data: string) => {
         console.log('Please enter a number.')
     }
 })
-
-

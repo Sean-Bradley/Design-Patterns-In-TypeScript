@@ -1,3 +1,0 @@
-interface Command {
-    execute(): void
-}

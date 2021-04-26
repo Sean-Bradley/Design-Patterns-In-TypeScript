@@ -8,7 +8,7 @@ class Switch {
     }
     showHistory() {
         // Print the history of each time a command was invoked"
-        this.history.forEach(row => {
+        this.history.forEach((row) => {
             console.log(`${row[0]} : ${row[1]}`);
         });
     }
@@ -27,9 +27,9 @@ class Switch {
         }
     }
     replayLast(numberOfCommands) {
-        // Replay the last N commands        
-        const commands = this.history.slice((this.history.length - numberOfCommands), this.history.length);
-        commands.forEach(command => {
+        // Replay the last N commands
+        const commands = this.history.slice(this.history.length - numberOfCommands, this.history.length);
+        commands.forEach((command) => {
             this.commands[command[1]].execute();
             // or if you wanted to also record this replay in history
             // this.execute(command[1])
