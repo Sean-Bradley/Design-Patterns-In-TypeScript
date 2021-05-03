@@ -5,26 +5,26 @@ interface IAbstraction {
 }
 
 class RefinedAbstractionA implements IAbstraction {
-    implementer: IImplementer
+    #implementer: IImplementer
 
     constructor(implementer: IImplementer) {
-        this.implementer = implementer
+        this.#implementer = implementer
     }
 
     method(value: string[]) {
-        this.implementer.method(value)
+        this.#implementer.method(value)
     }
 }
 
 class RefinedAbstractionB implements IAbstraction {
-    implementer: IImplementer
+    #implementer: IImplementer
 
     constructor(implementer: IImplementer) {
-        this.implementer = implementer
+        this.#implementer = implementer
     }
 
     method(value: string[]) {
-        this.implementer.method(value)
+        this.#implementer.method(value)
     }
 }
 

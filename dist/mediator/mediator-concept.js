@@ -7,22 +7,22 @@ class Mediator {
     }
     colleague1Method() {
         // Calls the method provided by Colleague1
-        return this.colleague1.method_1();
+        return this.colleague1.method1();
     }
     colleague2Method() {
         // Calls the method provided by Colleague2
-        return this.colleague2.method_2();
+        return this.colleague2.method2();
     }
 }
 class Colleague1 {
     // This Colleague provides data for Colleague2
-    method_1() {
+    method1() {
         return 'Here is the Colleague1 specific data you asked for';
     }
 }
 class Colleague2 {
     // This Colleague provides data for Colleague1
-    method_2() {
+    method2() {
         return 'Here is the Colleague2 specific data you asked for';
     }
 }

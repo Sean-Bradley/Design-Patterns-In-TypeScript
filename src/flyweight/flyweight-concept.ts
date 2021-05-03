@@ -15,7 +15,7 @@ class Flyweight implements IFlyweight {
 class FlyweightFactory {
     // Creating the FlyweightFactory as a static class
 
-    private static flyweights: { [id: number]: Flyweight } = {}
+    static flyweights: { [id: number]: Flyweight } = {}
 
     static getFlyweight(code: number): Flyweight {
         // A static method to get a flyweight based on a code

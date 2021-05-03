@@ -1,23 +1,40 @@
 "use strict";
 // The Command Pattern Concept
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+};
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _commands, _receiver, _receiver_1;
 class Invoker {
     constructor() {
-        this.commands = {};
+        // The Invoker Class
+        _commands.set(this, void 0);
+        __classPrivateFieldSet(this, _commands, {});
     }
     register(commandName, command) {
         // Register commands in the Invoker
-        this.commands[commandName] = command;
+        __classPrivateFieldGet(this, _commands)[commandName] = command;
     }
     execute(commandName) {
         // Execute any registered commands
-        if (commandName in this.commands) {
-            this.commands[commandName].execute();
+        if (commandName in __classPrivateFieldGet(this, _commands)) {
+            __classPrivateFieldGet(this, _commands)[commandName].execute();
         }
         else {
             console.log(`Command [${commandName}] not recognised`);
         }
     }
 }
+_commands = new WeakMap();
 class Receiver {
     // The Receiver
     runCommand1() {
@@ -31,20 +48,28 @@ class Receiver {
 }
 class Command1 {
     constructor(receiver) {
-        this.receiver = receiver;
+        // A Command object, that implements the ICommand interface and
+        // runs the command on the designated receiver
+        _receiver.set(this, void 0);
+        __classPrivateFieldSet(this, _receiver, receiver);
     }
     execute() {
-        this.receiver.runCommand1();
+        __classPrivateFieldGet(this, _receiver).runCommand1();
     }
 }
+_receiver = new WeakMap();
 class Command2 {
     constructor(receiver) {
-        this.receiver = receiver;
+        // A Command object, that implements the ICommand interface and
+        // runs the command on the designated receiver
+        _receiver_1.set(this, void 0);
+        __classPrivateFieldSet(this, _receiver_1, receiver);
     }
     execute() {
-        this.receiver.runCommand2();
+        __classPrivateFieldGet(this, _receiver_1).runCommand2();
     }
 }
+_receiver_1 = new WeakMap();
 // The Client
 // Create a receiver
 const RECEIVER = new Receiver();

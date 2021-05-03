@@ -28,7 +28,7 @@ class Successor2 {
         else if (test === 2) {
             payload = payload / 2;
             payload = new Successor2().handle(payload);
-        } // if test = 3 then ignore
+        } // if test = 3 then assign no further successors
         return payload;
     }
 }

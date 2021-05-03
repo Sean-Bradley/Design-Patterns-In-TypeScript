@@ -4,10 +4,10 @@ import Reports from './reports'
 import Wallets from './wallets'
 
 export default class Users {
-    private static instance: Users
-    private users: { [id: string]: { [id: string]: string } } = {}
-    private reports = new Reports()
-    private wallets = new Wallets()
+    static instance: Users
+    #users: { [id: string]: { [id: string]: string } } = {}
+    #reports = new Reports()
+    #wallets = new Wallets()
 
     constructor() {
         if (Users.instance) {
@@ -16,34 +16,34 @@ export default class Users {
         Users.instance = this
     }
 
-    registerUser(new_user: { [id: string]: string }): string {
+    registerUser(newUser: { [id: string]: string }): string {
         // register a user
-        if (!(new_user['user_name'] in this.users)) {
+        if (!(newUser['user_name'] in this.#users)) {
             // generate really complicated unique user_id.
             // Using the existing user_name as the id for simplicity
-            const user_id = new_user['user_name']
-            this.users[user_id] = new_user
-            this.reports.logEvent(`new user '${user_id}' created`)
+            const userId = newUser['user_name']
+            this.#users[userId] = newUser
+            this.#reports.logEvent(`new user '${userId}' created`)
             // create a wallet for the new user
-            this.wallets.createWallet(user_id)
+            this.#wallets.createWallet(userId)
             // give the user a sign up bonus
-            this.reports.logEvent(`Give new user '${user_id}' sign up bonus of 10`)
-            this.wallets.adjustBalance(user_id, 10)
-            return user_id
+            this.#reports.logEvent(`Give new user '${userId}' sign up bonus of 10`)
+            this.#wallets.adjustBalance(userId, 10)
+            return userId
         }
         return ''
     }
 
-    editUser(user_id: string, user: { [id: string]: string }): boolean {
-        'do nothing. Not implemented yet'
-        console.log(user_id)
+    editUser(userId: string, user: { [id: string]: string }): boolean {
+        // do nothing. Not implemented yet
+        console.log(userId)
         console.log(user)
         return false
     }
 
-    changePwd(user_id: string, password: string): boolean {
-        'do nothing. Not implemented yet'
-        console.log(user_id)
+    changePwd(userId: string, password: string): boolean {
+        // do nothing. Not implemented yet
+        console.log(userId)
         console.log(password)
         return false
     }

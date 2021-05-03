@@ -1,27 +1,35 @@
 "use strict";
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _name;
 Object.defineProperty(exports, "__esModule", { value: true });
 const leopard_1 = require("./leopard");
 const serpent_1 = require("./serpent");
 class Lion {
     constructor() {
         // Proteus in the form of a Lion
-        this.name = 'Lion';
+        _name.set(this, 'Lion');
     }
-    tell_me_the_future() {
+    tellMeTheFuture() {
         // Proteus will change to something random
         if (Math.floor(Math.random() * 2)) {
             Object.assign(this, new serpent_1.default());
-            this.tell_me_the_future = serpent_1.default.prototype.tell_me_the_future;
-            this.tell_me_your_form = serpent_1.default.prototype.tell_me_your_form;
+            this.tellMeTheFuture = serpent_1.default.prototype.tellMeTheFuture;
+            this.tellMeYourForm = serpent_1.default.prototype.tellMeYourForm;
         }
         else {
             Object.assign(this, new leopard_1.default());
-            this.tell_me_the_future = leopard_1.default.prototype.tell_me_the_future;
-            this.tell_me_your_form = leopard_1.default.prototype.tell_me_your_form;
+            this.tellMeTheFuture = leopard_1.default.prototype.tellMeTheFuture;
+            this.tellMeYourForm = leopard_1.default.prototype.tellMeYourForm;
         }
     }
-    tell_me_your_form() {
-        console.log(`I am the form of ${this.name}`);
+    tellMeYourForm() {
+        console.log(`I am the form of ${__classPrivateFieldGet(this, _name)}`);
     }
 }
 exports.default = Lion;
+_name = new WeakMap();

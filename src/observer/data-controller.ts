@@ -12,7 +12,7 @@ export class DataController implements IDataController {
     // A Subject (a.k.a Observable)
 
     static instance: DataController
-    observers: Set<IDataModel> = new Set()
+    #observers: Set<IDataModel> = new Set()
 
     constructor() {
         if (DataController.instance) {
@@ -22,15 +22,15 @@ export class DataController implements IDataController {
     }
 
     subscribe(observer: IDataModel): void {
-        this.observers.add(observer)
+        this.#observers.add(observer)
     }
 
     unsubscribe(observer: IDataModel): void {
-        this.observers.delete(observer)
+        this.#observers.delete(observer)
     }
 
     notify(data: number[]): void {
-        this.observers.forEach((observer) => {
+        this.#observers.forEach((observer) => {
             observer.notify(data)
         })
     }

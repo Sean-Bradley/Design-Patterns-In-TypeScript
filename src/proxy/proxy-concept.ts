@@ -9,15 +9,15 @@ interface ISubject {
 class RealSubject implements ISubject {
     // The actual real object that the proxy is representing
 
-    enormous_data: number[]
+    enormousData: number[]
 
     constructor() {
         // hypothetically enormous amounts of data
-        this.enormous_data = [1, 2, 3]
+        this.enormousData = [1, 2, 3]
     }
 
     request() {
-        return this.enormous_data
+        return this.enormousData
     }
 }
 
@@ -26,23 +26,23 @@ class ProxySubject implements ISubject {
     // `enormous_data` and only populate the enormous_data when it
     // is actually necessary
 
-    enormous_data: number[]
-    real_subject: RealSubject
+    enormousData: number[]
+    realSubject: RealSubject
 
     constructor() {
-        this.enormous_data = []
-        this.real_subject = new RealSubject()
+        this.enormousData = []
+        this.realSubject = new RealSubject()
     }
     request() {
         // Using the proxy as a cache, and loading data into it only if
         // it is needed
-        if (this.enormous_data.length === 0) {
+        if (this.enormousData.length === 0) {
             console.log('pulling data from RealSubject')
-            this.enormous_data = this.real_subject.request()
-            return this.enormous_data
+            this.enormousData = this.realSubject.request()
+            return this.enormousData
         }
         console.log('pulling data from Proxy cache')
-        return this.enormous_data
+        return this.enormousData
     }
 }
 

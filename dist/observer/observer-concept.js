@@ -1,30 +1,50 @@
 "use strict";
 // Observer Design Pattern Concept
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+};
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _observers, _id;
 class Subject {
     constructor() {
-        this.observers = new Set();
+        // The Subject (a.k.a Observable)
+        _observers.set(this, void 0);
+        __classPrivateFieldSet(this, _observers, new Set());
     }
     subscribe(observer) {
-        this.observers.add(observer);
+        __classPrivateFieldGet(this, _observers).add(observer);
     }
     unsubscribe(observer) {
-        this.observers.delete(observer);
+        __classPrivateFieldGet(this, _observers).delete(observer);
     }
     notify(...args) {
-        this.observers.forEach((observer) => {
+        __classPrivateFieldGet(this, _observers).forEach((observer) => {
             observer.notify(...args);
         });
     }
 }
+_observers = new WeakMap();
 class Observer {
     constructor(observable) {
-        this.id = COUNTER++;
+        // The concrete observer
+        _id.set(this, void 0);
+        __classPrivateFieldSet(this, _id, COUNTER++);
         observable.subscribe(this);
     }
     notify(...args) {
-        console.log(`OBSERVER_${this.id} received ${JSON.stringify(args)}`);
+        console.log(`OBSERVER_${__classPrivateFieldGet(this, _id)} received ${JSON.stringify(args)}`);
     }
 }
+_id = new WeakMap();
 // The Client
 let COUNTER = 1; // An ID to help distinguish between objects
 const SUBJECT = new Subject();

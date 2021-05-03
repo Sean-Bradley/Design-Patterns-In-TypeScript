@@ -11,14 +11,14 @@ class Component implements IComponent {
 }
 
 class Decorator implements IComponent {
-    private object: IComponent
+    #object: IComponent
 
     constructor(object: IComponent) {
-        this.object = object
+        this.#object = object
     }
 
     method(): string {
-        return `Decorator Method(${this.object.method()})`
+        return `Decorator Method(${this.#object.method()})`
     }
 }
 

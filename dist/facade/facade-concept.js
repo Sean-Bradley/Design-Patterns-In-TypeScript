@@ -21,15 +21,15 @@ class SubSystemClassC {
 class Facade {
     // A simplified facade offering the services of subsystems
     subSystemClassA() {
-        // Uses the subsystems method"
+        // Uses the subsystems method
         return new SubSystemClassA().method();
     }
     subSystemClassB(value) {
-        // Uses the subsystems method"
+        // Uses the subsystems method
         return new SubSystemClassB().method(value);
     }
     subSystemClassC(value) {
-        // Uses the subsystems method"
+        // Uses the subsystems method
         return new SubSystemClassC().method(value);
     }
 }

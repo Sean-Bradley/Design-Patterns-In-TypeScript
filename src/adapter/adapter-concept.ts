@@ -1,37 +1,37 @@
 // Adapter Concept Sample Code
 
 interface IA {
-    method_a(): void
+    methodA(): void
 }
 
 class ClassA implements IA {
-    method_a() {
+    methodA() {
         console.log('method A')
     }
 }
 
 interface IB {
-    method_b(): void
+    methodB(): void
 }
 
 class ClassB implements IB {
-    method_b() {
+    methodB() {
         console.log('method B')
     }
 }
 
 class ClassBAdapter implements IA {
-    // ClassB does not have a method_a, so we can create an adapter
+    // ClassB does not have a methodA, so we can create an adapter
 
-    private class_b: ClassB
+    #classB: ClassB
 
     constructor() {
-        this.class_b = new ClassB()
+        this.#classB = new ClassB()
     }
 
-    method_a() {
+    methodA() {
         'calls the class b method_b instead'
-        this.class_b.method_b()
+        this.#classB.methodB()
     }
 }
 
@@ -41,9 +41,9 @@ class ClassBAdapter implements IA {
 const ITEMS = [new ClassA(), new ClassB()]
 ITEMS.forEach((item) => {
     if (item instanceof ClassB) {
-        item.method_b()
+        item.methodB()
     } else {
-        item.method_a()
+        item.methodA()
     }
 })
 
@@ -51,5 +51,5 @@ ITEMS.forEach((item) => {
 // signature as ClassA (preferred)
 const ADAPTED = [new ClassA(), new ClassBAdapter()]
 ADAPTED.forEach((item) => {
-    item.method_a()
+    item.methodA()
 })

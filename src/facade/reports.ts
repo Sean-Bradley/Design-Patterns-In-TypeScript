@@ -1,9 +1,9 @@
 // A Singleton Dictionary of Reported Events
 
 export default class Reports {
-    private static instance: Reports
-    private reports: { [id: string]: [number, string] } = {}
-    private row_id = 0
+    static instance: Reports
+    #reports: { [id: string]: [number, string] } = {}
+    #rowId = 0
 
     constructor() {
         if (Reports.instance) {
@@ -13,12 +13,12 @@ export default class Reports {
     }
 
     getHistory(): { [id: string]: [number, string] } {
-        return this.reports
+        return this.#reports
     }
 
     logEvent(event: string): boolean {
-        this.reports[this.row_id] = [Date.now(), event]
-        this.row_id = this.row_id + 1
+        this.#reports[this.#rowId] = [Date.now(), event]
+        this.#rowId = this.#rowId + 1
         return true
     }
 }

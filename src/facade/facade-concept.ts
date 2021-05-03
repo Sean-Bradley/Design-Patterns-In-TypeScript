@@ -9,32 +9,32 @@ class SubSystemClassA {
 
 class SubSystemClassB {
     // A hypothetically complicated class
-    method(value: unknown): unknown {
+    method(value: string): string {
         return value
     }
 }
 
 class SubSystemClassC {
     // A hypothetically complicated class
-    method(value: unknown): unknown {
+    method(value: {C: number[]}): {C: number[]} {
         return value
     }
 }
 
 class Facade {
     // A simplified facade offering the services of subsystems
-    subSystemClassA(): unknown {
-        // Uses the subsystems method"
+    subSystemClassA(): string {
+        // Uses the subsystems method
         return new SubSystemClassA().method()
     }
 
-    subSystemClassB(value: unknown): unknown {
-        // Uses the subsystems method"
+    subSystemClassB(value: string): string {
+        // Uses the subsystems method
         return new SubSystemClassB().method(value)
     }
 
-    subSystemClassC(value: unknown): unknown {
-        // Uses the subsystems method"
+    subSystemClassC(value: {C: number[]}): {C: number[]} {
+        // Uses the subsystems method
         return new SubSystemClassC().method(value)
     }
 }

@@ -12,7 +12,7 @@ interface IVisitable {
 }
 
 class Part implements IVisitable {
-    // An Object that can be part of any hierarchy
+    // a.k.a Element. An Object that can be part of any hierarchy
     name: string
     value: number
     parts: Set<Part>

@@ -1,24 +1,32 @@
 "use strict";
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _observers;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DataController = void 0;
 class DataController {
     constructor() {
-        this.observers = new Set();
+        _observers.set(this, new Set());
         if (DataController.instance) {
             return DataController.instance;
         }
         DataController.instance = this;
     }
     subscribe(observer) {
-        this.observers.add(observer);
+        __classPrivateFieldGet(this, _observers).add(observer);
     }
     unsubscribe(observer) {
-        this.observers.delete(observer);
+        __classPrivateFieldGet(this, _observers).delete(observer);
     }
     notify(data) {
-        this.observers.forEach((observer) => {
+        __classPrivateFieldGet(this, _observers).forEach((observer) => {
             observer.notify(data);
         });
     }
 }
 exports.DataController = DataController;
+_observers = new WeakMap();

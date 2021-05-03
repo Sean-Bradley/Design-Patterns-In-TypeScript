@@ -6,21 +6,21 @@ interface ICommand {
 
 class Invoker {
     // The Invoker Class
-    commands: { [id: string]: ICommand }
+    #commands: { [id: string]: ICommand }
 
     constructor() {
-        this.commands = {}
+        this.#commands = {}
     }
 
     register(commandName: string, command: ICommand) {
         // Register commands in the Invoker
-        this.commands[commandName] = command
+        this.#commands[commandName] = command
     }
 
     execute(commandName: string) {
         // Execute any registered commands
-        if (commandName in this.commands) {
-            this.commands[commandName].execute()
+        if (commandName in this.#commands) {
+            this.#commands[commandName].execute()
         } else {
             console.log(`Command [${commandName}] not recognised`)
         }
@@ -45,14 +45,14 @@ class Command1 implements ICommand {
     // A Command object, that implements the ICommand interface and
     // runs the command on the designated receiver
 
-    receiver: Receiver
+    #receiver: Receiver
 
     constructor(receiver: Receiver) {
-        this.receiver = receiver
+        this.#receiver = receiver
     }
 
     execute() {
-        this.receiver.runCommand1()
+        this.#receiver.runCommand1()
     }
 }
 
@@ -60,14 +60,14 @@ class Command2 implements ICommand {
     // A Command object, that implements the ICommand interface and
     // runs the command on the designated receiver
 
-    receiver: Receiver
+    #receiver: Receiver
 
     constructor(receiver: Receiver) {
-        this.receiver = receiver
+        this.#receiver = receiver
     }
 
     execute() {
-        this.receiver.runCommand2()
+        this.#receiver.runCommand2()
     }
 }
 

@@ -1,39 +1,56 @@
 "use strict";
 // Adapter Concept Sample Code
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+};
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _classB;
 class ClassA {
-    method_a() {
+    methodA() {
         console.log('method A');
     }
 }
 class ClassB {
-    method_b() {
+    methodB() {
         console.log('method B');
     }
 }
 class ClassBAdapter {
     constructor() {
-        this.class_b = new ClassB();
+        // ClassB does not have a methodA, so we can create an adapter
+        _classB.set(this, void 0);
+        __classPrivateFieldSet(this, _classB, new ClassB());
     }
-    method_a() {
+    methodA() {
         'calls the class b method_b instead';
-        this.class_b.method_b();
+        __classPrivateFieldGet(this, _classB).methodB();
     }
 }
+_classB = new WeakMap();
 // The Client
 // Before the adapter I need to test the objects class to know which
 // method to call.
 const ITEMS = [new ClassA(), new ClassB()];
 ITEMS.forEach((item) => {
     if (item instanceof ClassB) {
-        item.method_b();
+        item.methodB();
     }
     else {
-        item.method_a();
+        item.methodA();
     }
 });
 // After creating an adapter for ClassB I can reuse the same method
 // signature as ClassA (preferred)
 const ADAPTED = [new ClassA(), new ClassBAdapter()];
 ADAPTED.forEach((item) => {
-    item.method_a();
+    item.methodA();
 });

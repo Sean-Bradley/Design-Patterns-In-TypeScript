@@ -1,5 +1,19 @@
 "use strict";
 // The Game API facade
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+};
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+};
+var _wallets, _reports, _users, _gameEngine;
 Object.defineProperty(exports, "__esModule", { value: true });
 const reports_1 = require("./reports");
 const wallets_1 = require("./wallets");
@@ -7,34 +21,39 @@ const users_1 = require("./users");
 const game_engine_1 = require("./game-engine");
 class GameAPI {
     constructor() {
-        this.wallets = new wallets_1.default();
-        this.reports = new reports_1.default();
-        this.users = new users_1.default();
-        this.gameEngine = new game_engine_1.default();
+        _wallets.set(this, void 0);
+        _reports.set(this, void 0);
+        _users.set(this, void 0);
+        _gameEngine.set(this, void 0);
+        __classPrivateFieldSet(this, _wallets, new wallets_1.default());
+        __classPrivateFieldSet(this, _reports, new reports_1.default());
+        __classPrivateFieldSet(this, _users, new users_1.default());
+        __classPrivateFieldSet(this, _gameEngine, new game_engine_1.default());
     }
-    getBalance(user_id) {
+    getBalance(userId) {
         // Get a players balance
-        return this.wallets.getBalance(user_id);
+        return __classPrivateFieldGet(this, _wallets).getBalance(userId);
     }
     gameState() {
         // Get the current game state
-        return this.gameEngine.getGameState();
+        return __classPrivateFieldGet(this, _gameEngine).getGameState();
     }
     getHistory() {
         // get the game history
-        return this.reports.getHistory();
+        return __classPrivateFieldGet(this, _reports).getHistory();
     }
-    changePwd(user_id, password) {
+    changePwd(userId, password) {
         // change users password
-        return this.users.changePwd(user_id, password);
+        return __classPrivateFieldGet(this, _users).changePwd(userId, password);
     }
-    submitEntry(user_id, entry) {
+    submitEntry(userId, entry) {
         // submit a bet
-        return this.gameEngine.submitEntry(user_id, entry);
+        return __classPrivateFieldGet(this, _gameEngine).submitEntry(userId, entry);
     }
     registerUser(value) {
         // register a new user and returns the new id
-        return this.users.registerUser(value);
+        return __classPrivateFieldGet(this, _users).registerUser(value);
     }
 }
 exports.default = GameAPI;
+_wallets = new WeakMap(), _reports = new WeakMap(), _users = new WeakMap(), _gameEngine = new WeakMap();
