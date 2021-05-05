@@ -25,7 +25,7 @@ A Design Pattern is a description or template that can be repeatedly applied to 
 
 A familiarity of Design Patterns will be very useful when planning, discussing, managing and documenting your applications from now on and into the future.
 
-Also, throughout the book, as each design pattern is discussed and demonstrated using example code, I also introduce new python coding concepts with each new design pattern. So that as you progress through the book and try out the examples, you will also get experience and familiarity with some of the finer details of programming with python.
+Also, throughout the book, as each design pattern is discussed and demonstrated using example code, I also introduce new TypeScript coding concepts with each new design pattern. So that as you progress through the book and try out the examples, you will also get experience and familiarity with some of the finer details of programming with TypeScript.
 
 So, in this book, you will learn about these 23 Design Patterns, 
 
