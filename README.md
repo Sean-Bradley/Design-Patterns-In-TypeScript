@@ -21,6 +21,19 @@ It is supplementary to my book titled **Design Patterns In TypeScript**
 
 All the code examples in the book can be found in these pages.
 
+## Setup Project
+
+```bash
+git clone https://github.com/Sean-Bradley/Design-Patterns-In-TypeScript.git
+cd Design-Patterns-In-TypeScript
+npm install -g typescript
+npm install
+tsc -p ./src
+# run each pattern tutorial separately, e.g,
+node ./dist/factory/factory-concept.js
+node ./dist/factory/client.js
+```
+
 ## Overview
 
 A Design Pattern is a description or template that can be repeatedly applied to a commonly recurring problem in software design.
@@ -29,7 +42,7 @@ A familiarity of Design Patterns will be very useful when planning, discussing, 
 
 Also, throughout the book, as each design pattern is discussed and demonstrated using example code, I also introduce new TypeScript coding concepts with each new design pattern. So that as you progress through the book and try out the examples, you will also get experience and familiarity with some of the finer details of programming with TypeScript.
 
-So, in this book, you will learn about these 23 Design Patterns, 
+So, in the book, you will learn about these 23 Design Patterns, 
 
 * Creational
     - [Factory](src/factory)
