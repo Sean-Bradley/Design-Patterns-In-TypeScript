@@ -1,4 +1,4 @@
-# Design-Patterns-In-TypeScript
+# Design Patterns In TypeScript
 
 This repository focuses on the 23 famous GoF (Gang of Four) Design Patterns implemented in TypeScript.
 
