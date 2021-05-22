@@ -2,15 +2,10 @@
 
 export interface IProduct {
     name: string
-    createObject(): IProduct
 }
 
 class ConcreteProduct implements IProduct {
     name = ''
-
-    createObject() {
-        return this
-    }
 }
 
 class ConcreteProductA extends ConcreteProduct {
