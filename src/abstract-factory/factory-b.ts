@@ -1,10 +1,10 @@
 // FactoryBSample Code
 
-export interface IProduct {
+export interface IProductB {
     name: string
 }
 
-class ConcreteProduct implements IProduct {
+class ConcreteProduct implements IProductB {
     name = ''
 }
 
@@ -30,7 +30,7 @@ class ConcreteProductC extends ConcreteProduct {
 }
 
 export class FactoryB {
-    static getObject(some_property: string): IProduct {
+    static getObject(some_property: string): IProductB {
         try {
             if (some_property === 'a') {
                 return new ConcreteProductA()

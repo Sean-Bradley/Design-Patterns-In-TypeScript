@@ -1,6 +1,6 @@
 // Abstract Factory Concept Sample Code
-import {FactoryA, IProduct as IProductA} from './factory-a'
-import {FactoryB, IProduct as IProductB} from './factory-b'
+import {FactoryA, IProductA} from './factory-a'
+import {FactoryB, IProductB} from './factory-b'
 
 interface IProduct extends IProductA, IProductB {}
 
