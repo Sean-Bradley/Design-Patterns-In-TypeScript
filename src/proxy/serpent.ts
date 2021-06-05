@@ -5,7 +5,7 @@ import Lion from './lion'
 export default class Serpent implements IProteus {
     // Proteus in the form of a Serpent
 
-    #name = 'Serpent'
+    name = 'Serpent'
 
     tellMeTheFuture(): void {
         // Proteus will change to something random
@@ -21,6 +21,6 @@ export default class Serpent implements IProteus {
     }
 
     tellMeYourForm(): void {
-        console.log(`I am the form of ${this.#name}`)
+        console.log(`I am the form of ${this.name}`)
     }
 }

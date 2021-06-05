@@ -5,7 +5,7 @@ import Serpent from './serpent'
 export default class Leopard implements IProteus {
     // Proteus in the form of a Leopard
 
-    #name = 'Leopard'
+    name = 'Leopard'
 
     tellMeTheFuture(): void {
         // Proteus will change to something random
@@ -21,6 +21,6 @@ export default class Leopard implements IProteus {
     }
 
     tellMeYourForm(): void {
-        console.log(`I am the form of ${this.#name}`)
+        console.log(`I am the form of ${this.name}`)
     }
 }
