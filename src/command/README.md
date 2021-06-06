@@ -1,11 +1,11 @@
-# Proxy Design Pattern
+# Command Design Pattern
 
 ## Video Lecture
 
-| Section        | Video Links                                                                                                                                                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Proxy Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=VXKjRaXgzC8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Proxy Pattern"><img src="../img/yt_btn_sm.gif" alt="Proxy Pattern"/></a>   |
-| Proxy Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=4CUEtE2uYLY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Proxy Use Case"><img src="../img/yt_btn_sm.gif" alt="Proxy Use Case"/></a> |
+| Section          | Video Links                                                                                                                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Command Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=tkvpIyuGfdQ&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Command Pattern"><img src="../img/yt_btn_sm.gif" alt="Command Pattern"/></a>   |
+| Command Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=j3I-TZGvUZ4&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Command Use Case"><img src="../img/yt_btn_sm.gif" alt="Command Use Case"/></a> |
 
 ## Book 
 
@@ -21,39 +21,42 @@ _...Refer to Book or Videos for extra content._
 
 _...Refer to Book or Videos for extra content._
 
-## Proxy UML Diagram
+## Command Pattern UML Diagram
 
-![Proxy Pattern UML Diagram](../img/proxy_concept.svg)
+![The Command Pattern UML Diagram](../img/command_concept.svg)
 
 ## Output
 
 ```bash
-node ./dist/proxy/proxy-concept.js
-pulling data from RealSubject
-[ 1, 2, 3 ]
-pulling data from Proxy cache
-[ 1, 2, 3 ]
+node ./dist/command/command-concept.js
+Executing Command 1
+Executing Command 2
+Executing Command 1
+Executing Command 2
 ```
 
-## Proxy Use Case
+## Command Use Case
 
 _...Refer to Book or Videos for extra content._
 
 ## Example UML Diagram
 
-![Proxy Use Case Example](../img/proxy_example.svg)
+![The Command Pattern UML Diagram](../img/command_example.svg)
 
 ## Output
 
 ```bash
-node ./dist/proxy/client.js
-I am the form of Lion
-I am the form of Serpent
-I am the form of Lion
-I am the form of Serpent
-I am the form of Leopard
-I am the form of Lion
-I am the form of Leopard
+node ./dist/command/client.js
+Light turned ON
+Light turned OFF
+Light turned ON
+Light turned OFF
+1619288201312 : ON
+1619288201313 : OFF
+1619288201313 : ON
+1619288201313 : OFF
+Light turned ON
+Light turned OFF
 ```
 
 <!-- ## New Coding Concepts
