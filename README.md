@@ -29,6 +29,7 @@ cd Design-Patterns-In-TypeScript
 npm install -g typescript
 npm install
 tsc -p ./src
+
 # run each pattern tutorial separately, e.g,
 node ./dist/factory/factory-concept.js
 node ./dist/factory/client.js
@@ -46,7 +47,7 @@ So, in the book, you will learn about these 23 Design Patterns,
 
 * Creational
     - [Factory](src/factory)
-    - [Abstract Factory](src/abstract_factory)
+    - [Abstract Factory](src/abstract-factory)
     - [Builder](src/builder)
     - [Prototype](src/prototype)
     - [Singleton](src/singleton)
@@ -60,7 +61,7 @@ So, in the book, you will learn about these 23 Design Patterns,
     - [Proxy](src/proxy)
 * Behavioral
     - [Command](src/command)
-    - [Chain of Responsibility](src/chain_of_responsibility)
+    - [Chain of Responsibility](src/chain-of-responsibility)
     - [Observer Pattern](src/observer)
     - [Interpreter](src/interpreter)
     - [Iterator](src/iterator)
