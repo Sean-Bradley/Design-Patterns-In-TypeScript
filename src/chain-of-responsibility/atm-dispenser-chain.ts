@@ -5,9 +5,9 @@ import Dispenser20 from './dispenser20'
 import Dispenser50 from './dispenser50'
 
 export default class ATMDispenserChain {
-    chain1: Dispenser50
-    chain2: Dispenser20
-    chain3: Dispenser10
+    chain1: IDispenser
+    chain2: IDispenser
+    chain3: IDispenser
 
     constructor() {
         // initializing the successors chain
