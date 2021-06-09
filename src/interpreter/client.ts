@@ -1,5 +1,5 @@
 // The Interpreter Pattern Use Case Example
-
+import IAbstractExpression from "./iabstract-expression"
 import Parser from './sentence-parser'
 
 // The sentence complies with a simple grammar of

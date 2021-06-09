@@ -1,3 +1,4 @@
+import IAbstractExpression from "./iabstract-expression"
 export default class Numeral implements IAbstractExpression {
     // Terminal Expression
 

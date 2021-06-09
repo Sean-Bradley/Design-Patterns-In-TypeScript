@@ -1,5 +1,5 @@
 // Roman Numeral Expression. This is a Non-Terminal Expression
-
+import IAbstractExpression from "./iabstract-expression"
 import Numeral from './numeral'
 
 export default class RomanNumeral implements IAbstractExpression {
