@@ -11,8 +11,7 @@ abstract class AbstractClass {
 
     abstract stepTwo(): void
     // An abstract method that must be overridden in the implementing
-    // class. It has been given `@abstractmethod` decorator so that
-    // pylint shows the error
+    // class. Note the addition of the `abstract` keyword
 
     stepThree(): void {
         // Hooks can also contain default behavior and can be optionally

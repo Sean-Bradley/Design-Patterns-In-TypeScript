@@ -16,7 +16,7 @@ interface IStrategyConstructor {
 
 interface IStrategy {
     // A strategy Interface
-    method(): void
+    method(): string
 }
 
 class ConcreteStrategyA implements IStrategy {
