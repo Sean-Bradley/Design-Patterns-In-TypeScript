@@ -69,7 +69,7 @@ So, in the book, you will learn about these 23 Design Patterns,
     - [Memento](src/memento)
     - [State](src/state)
     - [Strategy](src/strategy)
-    - [Template](src/template)
+    - [Template](src/template-method)
     - [Visitor](src/visitor)
 
 ## Pattern Types
