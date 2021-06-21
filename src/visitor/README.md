@@ -4,8 +4,8 @@
 
 | Section          | Video Links                                                                                                                                                                                                                                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Visitor Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=4Ixas7F1QSU&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Visitor Pattern"><img src="../img/yt_btn_sm.gif" alt="Visitor Pattern"/></a> |
-| Visitor Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=C1ltq-ffY4c&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Visitor Use Case"><img src="../img/yt_btn_sm.gif" alt="Visitor Use Case"/></a> |
+| Visitor Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=bQDm8jks5NA&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Visitor Pattern"><img src="../img/yt_btn_sm.gif" alt="Visitor Pattern"/></a> |
+| Visitor Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=a0Rxe-dla_I&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Visitor Use Case"><img src="../img/yt_btn_sm.gif" alt="Visitor Use Case"/></a> |
 
 ## Book 
 
