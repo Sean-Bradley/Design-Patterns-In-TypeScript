@@ -58,7 +58,6 @@ class TotalPriceVisitor implements IVisitor {
         if (abstractCarPart.price !== undefined) {
             this.totalPrice += abstractCarPart.price as number
         }
-        return this.totalPrice
     }
 }
 

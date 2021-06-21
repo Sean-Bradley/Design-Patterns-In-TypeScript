@@ -63,7 +63,6 @@ class CalculatePartTotalsVisitor implements IVisitor {
 
     visit(part: Part) {
         this.totalValue += part.value
-        return this.totalValue
     }
 }
 
