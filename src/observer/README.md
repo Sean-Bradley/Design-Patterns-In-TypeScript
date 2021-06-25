@@ -4,8 +4,8 @@
 
 | Section           | Video Links                                                                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Observer Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=CvahYvzrTW8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Observer Pattern"><img src="../img/yt_btn_sm.gif" alt="Observer Pattern"/></a>   |
-| Observer Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=gBvaRtwki78&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Observer Use Case"><img src="../img/yt_btn_sm.gif" alt="Observer Use Case"/></a> |
+| Observer Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26971678/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Observer"><img src="../img/udemy_btn_sm.gif" alt="Observer"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=CvahYvzrTW8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Observer Pattern"><img src="../img/yt_btn_sm.gif" alt="Observer Pattern"/></a>   |
+| Observer Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26971688/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Observer Use Case"><img src="../img/udemy_btn_sm.gif" alt="Observer Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=gBvaRtwki78&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Observer Use Case"><img src="../img/yt_btn_sm.gif" alt="Observer Use Case"/></a> |
 
 ## Book 
 

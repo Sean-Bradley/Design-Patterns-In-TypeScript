@@ -4,8 +4,8 @@
 
 | Section            | Video Links                                                                                                                                                                                                              |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Singleton Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=yg3gt-SZGQY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Singleton Pattern"><img src="../img/yt_btn_sm.gif" alt="Singleton Pattern"/></a>   |
-| Singleton Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=7LPLT2vgUJk&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Singleton Use Case"><img src="../img/yt_btn_sm.gif" alt="Singleton Use Case"/></a> |
+| Singleton Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27162320/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Singleton"><img src="../img/udemy_btn_sm.gif" alt="Singleton"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=yg3gt-SZGQY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Singleton Pattern"><img src="../img/yt_btn_sm.gif" alt="Singleton Pattern"/></a>   |
+| Singleton Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27162324/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Singleton Use Case"><img src="../img/udemy_btn_sm.gif" alt="Singleton Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=7LPLT2vgUJk&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Singleton Use Case"><img src="../img/yt_btn_sm.gif" alt="Singleton Use Case"/></a> |
 
 ## Book 
 

@@ -4,8 +4,8 @@
 
 | Section        | Video Links                                                                                                                                                                                                      |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| State Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=hvEU_Aq_xJQ&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="State Pattern"><img src="../img/yt_btn_sm.gif" alt="State Pattern"/></a>   |
-| State Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=GVRb0glStzk&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="State Use Case"><img src="../img/yt_btn_sm.gif" alt="State Use Case"/></a> |
+| State Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133742/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="State"><img src="../img/udemy_btn_sm.gif" alt="State"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=hvEU_Aq_xJQ&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="State Pattern"><img src="../img/yt_btn_sm.gif" alt="State Pattern"/></a>   |
+| State Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133744/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="State Use Case"><img src="../img/udemy_btn_sm.gif" alt="State Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=GVRb0glStzk&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="State Use Case"><img src="../img/yt_btn_sm.gif" alt="State Use Case"/></a> |
 
 ## Book 
 

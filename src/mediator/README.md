@@ -4,8 +4,8 @@
 
 | Section           | Video Links                                                                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mediator Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=ES2WBOhVIhM&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Mediator Pattern"><img src="../img/yt_btn_sm.gif" alt="Mediator Pattern"/></a>   |
-| Mediator Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=1yZhuA4jJic&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Mediator Use Case"><img src="../img/yt_btn_sm.gif" alt="Mediator Use Case"/></a> |
+| Mediator Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27023512/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Mediator"><img src="../img/udemy_btn_sm.gif" alt="Mediator"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=ES2WBOhVIhM&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Mediator Pattern"><img src="../img/yt_btn_sm.gif" alt="Mediator Pattern"/></a>   |
+| Mediator Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27023516/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Mediator Use Case"><img src="../img/udemy_btn_sm.gif" alt="Mediator Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=1yZhuA4jJic&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Mediator Use Case"><img src="../img/yt_btn_sm.gif" alt="Mediator Use Case"/></a> |
 
 ## Book 
 

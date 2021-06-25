@@ -4,8 +4,8 @@
 
 | Section        | Video Links                                                                                                                                                                                                      |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Proxy Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=VXKjRaXgzC8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Proxy Pattern"><img src="../img/yt_btn_sm.gif" alt="Proxy Pattern"/></a>   |
-| Proxy Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=4CUEtE2uYLY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Proxy Use Case"><img src="../img/yt_btn_sm.gif" alt="Proxy Use Case"/></a> |
+| Proxy Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900642/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Proxy"><img src="../img/udemy_btn_sm.gif" alt="Proxy"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=VXKjRaXgzC8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Proxy Pattern"><img src="../img/yt_btn_sm.gif" alt="Proxy Pattern"/></a>   |
+| Proxy Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900640/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Proxy Use Case"><img src="../img/udemy_btn_sm.gif" alt="Proxy Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=4CUEtE2uYLY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Proxy Use Case"><img src="../img/yt_btn_sm.gif" alt="Proxy Use Case"/></a> |
 
 ## Book 
 

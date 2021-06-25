@@ -4,8 +4,8 @@
 
 | Section           | Video Links                                                                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Interpreter Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=I--y840bW7I&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Interpreter Pattern"><img src="../img/yt_btn_sm.gif" alt="Interpreter Pattern"/></a>   |
-| Interpreter Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=fsKaRa3pcmc&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Interpreter Use Case"><img src="../img/yt_btn_sm.gif" alt="Interpreter Use Case"/></a> |
+| Interpreter Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26971698/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Interpreter"><img src="../img/udemy_btn_sm.gif" alt="Interpreter"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=I--y840bW7I&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Interpreter Pattern"><img src="../img/yt_btn_sm.gif" alt="Interpreter Pattern"/></a>   |
+| Interpreter Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26971708/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Interpreter Use Case"><img src="../img/udemy_btn_sm.gif" alt="Interpreter Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=fsKaRa3pcmc&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Interpreter Use Case"><img src="../img/yt_btn_sm.gif" alt="Interpreter Use Case"/></a> |
 
 ## Book 
 

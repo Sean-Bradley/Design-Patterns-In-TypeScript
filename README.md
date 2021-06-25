@@ -19,7 +19,27 @@ It is supplementary to my book titled **Design Patterns In TypeScript**
 
 (ASIN : B0948BCH24 / B094716FD6)
 
-All the code examples in the book can be found in these pages.
+and courses on [Udemy](https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9) and [YouTube (Channel membership required)](https://www.youtube.com/playlist?list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP)
+
+<a href="https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9" target="_blank"><img src="../img/udemy_btn_sm.gif" title="Design Patterns In TypeScript"/></a>&nbsp;<a href="https://www.youtube.com/playlist?list=PLKWUX7aMnlEJzRvCXnwFEdk_WJDNjMDOo" target="_blank"><img src="../img/yt_btn_sm.gif" title="Design Patterns In TypeScript"/></a>
+
+## Course Access
+
+There are 3 possible ways to access the video content in this course,
+
+1. Udemy : [https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9](https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9)
+2. YouTube Membership : [https://www.youtube.com/channel/UCmUILI2AWt2MSUgPlZwFdOg/join](https://www.youtube.com/channel/UCmUILI2AWt2MSUgPlZwFdOg/join)
+4. Book : [https://www.amazon.com/dp/B0948BCH24](https://www.amazon.com/dp/B0948BCH24) : (ASIN : B0948BCH24 / B094716FD6)
+
+
+!!! tip
+    [Design Pattern In TypeScript](https://www.amazon.com/dp/B0948BCH24) **(Book)** includes Video Access Codes to view videos for FREE from this official documentation website at [https://sbcode.net/typescript/](https://sbcode.net/typescript/)
+
+!!! tip
+    Get **Udemy Discount Coupons** at [https://sbcode.net/coupons](https://sbcode.net/coupons)
+
+
+
 
 ## Setup Project
 

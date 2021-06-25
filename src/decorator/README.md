@@ -4,8 +4,8 @@
 
 | Section            | Video Links                                                                                                                                                                                                              |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Decorator Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=umWz9o8IQtY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Decorator Pattern"><img src="../img/yt_btn_sm.gif" alt="Decorator Pattern"/></a>   |
-| Decorator Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=_Q2E3mNCqY4&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Decorator Use Case"><img src="../img/yt_btn_sm.gif" alt="Decorator Use Case"/></a> |
+| Decorator Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817836/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Decorator"><img src="../img/udemy_btn_sm.gif" alt="Decorator"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=umWz9o8IQtY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Decorator Pattern"><img src="../img/yt_btn_sm.gif" alt="Decorator Pattern"/></a>   |
+| Decorator Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817838/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Decorator Use Case"><img src="../img/udemy_btn_sm.gif" alt="Decorator Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=_Q2E3mNCqY4&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Decorator Use Case"><img src="../img/yt_btn_sm.gif" alt="Decorator Use Case"/></a> |
 
 ## Book 
 

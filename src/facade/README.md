@@ -4,8 +4,8 @@
 
 | Section         | Video Links                                                                                                                                                                                                        |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Facade Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=jhgtdztOoIU&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Facade Pattern"><img src="../img/yt_btn_sm.gif" alt="Facade Pattern"/></a>   |
-| Facade Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=Kqk4R3IfWnY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Facade Use Case"><img src="../img/yt_btn_sm.gif" alt="Facade Use Case"/></a> |
+| Facade Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817848/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Facade"><img src="../img/udemy_btn_sm.gif" alt="Facade"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=jhgtdztOoIU&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Facade Pattern"><img src="../img/yt_btn_sm.gif" alt="Facade Pattern"/></a>   |
+| Facade Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817850/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Facade Use Case"><img src="../img/udemy_btn_sm.gif" alt="Facade Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=Kqk4R3IfWnY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Facade Use Case"><img src="../img/yt_btn_sm.gif" alt="Facade Use Case"/></a> |
 
 ## Book 
 

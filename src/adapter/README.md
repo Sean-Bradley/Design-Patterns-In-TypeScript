@@ -4,8 +4,8 @@
 
 | Section          | Video Links                                                                                                                                                                                                          |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Adapter Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=4Ixas7F1QSU&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Adapter Pattern"><img src="../img/yt_btn_sm.gif" alt="Adapter Pattern"/></a>   |
-| Adapter Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=C1ltq-ffY4c&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Adapter Use Case"><img src="../img/yt_btn_sm.gif" alt="Adapter Use Case"/></a> |
+| Adapter Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817840/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Adapter"><img src="../img/udemy_btn_sm.gif" alt="Adapter"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=4Ixas7F1QSU&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Adapter Pattern"><img src="../img/yt_btn_sm.gif" alt="Adapter Pattern"/></a>   |
+| Adapter Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817844/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Adapter Use Case"><img src="../img/udemy_btn_sm.gif" alt="Adapter Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=C1ltq-ffY4c&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Adapter Use Case"><img src="../img/yt_btn_sm.gif" alt="Adapter Use Case"/></a> |
 
 ## Book 
 

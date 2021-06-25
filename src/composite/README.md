@@ -4,8 +4,8 @@
 
 | Section            | Video Links                                                                                                                                                                                                            |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Composite Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=kPBqsQBbRvA&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Composite Pattern"><img src="../img/yt_btn_sm.gif" alt="Composite Pattern"/></a>   |
-| Composite Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=1km6cxawCUg&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Composite Use Case"><img src="../img/yt_btn_sm.gif" alt="Composite Use Case"/></a> |
+| Composite Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900630/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Composite"><img src="../img/udemy_btn_sm.gif" alt="Composite"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=kPBqsQBbRvA&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Composite Pattern"><img src="../img/yt_btn_sm.gif" alt="Composite Pattern"/></a>   |
+| Composite Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900632/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Composite Use Case"><img src="../img/udemy_btn_sm.gif" alt="Composite Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=1km6cxawCUg&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Composite Use Case"><img src="../img/yt_btn_sm.gif" alt="Composite Use Case"/></a> |
 
 ## Book 
 

@@ -4,8 +4,8 @@
 
 | Section          | Video Links                                                                                                                                                                                                        |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Builder Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=2bF7HUAiaSU&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Builder Pattern"><img src="../img/yt_btn_sm.gif" alt="Builder Pattern"/></a>   |
-| Builder Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=JBVK6UnIUDA&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Builder Use Case"><img src="../img/yt_btn_sm.gif" alt="Builder Use Case"/></a> |
+| Builder Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26680140/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Builder"><img src="../img/udemy_btn_sm.gif" alt="Builder"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=2bF7HUAiaSU&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Builder Pattern"><img src="../img/yt_btn_sm.gif" alt="Builder Pattern"/></a>   |
+| Builder Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26680148/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Builder Use Case"><img src="../img/udemy_btn_sm.gif" alt="Builder Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=JBVK6UnIUDA&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Builder Use Case"><img src="../img/yt_btn_sm.gif" alt="Builder Use Case"/></a> |
 
 ## Book 
 

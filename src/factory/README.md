@@ -4,8 +4,8 @@
 
 | Section          | Video Links                                                                                                                                                                                                        |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Factory Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=KtPTG0Q8Fro&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Factory Pattern"><img src="../img/yt_btn_sm.gif" alt="Factory Pattern"/></a>   |
-| Factory Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=LNq3YTi8awA&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Factory Use Case"><img src="../img/yt_btn_sm.gif" alt="Factory Use Case"/></a> |
+| Factory Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26645970/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Factory"><img src="../img/udemy_btn_sm.gif" alt="Factory"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=KtPTG0Q8Fro&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Factory Pattern"><img src="../img/yt_btn_sm.gif" alt="Factory Pattern"/></a>   |
+| Factory Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26645974/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Factory Use Case"><img src="../img/udemy_btn_sm.gif" alt="Factory Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=LNq3YTi8awA&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Factory Use Case"><img src="../img/yt_btn_sm.gif" alt="Factory Use Case"/></a> |
 
 ## Book 
 

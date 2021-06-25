@@ -4,8 +4,8 @@
 
 | Section           | Video Links                                                                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Memento Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=A3K_cdkIpmQ&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Memento Pattern"><img src="../img/yt_btn_sm.gif" alt="Memento Pattern"/></a>   |
-| Memento Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=1DGRw1wzM_8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Memento Use Case"><img src="../img/yt_btn_sm.gif" alt="Memento Use Case"/></a> |
+| Memento Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133734/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Memento"><img src="../img/udemy_btn_sm.gif" alt="Memento"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=A3K_cdkIpmQ&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Memento Pattern"><img src="../img/yt_btn_sm.gif" alt="Memento Pattern"/></a>   |
+| Memento Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133736/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Memento Use Case"><img src="../img/udemy_btn_sm.gif" alt="Memento Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=1DGRw1wzM_8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Memento Use Case"><img src="../img/yt_btn_sm.gif" alt="Memento Use Case"/></a> |
 
 ## Book 
 

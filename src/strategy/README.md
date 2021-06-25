@@ -4,8 +4,8 @@
 
 | Section           | Video Links                                                                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Strategy Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=J7DtdyIIvMM&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Strategy Pattern"><img src="../img/yt_btn_sm.gif" alt="Strategy Pattern"/></a>   |
-| Strategy Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=v2H-QGbkV6s&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Strategy Use Case"><img src="../img/yt_btn_sm.gif" alt="Strategy Use Case"/></a> |
+| Strategy Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133748/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Strategy"><img src="../img/udemy_btn_sm.gif" alt="Strategy"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=J7DtdyIIvMM&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Strategy Pattern"><img src="../img/yt_btn_sm.gif" alt="Strategy Pattern"/></a>   |
+| Strategy Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133752/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Strategy Use Case"><img src="../img/udemy_btn_sm.gif" alt="Strategy Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=v2H-QGbkV6s&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Strategy Use Case"><img src="../img/yt_btn_sm.gif" alt="Strategy Use Case"/></a> |
 
 ## Book 
 

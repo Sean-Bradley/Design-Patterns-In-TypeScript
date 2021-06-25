@@ -4,8 +4,8 @@
 
 | Section            | Video Links                                                                                                                                                                                                              |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Flyweight Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=8y35OCxxFcw&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Flyweight Pattern"><img src="../img/yt_btn_sm.gif" alt="Flyweight Pattern"/></a>   |
-| Flyweight Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=nVBRPGJ8Pak&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Flyweight Use Case"><img src="../img/yt_btn_sm.gif" alt="Flyweight Use Case"/></a> |
+| Flyweight Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900634/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Flyweight"><img src="../img/udemy_btn_sm.gif" alt="Flyweight"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=8y35OCxxFcw&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Flyweight Pattern"><img src="../img/yt_btn_sm.gif" alt="Flyweight Pattern"/></a>   |
+| Flyweight Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900636/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Flyweight Use Case"><img src="../img/udemy_btn_sm.gif" alt="Flyweight Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=nVBRPGJ8Pak&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Flyweight Use Case"><img src="../img/yt_btn_sm.gif" alt="Flyweight Use Case"/></a> |
 
 ## Book 
 

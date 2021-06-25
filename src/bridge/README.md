@@ -4,8 +4,8 @@
 
 | Section         | Video Links                                                                                                                                                                                                      |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bridge Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=d4B7jIRkBTY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Bridge Pattern"><img src="../img/yt_btn_sm.gif" alt="Bridge Pattern"/></a>   |
-| Bridge Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=uvHAdlQ2SHg&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Bridge Use Case"><img src="../img/yt_btn_sm.gif" alt="Bridge Use Case"/></a> |
+| Bridge Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817858/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Bridge"><img src="../img/udemy_btn_sm.gif" alt="Bridge"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=d4B7jIRkBTY&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Bridge Pattern"><img src="../img/yt_btn_sm.gif" alt="Bridge Pattern"/></a>   |
+| Bridge Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26817866/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Bridge Use Case"><img src="../img/udemy_btn_sm.gif" alt="Bridge Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=uvHAdlQ2SHg&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Bridge Use Case"><img src="../img/yt_btn_sm.gif" alt="Bridge Use Case"/></a> |
 
 ## Book 
 

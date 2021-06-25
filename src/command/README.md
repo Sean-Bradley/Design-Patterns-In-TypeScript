@@ -4,8 +4,8 @@
 
 | Section          | Video Links                                                                                                                                                                                                        |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Command Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=tkvpIyuGfdQ&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Command Pattern"><img src="../img/yt_btn_sm.gif" alt="Command Pattern"/></a>   |
-| Command Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=j3I-TZGvUZ4&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Command Use Case"><img src="../img/yt_btn_sm.gif" alt="Command Use Case"/></a> |
+| Command Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900644/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Command"><img src="../img/udemy_btn_sm.gif" alt="Command"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=tkvpIyuGfdQ&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Command Pattern"><img src="../img/yt_btn_sm.gif" alt="Command Pattern"/></a>   |
+| Command Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26900646/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Command Use Case"><img src="../img/udemy_btn_sm.gif" alt="Command Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=j3I-TZGvUZ4&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Command Use Case"><img src="../img/yt_btn_sm.gif" alt="Command Use Case"/></a> |
 
 ## Book 
 

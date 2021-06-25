@@ -4,8 +4,8 @@
 
 | Section            | Video Links                                                                                                                                                                                                            |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Prototype Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=No5akL0cL6I&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Prototype Pattern"><img src="../img/yt_btn_sm.gif" alt="Prototype Pattern"/></a>   |
-| Prototype Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=oQzN6chBOCc&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Prototype Use Case"><img src="../img/yt_btn_sm.gif" alt="Prototype Use Case"/></a> |
+| Prototype Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26698320/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Prototype"><img src="../img/udemy_btn_sm.gif" alt="Prototype"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=No5akL0cL6I&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Prototype Pattern"><img src="../img/yt_btn_sm.gif" alt="Prototype Pattern"/></a>   |
+| Prototype Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26698322/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Prototype Use Case"><img src="../img/udemy_btn_sm.gif" alt="Prototype Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=oQzN6chBOCc&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Prototype Use Case"><img src="../img/yt_btn_sm.gif" alt="Prototype Use Case"/></a> |
 
 ## Book 
 

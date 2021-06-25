@@ -4,8 +4,8 @@
 
 | Section                  | Video Links                                                                                                                                                                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Template Method Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=DkdQiMqnYL4&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Template Method Pattern"><img src="../img/yt_btn_sm.gif" alt="Template Method Pattern"/></a>   |
-| Template Method Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=nYBHh9l0IK8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Template Method Use Case"><img src="../img/yt_btn_sm.gif" alt="Template Method Use Case"/></a> |
+| Template Method Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133756/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Template Method"><img src="../img/udemy_btn_sm.gif" alt="Template Method"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=DkdQiMqnYL4&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Template Method Pattern"><img src="../img/yt_btn_sm.gif" alt="Template Method Pattern"/></a>   |
+| Template Method Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/27133758/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Template Method Use Case"><img src="../img/udemy_btn_sm.gif" alt="Template Method Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=nYBHh9l0IK8&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Template Method Use Case"><img src="../img/yt_btn_sm.gif" alt="Template Method Use Case"/></a> |
 
 ## Book 
 

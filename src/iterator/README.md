@@ -4,8 +4,8 @@
 
 | Section           | Video Links                                                                                                                                                                                                          |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Iterator Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=ePyjE0dADvs&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Iterator Pattern"><img src="../img/yt_btn_sm.gif" alt="Iterator Pattern"/></a>   |
-| Iterator Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=mkgFviTFqDk&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Iterator Use Case"><img src="../img/yt_btn_sm.gif" alt="Iterator Use Case"/></a> |
+| Iterator Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26989340/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Iterator"><img src="../img/udemy_btn_sm.gif" alt="Iterator"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=ePyjE0dADvs&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Iterator Pattern"><img src="../img/yt_btn_sm.gif" alt="Iterator Pattern"/></a>   |
+| Iterator Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26989346/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Iterator Use Case"><img src="../img/udemy_btn_sm.gif" alt="Iterator Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=mkgFviTFqDk&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Iterator Use Case"><img src="../img/yt_btn_sm.gif" alt="Iterator Use Case"/></a> |
 
 ## Book 
 
