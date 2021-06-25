@@ -29,11 +29,11 @@ There are 3 possible ways to access the video content in this course,
 
 1. Udemy : [https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9](https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9)
 2. YouTube Membership : [https://www.youtube.com/channel/UCmUILI2AWt2MSUgPlZwFdOg/join](https://www.youtube.com/channel/UCmUILI2AWt2MSUgPlZwFdOg/join)
-4. Book/Kindle : [https://www.amazon.com/dp/B0948BCH24](https://www.amazon.com/dp/B0948BCH24) : (ASIN : B0948BCH24 / B094716FD6)
+4. Paperback/Kindle : [https://www.amazon.com/dp/B0948BCH24](https://www.amazon.com/dp/B0948BCH24) : (ASIN : B0948BCH24 / B094716FD6)
 
 ---
 **TIP** 
-> [Design Pattern In TypeScript](https://www.amazon.com/dp/B0948BCH24) **(Book/Kindle)** includes Video Access Codes to view videos for FREE from the official documentation website at [https://sbcode.net/typescript/](https://sbcode.net/typescript/)
+> [Design Pattern In TypeScript](https://www.amazon.com/dp/B0948BCH24) **(Paperback/Kindle)** includes Video Access Codes to view videos for FREE from the official documentation website at [https://sbcode.net/typescript/](https://sbcode.net/typescript/)
 
 ---
 **TIP** 
