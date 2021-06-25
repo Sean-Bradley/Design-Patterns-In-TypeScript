@@ -4,8 +4,8 @@
 
 | Section                   | Video Links                                                                                                                                                                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Abstract Factory Pattern  | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=fKDZ5QeFVEE&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Abstract Factory Pattern"><img src="../img/yt_btn_sm.gif" alt="Abstract Factory Pattern"/></a>   |
-| Abstract Factory Use Case | <a id="ytVideoLink" href="https://www.youtube.com/watch?v=KzDVODMnsh0&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Abstract Factory Use Case"><img src="../img/yt_btn_sm.gif" alt="Abstract Factory Use Case"/></a> |
+| Abstract Factory Pattern  | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26664356/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Abstract Factory"><img src="../img/udemy_btn_sm.gif" alt="Abstract Factory"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=fKDZ5QeFVEE&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Abstract Factory Pattern"><img src="../img/yt_btn_sm.gif" alt="Abstract Factory Pattern"/></a>   |
+| Abstract Factory Use Case | <a class="udemyVideoLink" href="https://www.udemy.com/course/design-patterns-typescript/learn/lecture/26664364/?referralCode=6384C079FB0A503DB9D9" target="_blank" title="Abstract Factory Use Case"><img src="/img/udemy_btn_sm.gif" alt="Abstract Factory Use Case"/></a>&nbsp;<a id="ytVideoLink" href="https://www.youtube.com/watch?v=KzDVODMnsh0&list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank" title="Abstract Factory Use Case"><img src="../img/yt_btn_sm.gif" alt="Abstract Factory Use Case"/></a> |
 
 ## Book 
 
