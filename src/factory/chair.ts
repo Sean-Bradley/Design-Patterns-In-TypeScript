@@ -14,10 +14,6 @@ export default class Chair implements IChair {
     width = 0
     depth = 0
 
-    createObject(): IChair {
-        return this
-    }
-
     getDimensions(): dimension {
         return {
             width: this.width,
