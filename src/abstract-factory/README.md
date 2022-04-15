@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Terminology
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Abstract Factory UML Diagram
 
@@ -35,7 +35,7 @@ ConcreteProductC { name: 'FactoryB:ConcreteProductC' }
 
 ## Abstract Factory Example Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Abstract Factory Example UML Diagram
 
@@ -64,4 +64,4 @@ Error Handling -->
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._

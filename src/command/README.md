@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Terminology
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Command Pattern UML Diagram
 
@@ -37,7 +37,7 @@ Executing Command 2
 
 ## Command Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Example UML Diagram
 
@@ -65,4 +65,4 @@ Light turned OFF
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._

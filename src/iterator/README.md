@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Terminology
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Iterator UML Diagram
 
@@ -37,7 +37,7 @@ This method has been invoked
 
 ## Iterator Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Example UML Diagram
 
@@ -52,4 +52,4 @@ node ./dist/iterator/client.js
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._

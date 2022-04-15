@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Terminology
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Prototype UML Diagram
 
@@ -49,7 +49,7 @@ OBJECT1: {"field":[1,2,3,4]}
 
 ## Prototype Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Example UML Diagram
 
@@ -102,4 +102,4 @@ Object.assign -->
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._

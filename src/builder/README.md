@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Terminology
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Builder UML Diagram
 
@@ -34,7 +34,7 @@ node ./dist/builder/builder-concept.js
 
 ## Builder Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Example UML Diagram
 
@@ -55,4 +55,4 @@ This is a Wood House Boat with 6 door(s) and 8 window(s).
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._

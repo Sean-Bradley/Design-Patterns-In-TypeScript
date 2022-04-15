@@ -95,8 +95,8 @@ So, in the book, you will learn about these 23 Design Patterns,
 
 ## Pattern Types
 
-*...Refer to Book or Videos for extra content.*
+*... Refer to book or pause videos to read textual content.*
 
 ## Class Scope and Object Scope Patterns
 
-*...Refer to Book or Videos for extra content.*
+*... Refer to book or pause videos to read textual content.*

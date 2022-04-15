@@ -16,11 +16,11 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Terminology
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Strategy UML Diagram
 
@@ -37,7 +37,7 @@ I am ConcreteStrategyC
 
 ## Strategy Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Strategy Example Use Case UML Diagram
 
@@ -54,4 +54,4 @@ I am Crawling. New position = 3.5,0
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._

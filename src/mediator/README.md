@@ -16,11 +16,11 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Terminology
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Mediator UML Diagram
 
@@ -36,7 +36,7 @@ COLLEAGUE2 <--> Here is the Colleague1 specific data you asked for
 
 ## Mediator Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Example UML Diagram
 
@@ -59,4 +59,4 @@ Component2: <<< In <<< : data C
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._

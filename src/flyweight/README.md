@@ -15,7 +15,7 @@ Cover | Links
 
 ## Overview
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Flyweight UML Diagram
 
@@ -32,7 +32,7 @@ FlyweightFactory has 5 flyweights
 
 ## Flyweight Use Case
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
 
 ## Example UML Diagram
 
@@ -52,4 +52,4 @@ FlyweightFactory has 12 flyweights
 
 ## Summary
 
-_...Refer to Book or Videos for extra content._
+_... Refer to book or pause videos to read textual content._
