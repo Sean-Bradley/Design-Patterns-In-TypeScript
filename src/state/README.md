@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## Terminology
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## State UML Diagram
 
@@ -38,7 +38,7 @@ ConcreteStateC {}
 
 ## State Use Case
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## State Example Use Case UML Diagram
 
@@ -59,4 +59,4 @@ I am now Finished
 
 ## Summary
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._

@@ -15,7 +15,7 @@ Cover | Links
 
 ## Overview
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## Singleton UML Diagram
 
@@ -30,7 +30,7 @@ true
 
 ## Singleton Use Case
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## Example UML Diagram
 
@@ -62,4 +62,4 @@ node ./dist/singleton/client
 
 ## Summary
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._

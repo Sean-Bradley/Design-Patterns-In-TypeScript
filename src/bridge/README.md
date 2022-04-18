@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## Terminology
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## Bridge UML Diagram
 
@@ -37,7 +37,7 @@ c
 
 ## Bridge Use Case
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
 
 ## Example UML Diagram
 
@@ -71,4 +71,4 @@ node ./dist/bridge/client.js
 
 ## Summary
 
-_... Refer to book or pause videos to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
