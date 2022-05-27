@@ -1,5 +1,4 @@
 "use strict";
-// The Interpreter Pattern Use Case Example
 Object.defineProperty(exports, "__esModule", { value: true });
 const sentence_parser_1 = require("./sentence-parser");
 // The sentence complies with a simple grammar of

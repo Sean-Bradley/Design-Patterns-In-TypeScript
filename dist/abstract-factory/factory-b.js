@@ -6,9 +6,6 @@ class ConcreteProduct {
     constructor() {
         this.name = '';
     }
-    createObject() {
-        return this;
-    }
 }
 class ConcreteProductA extends ConcreteProduct {
     constructor() {

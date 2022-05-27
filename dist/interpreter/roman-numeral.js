@@ -1,5 +1,4 @@
 "use strict";
-// Roman Numeral Expression. This is a Non-Terminal Expression
 Object.defineProperty(exports, "__esModule", { value: true });
 const numeral_1 = require("./numeral");
 class RomanNumeral {

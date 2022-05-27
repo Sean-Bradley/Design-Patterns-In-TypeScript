@@ -1,19 +1,17 @@
 "use strict";
 // The State Use Case Example
-var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var _state;
+var _StateContext_state;
 var ExampleState;
 (function (ExampleState) {
     ExampleState["Initializing"] = "Initializing";
@@ -23,11 +21,11 @@ var ExampleState;
 })(ExampleState || (ExampleState = {}));
 class StateContext {
     constructor() {
-        _state.set(this, void 0);
-        __classPrivateFieldSet(this, _state, ExampleState.Initializing);
+        _StateContext_state.set(this, void 0);
+        __classPrivateFieldSet(this, _StateContext_state, ExampleState.Initializing, "f");
     }
     get state() {
-        return __classPrivateFieldGet(this, _state);
+        return __classPrivateFieldGet(this, _StateContext_state, "f");
     }
     set state(value) {
         switch (value) {
@@ -41,7 +39,7 @@ class StateContext {
                 this.request = Finished.prototype.request;
                 break;
         }
-        __classPrivateFieldSet(this, _state, value);
+        __classPrivateFieldSet(this, _StateContext_state, value, "f");
     }
     request() {
         // Does nothing until state changes, when then
@@ -49,7 +47,7 @@ class StateContext {
         // concrete states request method
     }
 }
-_state = new WeakMap();
+_StateContext_state = new WeakMap();
 class Started {
     // A ConcreteState Subclass
     request() {

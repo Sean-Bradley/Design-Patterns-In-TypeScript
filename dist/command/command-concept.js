@@ -1,40 +1,38 @@
 "use strict";
 // The Command Pattern Concept
-var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var _commands, _receiver, _receiver_1;
+var _Invoker_commands, _Command1_receiver, _Command2_receiver;
 class Invoker {
     constructor() {
         // The Invoker Class
-        _commands.set(this, void 0);
-        __classPrivateFieldSet(this, _commands, {});
+        _Invoker_commands.set(this, void 0);
+        __classPrivateFieldSet(this, _Invoker_commands, {}, "f");
     }
     register(commandName, command) {
         // Register commands in the Invoker
-        __classPrivateFieldGet(this, _commands)[commandName] = command;
+        __classPrivateFieldGet(this, _Invoker_commands, "f")[commandName] = command;
     }
     execute(commandName) {
         // Execute any registered commands
-        if (commandName in __classPrivateFieldGet(this, _commands)) {
-            __classPrivateFieldGet(this, _commands)[commandName].execute();
+        if (commandName in __classPrivateFieldGet(this, _Invoker_commands, "f")) {
+            __classPrivateFieldGet(this, _Invoker_commands, "f")[commandName].execute();
         }
         else {
             console.log(`Command [${commandName}] not recognised`);
         }
     }
 }
-_commands = new WeakMap();
+_Invoker_commands = new WeakMap();
 class Receiver {
     // The Receiver
     runCommand1() {
@@ -50,26 +48,26 @@ class Command1 {
     constructor(receiver) {
         // A Command object, that implements the ICommand interface and
         // runs the command on the designated receiver
-        _receiver.set(this, void 0);
-        __classPrivateFieldSet(this, _receiver, receiver);
+        _Command1_receiver.set(this, void 0);
+        __classPrivateFieldSet(this, _Command1_receiver, receiver, "f");
     }
     execute() {
-        __classPrivateFieldGet(this, _receiver).runCommand1();
+        __classPrivateFieldGet(this, _Command1_receiver, "f").runCommand1();
     }
 }
-_receiver = new WeakMap();
+_Command1_receiver = new WeakMap();
 class Command2 {
     constructor(receiver) {
         // A Command object, that implements the ICommand interface and
         // runs the command on the designated receiver
-        _receiver_1.set(this, void 0);
-        __classPrivateFieldSet(this, _receiver_1, receiver);
+        _Command2_receiver.set(this, void 0);
+        __classPrivateFieldSet(this, _Command2_receiver, receiver, "f");
     }
     execute() {
-        __classPrivateFieldGet(this, _receiver_1).runCommand2();
+        __classPrivateFieldGet(this, _Command2_receiver, "f").runCommand2();
     }
 }
-_receiver_1 = new WeakMap();
+_Command2_receiver = new WeakMap();
 // The Client
 // Create a receiver
 const RECEIVER = new Receiver();

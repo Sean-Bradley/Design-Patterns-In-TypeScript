@@ -1,18 +1,11 @@
 "use strict";
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
-};
-var _name;
 Object.defineProperty(exports, "__esModule", { value: true });
 const lion_1 = require("./lion");
 const serpent_1 = require("./serpent");
 class Leopard {
     constructor() {
         // Proteus in the form of a Leopard
-        _name.set(this, 'Leopard');
+        this.name = 'Leopard';
     }
     tellMeTheFuture() {
         // Proteus will change to something random
@@ -28,8 +21,7 @@ class Leopard {
         }
     }
     tellMeYourForm() {
-        console.log(`I am the form of ${__classPrivateFieldGet(this, _name)}`);
+        console.log(`I am the form of ${this.name}`);
     }
 }
 exports.default = Leopard;
-_name = new WeakMap();

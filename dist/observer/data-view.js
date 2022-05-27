@@ -1,80 +1,78 @@
 "use strict";
-var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var _observable, _id, _observable_1, _id_1, _observable_2, _id_2;
+var _BarGraphView_observable, _BarGraphView_id, _PieGraphView_observable, _PieGraphView_id, _TableView_observable, _TableView_id;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TableView = exports.PieGraphView = exports.BarGraphView = void 0;
 class BarGraphView {
     constructor(observable) {
         // A concrete observer
-        _observable.set(this, void 0);
-        _id.set(this, void 0);
-        __classPrivateFieldSet(this, _observable, observable);
-        __classPrivateFieldSet(this, _id, __classPrivateFieldGet(this, _observable).subscribe(this));
+        _BarGraphView_observable.set(this, void 0);
+        _BarGraphView_id.set(this, void 0);
+        __classPrivateFieldSet(this, _BarGraphView_observable, observable, "f");
+        __classPrivateFieldSet(this, _BarGraphView_id, __classPrivateFieldGet(this, _BarGraphView_observable, "f").subscribe(this), "f");
     }
     notify(data) {
-        console.log(`BarGraph, id:${__classPrivateFieldGet(this, _id)}`);
+        console.log(`BarGraph, id:${__classPrivateFieldGet(this, _BarGraphView_id, "f")}`);
         this.draw(data);
     }
     draw(data) {
         console.log(`Drawing a Bar graph using data:${JSON.stringify(data)}`);
     }
     delete() {
-        __classPrivateFieldGet(this, _observable).unsubscribe(__classPrivateFieldGet(this, _id));
+        __classPrivateFieldGet(this, _BarGraphView_observable, "f").unsubscribe(__classPrivateFieldGet(this, _BarGraphView_id, "f"));
     }
 }
 exports.BarGraphView = BarGraphView;
-_observable = new WeakMap(), _id = new WeakMap();
+_BarGraphView_observable = new WeakMap(), _BarGraphView_id = new WeakMap();
 class PieGraphView {
     constructor(observable) {
         // A concrete observer
-        _observable_1.set(this, void 0);
-        _id_1.set(this, void 0);
-        __classPrivateFieldSet(this, _observable_1, observable);
-        __classPrivateFieldSet(this, _id_1, __classPrivateFieldGet(this, _observable_1).subscribe(this));
+        _PieGraphView_observable.set(this, void 0);
+        _PieGraphView_id.set(this, void 0);
+        __classPrivateFieldSet(this, _PieGraphView_observable, observable, "f");
+        __classPrivateFieldSet(this, _PieGraphView_id, __classPrivateFieldGet(this, _PieGraphView_observable, "f").subscribe(this), "f");
     }
     notify(data) {
-        console.log(`PieGraph, id:${__classPrivateFieldGet(this, _id_1)}`);
+        console.log(`PieGraph, id:${__classPrivateFieldGet(this, _PieGraphView_id, "f")}`);
         this.draw(data);
     }
     draw(data) {
         console.log(`Drawing a Pie graph using data:${data}`);
     }
     delete() {
-        __classPrivateFieldGet(this, _observable_1).unsubscribe(__classPrivateFieldGet(this, _id_1));
+        __classPrivateFieldGet(this, _PieGraphView_observable, "f").unsubscribe(__classPrivateFieldGet(this, _PieGraphView_id, "f"));
     }
 }
 exports.PieGraphView = PieGraphView;
-_observable_1 = new WeakMap(), _id_1 = new WeakMap();
+_PieGraphView_observable = new WeakMap(), _PieGraphView_id = new WeakMap();
 class TableView {
     constructor(observable) {
         // A concrete observer
-        _observable_2.set(this, void 0);
-        _id_2.set(this, void 0);
-        __classPrivateFieldSet(this, _observable_2, observable);
-        __classPrivateFieldSet(this, _id_2, __classPrivateFieldGet(this, _observable_2).subscribe(this));
+        _TableView_observable.set(this, void 0);
+        _TableView_id.set(this, void 0);
+        __classPrivateFieldSet(this, _TableView_observable, observable, "f");
+        __classPrivateFieldSet(this, _TableView_id, __classPrivateFieldGet(this, _TableView_observable, "f").subscribe(this), "f");
     }
     notify(data) {
-        console.log(`TableView, id:${__classPrivateFieldGet(this, _id_2)}`);
+        console.log(`TableView, id:${__classPrivateFieldGet(this, _TableView_id, "f")}`);
         this.draw(data);
     }
     draw(data) {
         console.log(`Drawing a Table using data:${JSON.stringify(data)}`);
     }
     delete() {
-        __classPrivateFieldGet(this, _observable_2).unsubscribe(__classPrivateFieldGet(this, _id_2));
+        __classPrivateFieldGet(this, _TableView_observable, "f").unsubscribe(__classPrivateFieldGet(this, _TableView_id, "f"));
     }
 }
 exports.TableView = TableView;
-_observable_2 = new WeakMap(), _id_2 = new WeakMap();
+_TableView_observable = new WeakMap(), _TableView_id = new WeakMap();

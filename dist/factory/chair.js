@@ -7,9 +7,6 @@ class Chair {
         this.width = 0;
         this.depth = 0;
     }
-    createObject() {
-        return this;
-    }
     getDimensions() {
         return {
             width: this.width,

@@ -8,8 +8,7 @@ class AbstractClass {
         // implementation
     }
     // An abstract method that must be overridden in the implementing
-    // class. It has been given `@abstractmethod` decorator so that
-    // pylint shows the error
+    // class. Note the addition of the `abstract` keyword
     stepThree() {
         // Hooks can also contain default behavior and can be optionally
         // overridden

@@ -1,19 +1,17 @@
 "use strict";
 'Memento pattern concept';
-var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var _state, _originator, _mementos;
+var _Originator_state, _CareTaker_originator, _CareTaker_mementos;
 class Memento {
     constructor(state) {
         this.state = state;
@@ -22,48 +20,48 @@ class Memento {
 class Originator {
     constructor() {
         // The Object in the application whose state changes
-        _state.set(this, void 0);
-        __classPrivateFieldSet(this, _state, '');
+        _Originator_state.set(this, void 0);
+        __classPrivateFieldSet(this, _Originator_state, '', "f");
     }
     get state() {
-        return __classPrivateFieldGet(this, _state);
+        return __classPrivateFieldGet(this, _Originator_state, "f");
     }
     set state(value) {
-        __classPrivateFieldSet(this, _state, value);
+        __classPrivateFieldSet(this, _Originator_state, value, "f");
         console.log(`Originator: Set state to '${value}'`);
     }
     get memento() {
         console.log('Originator: Providing Memento of state to caretaker.');
-        return new Memento(__classPrivateFieldGet(this, _state));
+        return new Memento(__classPrivateFieldGet(this, _Originator_state, "f"));
     }
     set memento(value) {
-        __classPrivateFieldSet(this, _state, value.state);
-        console.log(`Originator: State after restoring from Memento: '${__classPrivateFieldGet(this, _state)}'`);
+        __classPrivateFieldSet(this, _Originator_state, value.state, "f");
+        console.log(`Originator: State after restoring from Memento: '${__classPrivateFieldGet(this, _Originator_state, "f")}'`);
     }
 }
-_state = new WeakMap();
+_Originator_state = new WeakMap();
 class CareTaker {
     constructor(originator) {
         // Guardian. Provides a narrow interface to the mementos
-        _originator.set(this, void 0);
-        _mementos.set(this, void 0);
-        __classPrivateFieldSet(this, _originator, originator);
-        __classPrivateFieldSet(this, _mementos, []);
+        _CareTaker_originator.set(this, void 0);
+        _CareTaker_mementos.set(this, void 0);
+        __classPrivateFieldSet(this, _CareTaker_originator, originator, "f");
+        __classPrivateFieldSet(this, _CareTaker_mementos, [], "f");
     }
     create() {
         // Store a new Memento of the Originators current state
         console.log('CareTaker: Getting a copy of Originators current state');
-        const memento = __classPrivateFieldGet(this, _originator).memento;
-        __classPrivateFieldGet(this, _mementos).push(memento);
+        const memento = __classPrivateFieldGet(this, _CareTaker_originator, "f").memento;
+        __classPrivateFieldGet(this, _CareTaker_mementos, "f").push(memento);
     }
     restore(index) {
         // Replace the Originators current state with the state stored in the saved Memento
         console.log('CareTaker: Restoring Originators state from Memento');
-        const memento = __classPrivateFieldGet(this, _mementos)[index];
-        __classPrivateFieldGet(this, _originator).memento = memento;
+        const memento = __classPrivateFieldGet(this, _CareTaker_mementos, "f")[index];
+        __classPrivateFieldGet(this, _CareTaker_originator, "f").memento = memento;
     }
 }
-_originator = new WeakMap(), _mementos = new WeakMap();
+_CareTaker_originator = new WeakMap(), _CareTaker_mementos = new WeakMap();
 // The Client
 const ORIGINATOR = new Originator();
 const CARETAKER = new CareTaker(ORIGINATOR);

@@ -1,5 +1,4 @@
 "use strict";
-// A Custom Parser for creating an Abstract Syntax Tree
 Object.defineProperty(exports, "__esModule", { value: true });
 const add_1 = require("./add");
 const numeral_1 = require("./numeral");

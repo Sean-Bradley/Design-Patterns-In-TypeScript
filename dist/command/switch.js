@@ -1,42 +1,40 @@
 "use strict";
 // The Switch (Invoker) Class.
-var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
+var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var _commands, _history;
+var _Switch_commands, _Switch_history;
 Object.defineProperty(exports, "__esModule", { value: true });
 class Switch {
     constructor() {
-        _commands.set(this, void 0);
-        _history.set(this, void 0);
-        __classPrivateFieldSet(this, _commands, {});
-        __classPrivateFieldSet(this, _history, []);
+        _Switch_commands.set(this, void 0);
+        _Switch_history.set(this, void 0);
+        __classPrivateFieldSet(this, _Switch_commands, {}, "f");
+        __classPrivateFieldSet(this, _Switch_history, [], "f");
     }
     showHistory() {
         // Print the history of each time a command was invoked"
-        __classPrivateFieldGet(this, _history).forEach((row) => {
+        __classPrivateFieldGet(this, _Switch_history, "f").forEach((row) => {
             console.log(`${row[0]} : ${row[1]}`);
         });
     }
     register(commandName, command) {
         // Register commands in the Invoker
-        __classPrivateFieldGet(this, _commands)[commandName] = command;
+        __classPrivateFieldGet(this, _Switch_commands, "f")[commandName] = command;
     }
     execute(commandName) {
         // Execute any registered commands
-        if (commandName in __classPrivateFieldGet(this, _commands)) {
-            __classPrivateFieldGet(this, _commands)[commandName].execute();
-            __classPrivateFieldGet(this, _history).push([Date.now(), commandName]);
+        if (commandName in __classPrivateFieldGet(this, _Switch_commands, "f")) {
+            __classPrivateFieldGet(this, _Switch_commands, "f")[commandName].execute();
+            __classPrivateFieldGet(this, _Switch_history, "f").push([Date.now(), commandName]);
         }
         else {
             console.log(`Command [${commandName}] not recognised`);
@@ -44,13 +42,13 @@ class Switch {
     }
     replayLast(numberOfCommands) {
         // Replay the last N commands
-        const commands = __classPrivateFieldGet(this, _history).slice(__classPrivateFieldGet(this, _history).length - numberOfCommands, __classPrivateFieldGet(this, _history).length);
+        const commands = __classPrivateFieldGet(this, _Switch_history, "f").slice(__classPrivateFieldGet(this, _Switch_history, "f").length - numberOfCommands, __classPrivateFieldGet(this, _Switch_history, "f").length);
         commands.forEach((command) => {
-            __classPrivateFieldGet(this, _commands)[command[1]].execute();
+            __classPrivateFieldGet(this, _Switch_commands, "f")[command[1]].execute();
             // or if you wanted to also record this replay in history
             // this.execute(command[1])
         });
     }
 }
 exports.default = Switch;
-_commands = new WeakMap(), _history = new WeakMap();
+_Switch_commands = new WeakMap(), _Switch_history = new WeakMap();

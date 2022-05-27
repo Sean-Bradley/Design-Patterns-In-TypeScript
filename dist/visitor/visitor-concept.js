@@ -42,7 +42,6 @@ class CalculatePartTotalsVisitor {
     }
     visit(part) {
         this.totalValue += part.value;
-        return this.totalValue;
     }
 }
 // Using the CalculatePartTotalsVisitor to traverse the
