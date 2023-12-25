@@ -31,5 +31,5 @@ class Reports {
         return true;
     }
 }
-exports.default = Reports;
 _Reports_reports = new WeakMap(), _Reports_rowId = new WeakMap();
+exports.default = Reports;

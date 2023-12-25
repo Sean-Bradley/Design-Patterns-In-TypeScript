@@ -14,5 +14,5 @@ class CubeB {
         }
     }
 }
-exports.default = CubeB;
 CubeB.last_time = Date.now();
+exports.default = CubeB;

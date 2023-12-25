@@ -53,5 +53,5 @@ class GameAPI {
         return __classPrivateFieldGet(this, _GameAPI_users, "f").registerUser(value);
     }
 }
-exports.default = GameAPI;
 _GameAPI_wallets = new WeakMap(), _GameAPI_reports = new WeakMap(), _GameAPI_users = new WeakMap(), _GameAPI_gameEngine = new WeakMap();
+exports.default = GameAPI;

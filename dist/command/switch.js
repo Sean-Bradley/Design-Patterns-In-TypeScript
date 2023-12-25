@@ -50,5 +50,5 @@ class Switch {
         });
     }
 }
-exports.default = Switch;
 _Switch_commands = new WeakMap(), _Switch_history = new WeakMap();
+exports.default = Switch;

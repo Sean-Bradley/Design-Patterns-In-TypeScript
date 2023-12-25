@@ -22,5 +22,5 @@ class Circle {
         __classPrivateFieldGet(this, _Circle_implementer, "f").drawImplementation();
     }
 }
-exports.default = Circle;
 _Circle_implementer = new WeakMap();
+exports.default = Circle;

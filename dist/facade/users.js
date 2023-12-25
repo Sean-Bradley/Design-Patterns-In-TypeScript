@@ -49,5 +49,5 @@ class Users {
         return false;
     }
 }
-exports.default = Users;
 _Users_users = new WeakMap(), _Users_reports = new WeakMap(), _Users_wallets = new WeakMap();
+exports.default = Users;

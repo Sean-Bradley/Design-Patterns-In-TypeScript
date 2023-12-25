@@ -14,6 +14,6 @@ class FlyweightFactory {
         return Object.keys(FlyweightFactory.flyweights).length;
     }
 }
-exports.default = FlyweightFactory;
 // Creating the FlyweightFactory as a static class
 FlyweightFactory.flyweights = {};
+exports.default = FlyweightFactory;

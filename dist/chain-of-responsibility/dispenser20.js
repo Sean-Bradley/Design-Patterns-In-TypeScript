@@ -37,5 +37,5 @@ class Dispenser20 {
         }
     }
 }
-exports.default = Dispenser20;
 _Dispenser20_successor = new WeakMap();
+exports.default = Dispenser20;

@@ -66,5 +66,5 @@ class GameEngine {
         return false;
     }
 }
-exports.default = GameEngine;
 _GameEngine_startTime = new WeakMap(), _GameEngine_clock = new WeakMap(), _GameEngine_entries = new WeakMap(), _GameEngine_gameOpen = new WeakMap(), _GameEngine_reports = new WeakMap(), _GameEngine_wallets = new WeakMap();
+exports.default = GameEngine;

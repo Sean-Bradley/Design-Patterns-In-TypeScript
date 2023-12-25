@@ -38,5 +38,5 @@ class Wallets {
         return __classPrivateFieldGet(this, _Wallets_wallets, "f")[userId];
     }
 }
-exports.default = Wallets;
 _Wallets_wallets = new WeakMap(), _Wallets_reports = new WeakMap();
+exports.default = Wallets;

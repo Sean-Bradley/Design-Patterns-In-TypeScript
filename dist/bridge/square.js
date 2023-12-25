@@ -22,5 +22,5 @@ class Square {
         __classPrivateFieldGet(this, _Square_implementer, "f").drawImplementation();
     }
 }
-exports.default = Square;
 _Square_implementer = new WeakMap();
+exports.default = Square;

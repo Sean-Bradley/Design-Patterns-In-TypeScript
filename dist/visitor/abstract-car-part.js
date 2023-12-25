@@ -44,5 +44,5 @@ class AbstractCarPart {
         visitor.visit(this);
     }
 }
-exports.default = AbstractCarPart;
 _AbstractCarPart_name = new WeakMap(), _AbstractCarPart_sku = new WeakMap(), _AbstractCarPart_price = new WeakMap();
+exports.default = AbstractCarPart;

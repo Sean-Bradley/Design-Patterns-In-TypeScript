@@ -35,5 +35,5 @@ class CareTaker {
         __classPrivateFieldGet(this, _CareTaker_originator, "f").memento = memento;
     }
 }
-exports.default = CareTaker;
 _CareTaker_originator = new WeakMap(), _CareTaker_mementos = new WeakMap();
+exports.default = CareTaker;

@@ -26,5 +26,5 @@ class Leaderboard {
         console.log();
     }
 }
-exports.default = Leaderboard;
 _Leaderboard_table = new WeakMap();
+exports.default = Leaderboard;

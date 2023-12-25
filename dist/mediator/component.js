@@ -28,5 +28,5 @@ class Component {
         console.log(__classPrivateFieldGet(this, _Component_name, "f") + ': <<< In <<< : ' + message);
     }
 }
-exports.default = Component;
 _Component_mediator = new WeakMap(), _Component_name = new WeakMap();
+exports.default = Component;

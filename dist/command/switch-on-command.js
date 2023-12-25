@@ -21,5 +21,5 @@ class SwitchOnCommand {
         __classPrivateFieldGet(this, _SwitchOnCommand_light, "f").turnOn();
     }
 }
-exports.default = SwitchOnCommand;
 _SwitchOnCommand_light = new WeakMap();
+exports.default = SwitchOnCommand;

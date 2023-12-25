@@ -21,5 +21,5 @@ class SwitchOffCommand {
         __classPrivateFieldGet(this, _SwitchOffCommand_light, "f").turnOff();
     }
 }
-exports.default = SwitchOffCommand;
 _SwitchOffCommand_light = new WeakMap();
+exports.default = SwitchOffCommand;

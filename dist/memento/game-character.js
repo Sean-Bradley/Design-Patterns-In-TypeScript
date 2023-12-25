@@ -62,5 +62,5 @@ class GameCharacter {
         __classPrivateFieldSet(this, _GameCharacter_location, value.location, "f");
     }
 }
-exports.default = GameCharacter;
 _GameCharacter_score = new WeakMap(), _GameCharacter_inventory = new WeakMap(), _GameCharacter_level = new WeakMap(), _GameCharacter_location = new WeakMap();
+exports.default = GameCharacter;

@@ -32,5 +32,5 @@ class Mediator {
         });
     }
 }
-exports.default = Mediator;
 _Mediator_components = new WeakMap();
+exports.default = Mediator;

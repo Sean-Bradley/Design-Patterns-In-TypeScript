@@ -23,5 +23,5 @@ class CubeBAdapter {
         return success;
     }
 }
-exports.default = CubeBAdapter;
 _CubeBAdapter_cube = new WeakMap();
+exports.default = CubeBAdapter;

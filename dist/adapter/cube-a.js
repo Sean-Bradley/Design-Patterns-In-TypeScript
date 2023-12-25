@@ -12,5 +12,5 @@ class CubeA {
         return false; // busy
     }
 }
-exports.default = CubeA;
 CubeA.last_time = Date.now();
+exports.default = CubeA;
