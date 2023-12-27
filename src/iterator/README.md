@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Terminology
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Iterator UML Diagram
 
@@ -37,7 +37,7 @@ This method has been invoked
 
 ## Iterator Use Case
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Example UML Diagram
 
@@ -52,4 +52,4 @@ node ./dist/iterator/client.js
 
 ## Summary
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._

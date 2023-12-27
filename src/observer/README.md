@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Terminology
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Observer UML Diagram
 
@@ -36,7 +36,7 @@ OBSERVER_1 received ["Second Notification",{"A":1,"B":2,"C":3}]
 
 ## Observer Use Case
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Example UML Diagram
 
@@ -66,4 +66,4 @@ spread operator : problem with using the spread operator in typescript, is that 
 
 ## Summary
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._

@@ -15,11 +15,11 @@ Cover | Links
 
 ## Overview
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Terminology
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Builder UML Diagram
 
@@ -34,7 +34,7 @@ node ./dist/builder/builder-concept.js
 
 ## Builder Use Case
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
 
 ## Example UML Diagram
 
@@ -55,4 +55,4 @@ This is a Wood House Boat with 6 door(s) and 8 window(s).
 
 ## Summary
 
-_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24), pause [Video Lectures](#videos) or subscribe to [Medium Membership](https://sean-bradley.medium.com/membership) to read textual content._
+_... Refer to [Book](https://www.amazon.com/dp/B0948BCH24) or [Design Patterns in TypeScript website](https://sbcode.net/typescript/) to read textual content._
