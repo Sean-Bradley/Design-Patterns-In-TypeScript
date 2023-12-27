@@ -41,10 +41,6 @@ There are 3 possible ways to access the video content in this course,
 
 ---
 
-**Note**
-> If you just want to read my design pattern articles, and you don't need to access the videos, then you can read them via [Medium Membership](https://sean-bradley.medium.com/membership)
-
-
 ## Setup Project
 
 ```bash
