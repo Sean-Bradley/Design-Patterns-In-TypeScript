@@ -21,7 +21,7 @@ It is supplementary to my book titled **Design Patterns In TypeScript**
 
 and courses on [Udemy](https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9) and [YouTube (Channel membership required)](https://www.youtube.com/playlist?list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP)
 
-<a href="https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9" target="_blank"><img src="src/img/udemy_btn_sm.gif" title="Design Patterns In TypeScript"/></a>&nbsp;<a href="https://www.youtube.com/playlist?list=PLKWUX7aMnlEJzRvCXnwFEdk_WJDNjMDOo" target="_blank"><img src="src/img/yt_btn_sm.gif" title="Design Patterns In TypeScript"/></a>
+<a href="https://www.udemy.com/course/design-patterns-typescript/?referralCode=6384C079FB0A503DB9D9" target="_blank"><img src="src/img/udemy_btn_sm.gif" title="Design Patterns In TypeScript"/></a>&nbsp;<a href="https://www.youtube.com/playlist?list=PLKWUX7aMnlELvv8bXquIgxXYyHH5SFlaP" target="_blank"><img src="src/img/yt_btn_sm.gif" title="Design Patterns In TypeScript"/></a>
 
 ## Course Access
 
